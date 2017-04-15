@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+<div class="main">
+       <!-- Button trigger modal -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">登录</button>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">请输入正确信息</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="formId2">
+                        <div class="form-group">
+                            <label for="recipient-name" class="control-label ">手机号:<span id="dv2"></span></label>
+                            <input type="text" class="form-control" id="recipient-tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="control-label ">密码:<span id="dv3"></span></label>
+                            <input type="text" class="form-control" id="recipient-password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close">取消</button>
+                    <button type="button" class="btn btn-primary" id="save">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/jquery/jquery.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.js"></script>
+<script src="js/register.js"></script>
+<script>
+    var url = 'http://127.0.0.1:3000';
+    $.ajax({
+        url: url + "/common",
+        type: "get",
+        data: "12121",
+        success: function(data){
+            console.log(data)
+        },
+        error: function(){
+            console.log("error")
+        }
+    })
+    console.log("111")
+</script>
+</body>
+</html>

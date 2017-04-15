@@ -1,0 +1,963 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 Microsoft YaHei, tahoma, arial, \5b8b\4f53, sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%
+}
+
+address, cite, dfn, em, var {
+    font-style: normal
+}
+
+code, kbd, pre, samp {
+    font-family: courier new, courier, monospace
+}
+
+small {
+    font-size: 12px
+}
+
+ul, ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+
+}
+legend {
+    color: #000
+}
+
+fieldset, img {
+    border: 0
+}
+
+button, input, select, textarea {
+    font-size: 100%
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+.inspan1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: 	#00B2EE;
+    line-height: 58px;
+    margin-top: 5px;
+    
+}
+.inspan1:hover {
+    text-decoration: none;
+}
+
+.ks-clear:after, .clear:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both
+}
+
+.ks-clear, .clear {
+    *zoom: 1
+}
+
+.idenCodeBoxW {
+    min-height: 250px
+}
+
+.header {
+    width: 1000px;
+    height: 70px;
+    margin: 20px auto 5px;
+    border-bottom: 1px solid #00B2EE;
+}
+
+.logoImg {
+    display: block;
+    height: 60px;
+    margin-top: 10px;
+    float: left
+}
+
+.title {
+    float: left;
+    font-size: 22px;
+    margin: 25px 0 0 30px;
+    font-weight: 400
+}
+
+.userInfo {
+    float: right;
+    margin-top: 40px
+}
+
+.pr8 {
+    padding-right: 8px
+}
+
+.wtip {
+    font-size: 13px;
+    color: #ee6161
+}
+
+.wtip .icon {
+    position: relative;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    margin: 0 3px 0 10px
+}
+
+.icon-error {
+    background-position: -21px -227px
+}
+
+.icon-warning {
+    background-position: 0 -227px
+}
+
+.main {
+    width: 810px;
+    margin: 40px auto 72px;
+    font-size: 14px
+}
+
+.com-content {
+    margin-top: 28px;
+    padding-left: 90px
+}
+
+.com-list li.cate-list {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px 0;
+    margin:10px;
+}
+
+.title-font {
+    float: left;
+    font-size: 20px;
+    color: #666;
+    margin: 0 5px
+}
+
+.line {
+    width: 692px;
+    float: right;
+    margin-top: 15px;
+    border: 1px dashed #e2e2e2
+}
+
+.icon {
+    display: inline-block;
+    background-image: url(../images/resume-post-icon.png?);
+    background-repeat: no-repeat;
+    *display: inline;
+    *zoom: 1
+}
+
+.com-title {
+    display: inline-block;
+    width: 56px;
+    margin: 0 20px 0 20px;
+    font-size: 14px;
+    float: left
+}
+
+.com-select {
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    float: left;
+    cursor: pointer;
+    background-color: #fff;
+
+}
+.com-select input {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border:none;
+    padding-left:10px;
+}
+
+.com-input {
+    display: block;
+    float: left;
+    width: 242px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    padding: 0 10px
+}
+
+.com-select-left {
+    height: 38px;
+    float: left;
+    padding: 0 10px
+}
+
+.com-select-right {
+    position: relative;
+    width: 36px;
+    height: 38px;
+    line-height: 38px;
+    border-left: 1px solid #e5e5e5;
+    text-align: center;
+    float: left
+}
+
+.arr-icon {
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    width: 12px;
+    height: 6px;
+    background-position: 0 -160px
+}
+.ErrorInfo {
+    color:red;
+}
+.com-select.focus {
+    border: 1px solid #ffc283;
+    border-radius: 3px 3px 0 0
+}
+
+.focus .arr-icon {
+    background-position: -15px -160px
+}
+
+.font-orange {
+    color: #ff8c14
+}
+
+.must-Symbol {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #f27668;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 2px
+}
+
+.orange-border {
+    box-shadow: 0 0 8px rgba(255, 140, 20, .5)
+}
+
+.green-font {
+    color: #0cae0c
+}
+
+.w106 {
+    width: 106px
+}
+
+.w194 {
+    width: 194px
+}
+
+.w205 {
+    width: 205px
+}
+
+.m10 {
+    margin-right: 10px
+}
+
+.fl {
+    float: left
+}
+
+.orange-font {
+    color: #fd7543
+}
+
+.icon-job {
+    width: 18px;
+    height: 18px;
+    background-position: 0 0;
+    margin-top: 8px;
+    float: left
+}
+
+.base {
+    *z-index: 30
+}
+
+.base .birthday {
+    *z-index: 37
+}
+
+.base .workTime {
+    *z-index: 36
+}
+
+.base .education {
+    *z-index: 35
+}
+
+.base .driving {
+    *z-index: 34
+}
+
+.base .language {
+    *z-index: 33
+}
+
+.base .certificate {
+    *z-index: 32
+}
+
+.base .language {
+    *z-index: 31
+}
+
+.other {
+    *z-index: 20
+}
+
+.other .nativePlace {
+    *z-index: 23
+}
+
+.other .home {
+    *z-index: 22
+}
+
+.other .self {
+    *z-index: 21
+}
+
+.save {
+    *z-index: 10
+}
+
+.work .com-select-left {
+    min-width: 205px;
+    max-width: 565px;
+    overflow: hidden
+}
+
+.job-seleced {
+    display: block;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ffc283;
+    padding-left: 5px;
+    border-radius: 3px;
+    margin: 5px 5px 0 0;
+    background-color: #fffcf8;
+    color: #666;
+    *line-height: 21px
+}
+
+.delete-icon {
+    margin-top: 3px;
+    float: right;
+    *float: none;
+    width: 20px;
+    height: 20px;
+    background-position: -11px -189px
+}
+
+.select-list {
+    position: absolute;
+    top: 49px;
+    left: 96px;
+    border: 1px solid #00B2EE;
+    border-radius: 0 0 3px 3px;
+    z-index: 1;
+    max-height: 380px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    background-color: #fff;
+    _height: 380px
+}
+
+
+.select-list li {
+    padding: 0;
+    margin: 0;
+    height: 38px;
+    line-height: 38px;
+    width: 262px;
+    background: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.birthday .select-list li, .driving .select-list li, .certificate .select-list li {
+    width: 245px \0
+}
+.birthday .dateBir {
+    width: 250px;
+}
+.select-option {
+    display: block;
+    padding: 0 10px;
+    color: #999
+}
+
+.select-option:hover {
+    background: #00B2EE;
+    color: #fff;
+    text-decoration: none
+}
+
+.job-win {
+    position: absolute;
+    top: 52px;
+    left: 96px;
+    width: 730px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background-color: #fff;
+    z-index: 1;
+    display: none
+}
+
+.job-win-header {
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 5
+}
+
+.search-box {
+    position: absolute;
+    top: 6px;
+    left: 25px
+}
+
+.search-input {
+    height: 30px;
+    width: 165px;
+    border: none;
+    vertical-align: top;
+    padding: 0 25px 0 10px;
+    font-size: 12px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    outline: 0
+}
+
+.search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 30px;
+    background-position: -19px -130px
+}
+
+.search-font {
+    font-size: 12px;
+    color: #999;
+    margin-left: 240px
+}
+
+.search-list {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 200px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    background-color: #fff;
+    display: none
+}
+
+.search-list li {
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+    padding: 0 9px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer
+}
+
+.search-list li:hover {
+    background-color: #efefef
+}
+
+.select-icon {
+    position: relative;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    background-position: -17px -211px
+}
+
+.selected .select-icon {
+    background-position: -1px -211px
+}
+
+.close-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 12px 12px 0 0;
+    width: 20px;
+    height: 20px;
+    background-position: -23px -259px;
+    border-radius: 3px
+}
+
+.close-icon:hover {
+    background-color: #ff8c14;
+    background-position: 4px -259px
+}
+
+.job-list-group {
+    padding: 9px 0;
+    border-bottom: 1px solid #e5e5e5;
+    *zoom: 1
+}
+
+.job-list-group:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both
+}
+
+.job-list-item {
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    float: left;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer
+}
+
+.job-list-item .arr-icon {
+    position: absolute;
+    top: 11px;
+    left: 130px;
+    margin-left: 15px
+}
+
+.job-list-item:hover {
+    z-index: 9
+}
+
+.job-list-item p:hover {
+    color: #ff8c14
+}
+
+.job-list-item.hover p {
+    background: #fffcf8;
+    border: 1px solid #ffc283;
+    border-bottom: none;
+    color: #ff8c14
+}
+
+.job-list-item p {
+    position: relative;
+    padding-left: 25px;
+    width: 155px;
+    border: 1px solid #fff;
+    z-index: 3
+}
+
+.secend-list {
+    position: absolute;
+    top: 25px;
+    width: 540px;
+    background: #fffcf8;
+    border: 1px solid #ffc283;
+    padding: 5px 0;
+    z-index: 2;
+    display: none
+}
+
+.left .secend-list {
+    left: 0
+}
+
+.right .secend-list {
+    right: 0
+}
+
+.job-list-item.hover .secend-list {
+    display: block
+}
+
+.secend-list-item {
+    float: left;
+    width: 155px;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.secend-list-item.selected {
+    color: #ff8c14
+}
+
+.city-win {
+    position: absolute;
+    top: 52px;
+    left: 96px;
+    width: 513px;
+    border: 1px solid #ffc283;
+    border-radius: 3px;
+    background-color: #fff;
+    z-index: 1;
+    display: none
+}
+
+.no-line {
+    border: none !important
+}
+
+.city-win-header {
+    border-bottom: 1px solid #e5e5e5
+}
+
+.city-win-header ul {
+    margin-left: 20px;
+    overflow: hidden
+}
+
+.city-win-header li.city-group-tab {
+    float: left;
+    width: 64px;
+    height: 22px;
+    line-height: 22px;
+    padding: 8px 3px
+}
+
+.city-group-tab a {
+    display: block;
+    text-align: center;
+    color: #999;
+    text-decoration: none
+}
+
+.city-group-tab.selected a {
+    background-color: #ff8c14;
+    color: #fff;
+    border-radius: 3px
+}
+
+.city-group-con {
+    width: 461px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.city-group-con ul {
+    width: 434px;
+    float: left
+}
+
+.city-group-title {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 33px;
+    line-height: 33px;
+    color: #ff8c14
+}
+
+.city-group-con li {
+    float: left;
+    padding: 0;
+    height: 33px;
+    line-height: 33px;
+    width: 72px
+}
+
+.noGroup, .noGroup ul {
+    width: 476px
+}
+
+.noGroup li {
+    width: 68px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.city-item {
+    color: #999;
+    padding: 0 6px
+}
+
+.loading {
+    display: block;
+    margin: 20px auto
+}
+
+.selected .city-item {
+    color: #ff8c14
+}
+
+.city-item:hover {
+    color: #ff8c14;
+    text-decoration: none
+}
+
+.language .city-win {
+    left: 194px;
+    width: 338px
+}
+
+.language .noGroup, .language .noGroup ul {
+    width: 340px
+}
+
+.base {
+    margin-top: 30px
+}
+
+.icon-base {
+    width: 20px;
+    height: 18px;
+    background-position: 0 -25px;
+    float: left;
+    margin-top: 7px
+}
+
+.sex {
+    float: left
+}
+
+.sex-input {
+    float: left;
+    width: 66px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    margin-left: 10px;
+    color: #333;
+    text-align: center;
+    cursor: pointer
+}
+
+.sex .selected {
+    background: #00B2EE;
+    color: #fff;
+    border-color: #00B2EE;
+}
+
+.sex .icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+.man-icon {
+    background-position: -27px -3px
+}
+
+.selected .man-icon {
+    background-position: -27px -18px
+}
+
+.woman-icon {
+    background-position: -27px -33px
+}
+
+.selected .woman-icon {
+    background-position: -27px -48px
+}
+
+.success-icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 0;
+    background-position: 0 -137px
+}
+
+.mobile-text {
+    margin-left: 3px;
+    font-size: 13px
+}
+
+.auth-text {
+    margin: 0 10px
+}
+
+.changeTel {
+    margin-left: 5px;
+    font-size: 13px;
+    color: #4e87e9
+}
+
+.img-box {
+    width: 264px;
+    float: left
+}
+
+.imgCode {
+    display: none
+}
+
+.imgCode .com-input {
+    width: 80px
+}
+
+.imgCode img {
+    float: left;
+    width: 80px;
+    height: 40px;
+    margin: 0 5px;
+    cursor: pointer
+}
+
+.height-com {
+    margin-left: 10px
+}
+
+.radio-lang {
+    float: left;
+    width: 88px;
+    height: 40px;
+    line-height: 40px
+}
+
+.icon-sel {
+    width: 16px;
+    height: 16px;
+    background-position: -1px -245px;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.icon-sel.checked {
+    background-position: -17px -245px
+}
+
+.other {
+    margin-top: 30px
+}
+
+.other .com-content {
+    display: none
+}
+
+.other.show .com-content {
+    display: block
+}
+
+.icon-other {
+    float: left;
+    margin-top: 6px;
+    width: 15px;
+    height: 20px;
+    background-position: 0 -48px
+}
+
+.other li.self {
+    height: 145px
+}
+
+.other .line {
+    width: 660px
+}
+
+.icon-cirArr {
+    /*background: #00B2EE;*/
+    color:white;
+    float: right;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    background:#00B2EE;
+    outline: none;
+    border:none;
+}
+.self-wrap {
+    float: left;
+    height: 145px;
+    width: 512px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px
+}
+
+.self-content {
+    height: 114px;
+    width: 502px;
+    padding: 3px 5px;
+    display: block;
+    overflow: auto;
+    border: none;
+    resize: none;
+    outline: 0
+}
+
+.hint-tips {
+    height: 24px;
+    line-height: 24px;
+    color: #ccc;
+    font-size: 12px;
+    text-align: right;
+    margin-right: 10px
+}
+.hint-tips span {
+    color: #00B2EE;
+}
+
+.save {
+    position: relative;
+    margin-top: 60px;
+    padding-left: 110px
+}
+.save-resume {
+    display: block;
+    margin-top: 30px;
+    width: 140px;
+    height: 44px;
+    line-height: 44px;
+    background-color: #00B2EE;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer
+}
+
+.save-resume.disabled {
+    background-color: #ccc
+}
+
+p.inspan1:hover {
+ text-decoration: none;   
+
+}
