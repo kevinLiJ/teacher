@@ -5,7 +5,7 @@ module.exports = function(sqlStatement, data, callback) {
         host: 'localhost',
         user: 'root',
         password: '1234',
-        database: 'myWebsite'
+        database: 'website'
     });
 
     connection.connect();
