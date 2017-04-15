@@ -14,5 +14,7 @@ router
 
 //ajax路由
 .post('/teacher/register', ajaxController.teacherRegister)
+    .post('/teacher/login', ajaxController.teacherLogin)
     // 导出路由
+
 module.exports = router;
