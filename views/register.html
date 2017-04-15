@@ -2,48 +2,49 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>注册</title>
-  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="/public/css/login.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/login.css">
 </head>
 
 <body>
-  <div class="container">
-    <form class="form-signin" id="form">
-      <h2 class="form-signin-heading">Please sign up</h2>
-      <input name="email" type="email" class="form-control" placeholder="邮箱" required autofocus>
-      <input name="password" type="password" class="form-control" placeholder="密码" required>
-      <input name="nickname" type="text" id="inputPassword" class="form-control" placeholder="昵称" required>
-      <div class="checkbox">
-        <label>
+    <div class="container">
+        <form class="form-signin" id="form">
+            <h2 class="form-signin-heading">Please sign up</h2>
+            <input name="email" type="email" class="form-control" placeholder="邮箱" required autofocus>
+            <input name="password" type="password" class="form-control" placeholder="密码" required>
+            <input name="nickname" type="text" id="inputPassword" class="form-control" placeholder="昵称" required>
+            <div class="checkbox">
+                <label>
           <input type="checkbox" value="remember-me"> 记住我
         </label>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-    </form>
-  </div>
-  <script src="/node_modules/jquery/dist/jquery.js"></script>
-  <script>
-    $('#form').on('submit', function (e) {
-      e.preventDefault()
-      $.ajax({
-        url: '/register',
-        type: 'post',
-        data: $(this).serialize(),
-        dataType: 'json'
-      }).then(function (data) {
-        var err_code = data.err_code
-        if (err_code === 0) {
-          window.location.href = '/login'
-        } else if (err_code === 1001) {
-          window.alert('邮箱已存在，请更换重试')
-        }
-      })
-    })
-  </script>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
+        </form>
+    </div>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        var remoteUrl = "http://192.168.1.8:3000"
+        $('#form').on('submit', function(e) {
+            e.preventDefault()
+            $.ajax({
+                url: remoteUrl + '/teacher/register',
+                type: 'post',
+                data: $(this).serialize(),
+                dataType: 'json',
+                success: function(data) {
+                    alert(1);
+                    console.log(data);
+                },
+                error: function() {
+                    console.log(1);
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>

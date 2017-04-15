@@ -1,4 +1,4 @@
-var mysql = require('mysql');
+﻿var mysql = require('mysql');
 
 module.exports = function(sqlStatement, data, callback) {
     var connection = mysql.createConnection({

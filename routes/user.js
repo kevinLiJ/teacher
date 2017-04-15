@@ -10,6 +10,7 @@ router
     .get('/resume', userController.showResume)
     .get('/logout', userController.doLogin)
 
+
 //ajax路由
 
 // 导出路由
