@@ -16,7 +16,7 @@
             <h2 class="form-signin-heading">Please sign up</h2>
             <input name="email" type="email" class="form-control" placeholder="邮箱" required autofocus>
             <input name="password" type="password" class="form-control" placeholder="密码" required>
-            <input name="nickname" type="text" id="inputPassword" class="form-control" placeholder="昵称" required>
+            <input name="username" type="text" id="inputPassword" class="form-control" placeholder="昵称" required>
             <div class="checkbox">
                 <label>
           <input type="checkbox" value="remember-me"> 记住我
@@ -27,11 +27,11 @@
     </div>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script>
-        var remoteUrl = "http://192.168.1.8:3000"
+        // var remoteUrl = "http://192.168.1.8:3000"
         $('#form').on('submit', function(e) {
             e.preventDefault()
             $.ajax({
-                url: remoteUrl + '/teacher/register',
+                url: '/teacher/register',
                 type: 'post',
                 data: $(this).serialize(),
                 dataType: 'json',
