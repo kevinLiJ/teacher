@@ -1,68 +1,77 @@
 /**
  * Created by 董丽茹 on 2017/3/20.
  */
-function Click(id1,id2,ele1,ele2){
-    id1.click(function(){
-        id2.css("display","block");
-        ele1.click(function(){
+function Click(id1, id2, ele1, ele2) {
+    id1.click(function() {
+        id2.css("display", "block");
+        ele1.click(function() {
             ele2.html($(this).html());
-            id2.css("display","none");
+            id2.css("display", "none");
         })
     })
 }
-Click($("#sal"), $("#salary"),$("#salary ul li"),$(".s1"))
-Click($("#rec"),$("#record"),$("#record ul li"),$(".r3"));
-Click($("#job"),$("#jobTime"),$("#jobTime ul li"),$(".j1"));
-function mouseLev(id){
-    id.mouseleave(function(){
-        $(this).css("display","none");
+Click($("#sal"), $("#salary"), $("#salary ul li"), $(".s1"));
+Click($("#rec"), $("#record"), $("#record ul li"), $(".r3"));
+Click($("#job"), $("#jobTime"), $("#jobTime ul li"), $(".j1"));
+
+function mouseLev(id) {
+    id.mouseleave(function() {
+        $(this).css("display", "none");
     })
 }
 mouseLev($("#salary"));
 mouseLev($("#record"));
 mouseLev($("#jobTime"));
 
-$("#other-sel").click(function(){
-    $(".other .com-content"). toggle();
+$("#other-sel").click(function() {
+    $(".other .com-content").toggle();
     return false;
-    
+
 })
-$("#man").click(function(){
+$("#man").click(function() {
     $(this).addClass("selected");
     $("#woman").removeClass("selected");
 })
-$("#woman").click(function(){
+$("#woman").click(function() {
     $(this).addClass("selected");
     $("#man").removeClass("selected");
 })
 
-$("#submit").click(function(){
-    $("#man").css("display","none");
-    $("#woman").css("display","none");
+$("#submit").click(function() {
+    $("#man").css("display", "none");
+    $("#woman").css("display", "none");
 })
 $("#resumeId").validate({
-
-    sendForm:false,
-    valid:function(){
+    sendForm: false,
+    valid: function() {
         $(this).ajaxSubmit({
 
         })
     },
-    eachInvalidField : function(){
-         $(this).closest('.form-group').removeClass('has-success').addClass('has-error');
+    eachInvalidField: function() {
+        $(this).closest('.form-group').removeClass('has-success').addClass('has-error');
     },
-    eachValidField : function(){
+    eachValidField: function() {
         $(this).closest('.form-group').removeClass('has-error').addClass('has-success');
     },
-    description : {
-        tcName : {
-            required : '姓名不能为空'
+    description: {
+        tcName: {
+            required: '姓名不能为空'
         },
-        dateBir : {
-             required : '出生年份不能为空',
+        dateBir: {
+            required: '出生年份不能为空'
         },
-        tel : {
-            required : '手机号不能为空'
+        tel: {
+            required: '手机号不能为空'
         }
     }
 });
+
+$("#submit").click(function() {
+    $.ajax({
+        url: '',
+        type: 'post',
+        data: $('#resumeId').serialize(),
+        success: function() {}
+    })
+})
