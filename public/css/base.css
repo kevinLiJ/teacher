@@ -147,3 +147,122 @@ em {
 .hide {
     display: none
 }
+
+
+/*header部分开始*/
+
+.btn-primary {
+    color: black;
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+}
+
+.btn-primary:hover {
+    color: #00B2EE;
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: black;
+    background-color: #F5F5F5;
+    border-color: #F5F5F5;
+}
+
+header {
+    width: 100%;
+    height: 34px;
+    background: #F5F5F5;
+    line-height: 30px;
+}
+
+header .left {
+    float: left;
+}
+
+header .right {
+    float: right;
+}
+
+header .right li {
+    float: left;
+    list-style: none;
+    padding: 0 10px;
+    color: #00B2EE;
+}
+
+header .container li a {
+    color: black;
+}
+
+header .container li a:hover {
+    text-decoration: none;
+    color: #00B2EE;
+}
+
+header nav .container- .btn-lg,
+.btn-group-lg>.btn {
+    font-size: 14px;
+    height: 33px;
+    line-height: 12px;
+}
+
+
+/*header部分结束*/
+
+
+/*footer部分开始*/
+
+footer {
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+    background: #F5F5F5;
+}
+
+
+/* CSS Document */
+
+.footernormal {
+    width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid #0da1d8;
+    overflow: hidden;
+    clear: both;
+    padding-top: 5px;
+}
+
+
+/* footer */
+
+.footer {
+    margin: 0 auto;
+    width: 1000px;
+    padding: 20px 0 15px;
+    overflow: hidden;
+    text-align: center;
+    color: #666;
+}
+
+.bottom_nav a {
+    color: #444;
+    padding-left: 7px;
+}
+
+.bottom_nav a:hover {
+    color: #c00;
+}
+
+footer p {
+    margin: 20px 0;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1050px;
+    }
+}
+
+
+/*footer部分结束*/

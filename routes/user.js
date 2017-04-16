@@ -10,6 +10,7 @@ router
     .get('/', userController.showMain)
     .get('/resume', userController.showResume)
     .get('/logout', userController.doLogin)
+    .get('/detail', userController.showDetail)
 
 
 //ajax路由
