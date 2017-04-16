@@ -20,3 +20,9 @@ exports.doLogin = function(req, res) {
 exports.showDetail = function(req, res) {
     res.render('detail');
 }
+exports.factoryMain = function(req, res) {
+    res.render('factoryMain');
+}
+exports.require = function(req, res) {
+    res.render('require');
+}

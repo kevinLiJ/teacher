@@ -11,6 +11,8 @@ router
     .get('/resume', userController.showResume)
     .get('/logout', userController.doLogin)
     .get('/detail', userController.showDetail)
+    .get('/factory', userController.factoryMain)
+    .get('/require', userController.require)
 
 
 //ajax路由
