@@ -1,0 +1,56 @@
+.sidebar {
+    float: left;
+    width: 150px;
+}
+
+.sidebar ul li {
+    cursor: pointer;
+}
+
+.sidebar ul li.active {
+    color: red;
+}
+
+.rightCon {
+    padding-left: 150px;
+}
+
+.rightCon .content-top {
+    border-bottom: 3px solid #00B2EE;
+}
+
+.rightCon .content-top h1 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.rightCon .title dd {
+    border-bottom: 1px solid #00B2EE;
+    height: 30px;
+    line-height: 30px;
+}
+
+.rightCon .box {
+    /*margin:-2px;*/
+    display: inline-block;
+    padding: 15px 0;
+    /*border-top:1px solid #F5F5F5;*/
+    border-bottom: 1px solid #ccc;
+}
+
+.rightCon .box:hover {
+    background: #F5F5F5;
+}
+
+.rightCon a {
+    color: #00B2EE;
+}
+
+.list-content {
+    white-space: normal;
+    line-height: 21px;
+    padding: 0 15px;
+}
+
+
+/*content部分结束*/

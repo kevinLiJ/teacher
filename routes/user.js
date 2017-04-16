@@ -11,11 +11,9 @@ router
     .get('/resume', userController.showResume)
     .get('/logout', userController.doLogin)
     .get('/detail', userController.showDetail)
-
-
-//ajax路由
-.post('/teacher/register', ajaxController.teacherRegister)
+    .get('/admin', userController.showAdmin)
+    //ajax路由
+    .post('/teacher/register', ajaxController.teacherRegister)
     .post('/teacher/login', ajaxController.teacherLogin)
-    // 导出路由
 
 module.exports = router;

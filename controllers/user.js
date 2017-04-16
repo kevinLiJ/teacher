@@ -20,3 +20,6 @@ exports.doLogin = function(req, res) {
 exports.showDetail = function(req, res) {
     res.render('detail');
 }
+exports.showAdmin = function(req, res) {
+    res.render('administrator/home');
+}
