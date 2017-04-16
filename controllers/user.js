@@ -20,14 +20,12 @@ exports.doLogin = function(req, res) {
 exports.showDetail = function(req, res) {
     res.render('detail');
 }
-<<<<<<< HEAD
 exports.showAdmin = function(req, res) {
     res.render('administrator/home');
-=======
+}
 exports.factoryMain = function(req, res) {
     res.render('factoryMain');
 }
 exports.require = function(req, res) {
     res.render('require');
->>>>>>> af4dc545284caafe7fa2d25994a0f1e3bd220f87
 }
