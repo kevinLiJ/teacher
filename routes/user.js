@@ -12,14 +12,12 @@ router
     .get('/logout', userController.doLogin)
     .get('/detail', userController.showDetail)
     .get('/admin', userController.showAdmin)
-    .get('/factory', userController.factoryMain)
+    .get('/factoryMain', userController.factoryMain)
     .get('/require', userController.require)
-    .get('/adminMain', userController.adminMain)
-
-//ajax路由
-.post('/teacher/register', ajaxController.teacherRegister)
+    // .get('/adminMain', userController.adminMain)
     //ajax路由
-
-.post('/teacher/login', ajaxController.teacherLogin)
+    .post('/teacher/register', ajaxController.userRegister)
+    .post('/teacher/login', ajaxController.userLogin)
+    .post('/teacher/submitTeacherInfo', ajaxController.submitTeacherInfo)
 
 module.exports = router;

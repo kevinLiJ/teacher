@@ -26,17 +26,23 @@
     </div>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script>
-        var remoteUrl = "http://192.168.1.8:3000";
+        // var remoteUrl = "http://192.168.1.8:3000";
         $('#form').on('submit', function(e) {
             e.preventDefault()
             $.ajax({
-                url: remoteUrl + '/teacher/login',
+                url: '/teacher/login',
                 type: 'post',
                 data: $(this).serialize(),
                 dataType: 'json'
             }).then(function(data) {
-                consloe.log(data);
-                window.location.href = "/main";
+                if (data.success) {
+                    if (data.type === '1') {
+                        window.location.href = '/'
+                    } else if (data.type === '2') {
+                        window.location.href = '/factoryMain'
+                    }
+
+                }
             })
         })
     </script>
