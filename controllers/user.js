@@ -29,3 +29,12 @@ exports.factoryMain = function(req, res) {
 exports.require = function(req, res) {
     res.render('require');
 }
+exports.add = function(req, res) {
+    res.render('administrator/add.html');
+}
+exports.company = function(req, res) {
+    res.render('administrator/company');
+}
+exports.companyAdd = function(req, res) {
+    res.render('administrator/company_add');
+}

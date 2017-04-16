@@ -15,6 +15,9 @@ router
     .get('/factoryMain', userController.factoryMain)
     .get('/require', userController.require)
     // .get('/adminMain', userController.adminMain)
+    .get('/add', userController.add)
+    .get('/company', userController.company)
+    .get('/company_add', userController.companyAdd)
     //ajax路由
     .post('/teacher/register', ajaxController.userRegister)
     .post('/teacher/login', ajaxController.userLogin)
