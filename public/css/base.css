@@ -1,268 +1,250 @@
-html,
-body,
-ul,
-li,
-ol,
-dl,
-dd,
-dt,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form,
-fieldset,
-legend,
-img {
-    margin: 0;
-    padding: 0;
-}
-
-body,
-html {
-    width: 100%;
-    height: 100%;
-}
-
-fieldset,
-img,
-input,
-button {
-    /*fieldset组合表单中的相关元素*/
-    border: none;
-    padding: 0;
-    margin: 0;
-    outline-style: none;
-}
-
-ul,
-ol {
-    list-style: none;
-    /*清除列表风格*/
-}
-
-input {
-    padding-top: 0;
-    padding-bottom: 0;
-    font-family: "SimSun", "宋体";
-}
-
-select,
-input {
-    vertical-align: middle;
-}
-
-select,
-input,
-textarea {
-    font-size: 14px;
-    margin: 0;
-}
-
-textarea {
-    resize: none;
-}
-
-
-/*防止多行文本框拖动*/
-
-img {
-    border: 0;
-    vertical-align: middle;
-}
-
-
-/*  去掉图片低测默认的3像素空白缝隙*/
-
-table {
-    border-collapse: collapse;
-    /*合并外边线*/
-}
-
-body {
-    font: 14px/150% Arial, Verdana, "\5b8b\4f53";
-    /*宋体，Unicode，统一码*/
-    color: #666;
-    background: #fff
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: "";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-    /*IE/7/6*/
-}
-
-a {
-    color: #666;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #00B2EE;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 100%;
-}
-
-s,
-i,
-em {
-    font-style: normal;
-    text-decoration: none;
-}
-
-.col-red {
-    color: #00B2EE !important;
-}
-
-
-/*公共类*/
-
-.container {
-    /*版心 提取 */
-    width: 1000 px;
-    margin: 0 auto;
-}
-
-.hide {
-    display: none
-}
-
-
-/*header部分开始*/
-
-.btn-primary {
-    color: black;
-    background-color: #F5F5F5;
-    border-color: #F5F5F5;
-}
-
-.btn-primary:hover {
-    color: #00B2EE;
-    background-color: #F5F5F5;
-    border-color: #F5F5F5;
-}
-
-.btn-primary:focus,
-.btn-primary.focus {
-    color: black;
-    background-color: #F5F5F5;
-    border-color: #F5F5F5;
-}
-
-header {
-    width: 100%;
-    height: 34px;
-    background: #F5F5F5;
-    line-height: 30px;
-}
-
-header .left {
-    float: left;
-}
-
-header .right {
-    float: right;
-}
-
-header .right li {
-    float: left;
-    list-style: none;
-    padding: 0 10px;
-    color: #00B2EE;
-}
-
-header .container li a {
-    color: black;
-}
-
-header .container li a:hover {
-    text-decoration: none;
-    color: #00B2EE;
-}
-
-header nav .container- .btn-lg,
-.btn-group-lg>.btn {
-    font-size: 14px;
-    height: 33px;
-    line-height: 12px;
-}
-
-
-/*header部分结束*/
-
-
-/*footer部分开始*/
-
-footer {
-    margin-top: 10px;
-    width: 100%;
-    height: 300px;
-    background: #F5F5F5;
-}
-
-
-/* CSS Document */
-
-.footernormal {
-    width: 1000px;
-    margin: 0 auto;
-    border-top: 1px solid #0da1d8;
-    overflow: hidden;
-    clear: both;
-    padding-top: 5px;
-}
-
-
-/* footer */
-
-.footer {
-    margin: 0 auto;
-    width: 1000px;
-    padding: 20px 0 15px;
-    overflow: hidden;
-    text-align: center;
-    color: #666;
-}
-
-.bottom_nav a {
-    color: #444;
-    padding-left: 7px;
-}
-
-.bottom_nav a:hover {
-    color: #c00;
-}
-
-footer p {
-    margin: 20px 0;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1050px;
-    }
-}
-
-
-/*footer部分结束*/
+                        html,
+                        body,
+                        ul,
+                        li,
+                        ol,
+                        dl,
+                        dd,
+                        dt,
+                        p,
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6,
+                        form,
+                        fieldset,
+                        legend,
+                        img {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        body,
+                        html {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        fieldset,
+                        img,
+                        input,
+                        button {
+                            /*fieldset组合表单中的相关元素*/
+                            border: none;
+                            padding: 0;
+                            margin: 0;
+                            outline-style: none;
+                        }
+                        
+                        ul,
+                        ol {
+                            list-style: none;
+                            /*清除列表风格*/
+                        }
+                        
+                        input {
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            font-family: "SimSun", "宋体";
+                        }
+                        
+                        select,
+                        input {
+                            vertical-align: middle;
+                        }
+                        
+                        select,
+                        input,
+                        textarea {
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                        
+                        textarea {
+                            resize: none;
+                        }
+                        /*防止多行文本框拖动*/
+                        
+                        img {
+                            border: 0;
+                            vertical-align: middle;
+                        }
+                        /*  去掉图片低测默认的3像素空白缝隙*/
+                        
+                        table {
+                            border-collapse: collapse;
+                            /*合并外边线*/
+                        }
+                        
+                        body {
+                            font: 14px/150% Arial, Verdana, "\5b8b\4f53";
+                            /*宋体，Unicode，统一码*/
+                            color: #666;
+                            background: #fff
+                        }
+                        
+                        .clearfix:before,
+                        .clearfix:after {
+                            content: "";
+                            display: table;
+                        }
+                        
+                        .clearfix:after {
+                            clear: both;
+                        }
+                        
+                        .clearfix {
+                            *zoom: 1;
+                            /*IE/7/6*/
+                        }
+                        
+                        a {
+                            color: #666;
+                            text-decoration: none;
+                        }
+                        
+                        a:hover {
+                            color: #00B2EE;
+                        }
+                        
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6 {
+                            text-decoration: none;
+                            font-weight: normal;
+                            font-size: 100%;
+                        }
+                        
+                        s,
+                        i,
+                        em {
+                            font-style: normal;
+                            text-decoration: none;
+                        }
+                        
+                        .col-red {
+                            color: #00B2EE !important;
+                        }
+                        /*公共类*/
+                        
+                        .container {
+                            /*版心 提取 */
+                            width: 1000 px;
+                            margin: 0 auto;
+                        }
+                        
+                        .hide {
+                            display: none
+                        }
+                        /*header部分开始*/
+                        
+                        .btn-primary {
+                            color: black;
+                            background-color: #F5F5F5;
+                            border-color: #F5F5F5;
+                        }
+                        
+                        .btn-primary:hover {
+                            color: #00B2EE;
+                            background-color: #F5F5F5;
+                            border-color: #F5F5F5;
+                        }
+                        
+                        .btn-primary:focus,
+                        .btn-primary.focus {
+                            color: black;
+                            background-color: #F5F5F5;
+                            border-color: #F5F5F5;
+                        }
+                        
+                        header {
+                            width: 100%;
+                            height: 34px;
+                            background: #F5F5F5;
+                            line-height: 30px;
+                        }
+                        
+                        header .left {
+                            float: left;
+                        }
+                        
+                        header .right {
+                            float: right;
+                        }
+                        
+                        header .right li {
+                            float: left;
+                            list-style: none;
+                            padding: 0 10px;
+                            color: #00B2EE;
+                        }
+                        
+                        header .container li a {
+                            color: black;
+                        }
+                        
+                        header .container li a:hover {
+                            text-decoration: none;
+                            color: #00B2EE;
+                        }
+                        
+                        header nav .container- .btn-lg,
+                        .btn-group-lg>.btn {
+                            font-size: 14px;
+                            height: 33px;
+                            line-height: 12px;
+                        }
+                        /*header部分结束*/
+                        /*footer部分开始*/
+                        
+                        footer {
+                            margin-top: 10px;
+                            width: 100%;
+                            height: 400px;
+                            background: #F5F5F5;
+                        }
+                        /* CSS Document */
+                        
+                        .footernormal {
+                            width: 1000px;
+                            margin: 0 auto;
+                            border-top: 1px solid #0da1d8;
+                            overflow: hidden;
+                            clear: both;
+                            padding-top: 5px;
+                        }
+                        /* footer */
+                        
+                        .footer {
+                            margin: 0 auto;
+                            width: 100%;
+                            padding: 20px 0 15px;
+                            overflow: hidden;
+                            text-align: center;
+                            color: #666;
+                        }
+                        
+                        .bottom_nav a {
+                            color: #444;
+                            padding-left: 7px;
+                        }
+                        
+                        .bottom_nav a:hover {
+                            color: #c00;
+                        }
+                        
+                        footer p {
+                            margin: 20px 0;
+                        }
+                        
+                        @media (min-width: 1200px) {
+                            .container {
+                                width: 1050px;
+                            }
+                        }
+                        /*footer部分结束*/

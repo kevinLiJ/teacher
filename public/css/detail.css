@@ -1,7 +1,8 @@
 /*search部分开始*/
 
 .search {
-    border-bottom: 2px solid #00B2EE;
+    /*border-bottom: 2px solid #00B2EE;*/
+    margin-top: 30px;
 }
 
 .search .search-left {
@@ -231,7 +232,6 @@
     padding-left: 5px;
     background: #fff url(/image/2012/main-icon.png) no-repeat 69px -147px;
     float: left;
-    )
 }
 
 .title-bot .over {
@@ -844,7 +844,6 @@ dl.ditie_style dd {
 }
 
 .nav {
-    width: 970px;
     margin: 0 auto 6px;
     padding: 8px 5px 0;
     overflow: hidden;
@@ -3181,6 +3180,785 @@ a.dianpu-link {
     font-size: 14px;
     line-height: 22px;
     color: #333333;
+}
+
+.main-l {
+    width: 100%;
+    margin-top: -70px;
+    border: 1px solid #eee;
+    border-top: 2px solid #00B2EE;
+}
+
+.sq-submiter {
+    height: 39px;
+    line-height: 39px;
+    width: 143px;
+    display: inline-block;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(185, 66, 9);
+    border-image: initial;
+    background: #00B2EE;
+    /*background: url(/image/2012/sq-article-bg.png) repeat-x;*/
+}
+
+.jl-post-info {
+    height: 29px;
+    width: 101px;
+    text-align: center;
+    line-height: 27px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff!important;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 111px;
+    border: 1px solid #4577ce;
+    background: url("/image/zhaopin/jl-post-info.png") no-repeat;
+}
+
+.zp-post-info {
+    height: 29px;
+    width: 101px;
+    text-align: center;
+    line-height: 27px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff!important;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    border: 1px solid #da6c0e;
+    background: url("/image/zhaopin/zp-post-info.png") no-repeat;
+}
+
+.main-content {
+    border-top: 1px solid #aaa;
+    padding-top: 20px;
+}
+
+.main-r-zp {
+    float: right;
+    width: 210px;
+    overflow: hidden;
+}
+
+
+/*===========招聘信息页==============*/
+
+.infoTitle-zp {}
+
+.companyInfo-zp,
+.companyOther,
+.welfare-zp,
+.applyJob {
+    overflow: hidden;
+}
+
+.companyInfo-zp {
+    _width: 670px;
+    margin-top: 12px;
+}
+
+.companyInfo-zp .companyName {
+    float: left;
+    font-size: 14px;
+}
+
+.companyName a {
+    color: #15c;
+}
+
+.companyName a:hover {
+    color: #c00;
+}
+
+.companyInfo-zp .companyIcon {
+    float: left;
+    padding-left: 20px;
+    font-size: 12px
+}
+
+.companyInfo-zp .companyIcon a {
+    float: left;
+    margin-left: 10px;
+}
+
+.companyOther {
+    font-size: 14px;
+    line-height: 36px;
+    color: #333;
+    margin-top: 6px;
+}
+
+.companyOther span {
+    display: block;
+    margin-right: 20px;
+}
+
+.welfare-zp {
+    margin-top: 20px;
+}
+
+.welfare-zp .welfareTitle {
+    height: 26px;
+    line-height: 26px;
+}
+
+.welfare-zp .welfareLr {
+    padding: 5px 15px;
+    border: 1px solid #c6e8bf;
+    background: #efffec;
+    float: left;
+}
+
+.welfareLr .fl {
+    float: left;
+    width: 63px;
+    height: 57px;
+    display: inline-block;
+    background: url("/image/2012/fl-article-bg.jpg") no-repeat;
+}
+
+.fl-con {
+    display: inline;
+    float: left;
+    margin-top: 19px;
+    margin-left: 15px;
+    width: 580px;
+}
+
+.jq {
+    font-family: "微软雅黑";
+    font-size: 15px;
+    padding-left: 26px;
+    margin-right: 20px;
+    background: url("/image/2012/duigou-bg22.png") no-repeat;
+}
+
+.applyJob {
+    margin-top: 30px;
+}
+
+.about-zp {
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.about-zp .about-dh li {
+    float: left;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.about-zp .about-lr {
+    padding: 20px 0 20px 0;
+}
+
+.hide {
+    display: none;
+}
+
+.about-dh {
+    height: 29px;
+    line-height: 28px;
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5;
+}
+
+.about-dh li {
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+    margin-right: -1px
+}
+
+.about-dh li.current {
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+.abouts-c {
+    padding-top: 20px;
+}
+
+.abouts-c .dt {
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+    margin-bottom: 10px;
+    text-indent: 0!important;
+}
+
+
+/*该公司其他职位*/
+
+.compotherPos {
+    padding-bottom: 22px
+}
+
+.posTable {
+    border: 1px solid #f0f0f0;
+    line-height: 32px;
+    width: 100%;
+    text-align: left;
+}
+
+.posTable thead {
+    background: #fafafa;
+    font-size: 14px;
+    color: #888;
+}
+
+.posTable th {
+    font-weight: normal;
+    text-align: left
+}
+
+.posTable tbody {
+    font-size: 12px;
+    color: #333
+}
+
+.posTable th,
+.posTable td {
+    padding-left: 17px
+}
+
+.posTable .wid173 {
+    width: 173px
+}
+
+.posTable .wid52 {
+    width: 52px
+}
+
+.posTable .wid79 {
+    width: 79px
+}
+
+.posTable .wid85 {
+    width: 107px
+}
+
+.posTable .wid136 {
+    width: 136px
+}
+
+.compotherPos .f12 {
+    display: block;
+    text-align: right;
+    margin-top: 8px
+}
+
+
+/*推荐职位*/
+
+.recPostion {
+    margin: 15px 0 20px;
+    border: 1px solid #e1e1e1;
+}
+
+.recPostion .headline {
+    line-height: 14px;
+    height: auto;
+    padding: 8px 0 8px 15px;
+    background: #f6f6f6;
+    border: none;
+    position: relative;
+    z-index: 0;
+}
+
+.recPostion .headline a {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 12px;
+    color: #15c;
+}
+
+.recPostion .headline p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.recPostion .recPosCont {
+    padding-left: 15px;
+    font-size: 12px
+}
+
+.recPostion .recPosInfo {
+    padding: 21px 0 8px 0;
+    border-bottom: 1px solid #f4f4f4;
+    color: #585858;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.recPostion .recPosInfo dl {
+    overflow: hidden;
+    line-height: 14px;
+}
+
+.recPostion dl dt {
+    float: left;
+    width: 136px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.recPostion dl dt a {
+    color: #15c;
+}
+
+.recPostion dl dd {
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.recPostion .wid106 {
+    width: 146px
+}
+
+.recPostion .wid217 {
+    width: 225px
+}
+
+.recPostion .wid217 a {
+    color: #585858;
+}
+
+.recPostion .wid217 a:hover {
+    color: red
+}
+
+.recPostion .wid136 {
+    width: 136px
+}
+
+.recPostion .wid94 {
+    width: 94px
+}
+
+.recPostion .recommRea {
+    margin-top: 19px
+}
+
+.recommRea span {
+    margin-top: 3px
+}
+
+.fl {
+    float: left;
+}
+
+.lh {
+    line-height: 14px;
+}
+
+.cbright li {
+    float: left;
+    display: inline;
+    line-height: 20px;
+    padding-bottom: 12px;
+    font-size: 12px;
+    position: relative;
+    z-index: 10
+}
+
+.cbright li .cbSum {
+    float: left;
+    display: inline;
+    margin-right: 7px;
+    white-space: nowrap;
+    background: #f8f8f8;
+    border: 1px solid #d6d6d6;
+    cursor: pointer;
+}
+
+.cbright li .cbSum span {
+    display: inline-block;
+    padding: 0 6px;
+    color: #555;
+    margin-top: 0
+}
+
+.cbright li .cbSum .downIco {
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    overflow: hidden;
+    margin-right: 7px;
+    background: url(http://pic2.58.com/ui7/job/hire/job-detail-btn.png) right -118px no-repeat;
+    vertical-align: middle;
+}
+
+.cbright li .cbSum .upIco {
+    background-position: right -112px
+}
+
+.cbright li .cbMsg {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 180px;
+    line-height: 22px;
+    padding: 5px 11px;
+    border: 1px solid #d6d6d6;
+    color: #505050;
+    background: #fff;
+    z-index: 10
+}
+
+.cbright li .cbMsg .cbArrow {
+    position: absolute;
+    top: -20px;
+    left: 149px
+}
+
+.contact-zp {
+    padding-top: 20px;
+}
+
+.contact-zp dl {
+    font-size: 14px;
+}
+
+.contact-zp dt {
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-zp dd {
+    line-height: 36px;
+}
+
+.detail-table {
+    font-size: 14px;
+    width: 100%;
+    margin-top: 0 !important;
+}
+
+.detail-table dt,
+.detail-table dd {
+    line-height: 36px;
+    overflow: hidden;
+}
+
+.detail-table li {
+    text-align: left;
+}
+
+.chakan {
+    color: #2255dd!important;
+}
+
+.sq-submiter {
+    height: 39px;
+    line-height: 39px;
+    width: 143px;
+    display: inline-block;
+    color: #fff!important;
+    text-align: center;
+    border: 1px solid #b94209;
+    font-family: '微软雅黑';
+    font-size: 18px;
+    background: #00B2EE;
+}
+
+.sq-submiter:hover {
+    text-decoration: none;
+}
+
+.approve-icon {
+    position: relative;
+    top: -24px;
+    left: 77px;
+}
+
+
+/*认证图标*/
+
+.email_rz,
+.phone_rz,
+.zhizhao_rz,
+.shenfen_rz,
+.noemail_rz,
+.nophone_rz,
+.nozhizhao_rz,
+.noshenfen_rz,
+.other_rz {
+    width: 32px;
+    height: 26px;
+    background: url("/image/2012/index-iconNews.png") no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+span.p_rz {
+    margin-right: 10px;
+}
+
+.email_rz {
+    background-position: 0 -77px;
+}
+
+.noemail_rz {
+    background-position: 0 -236px;
+}
+
+.phone_rz {
+    background-position: 0 -120px;
+    width: 25px;
+}
+
+.nophone_rz {
+    background-position: 0 -278px;
+    width: 25px;
+}
+
+.shenfen_rz {
+    background-position: 0 -38px;
+}
+
+.noshenfen_rz {
+    background-position: 0 -196px;
+}
+
+.zhizhao_rz {
+    background-position: 0px 0;
+}
+
+.nozhizhao_rz {
+    background-position: 0 -158px;
+}
+
+.other_rz {
+    background-position: -36px 0;
+    width: 24px;
+    height: 25px;
+}
+
+
+/*===========求职信息页==============*/
+
+.cont-qz {
+    padding: 0 30px;
+}
+
+.personInfo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.personInfo .info,
+.personInfo .hope {
+    clear: both;
+    margin-top: 6px;
+    overflow: hidden;
+    height: 24px;
+}
+
+.personInfo .info li,
+.personInfo .hope li {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #eaeaea
+}
+
+.personInfo .info .noborder,
+.personInfo .hope .noborder {
+    border: none;
+}
+
+.personInfo .name {
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+    overflow: hidden;
+    color: #333;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    padding-bottom: 4px;
+}
+
+.s-phone {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.s-phone li {
+    float: left;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 22px;
+    background: url("/image/2012/xxfs-bg2.png") repeat-x;
+    padding: 0 30px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #dd8722;
+    cursor: pointer;
+}
+
+.rz-shouju {
+    font-size: 12px;
+    font-family: 'song';
+    float: left;
+}
+
+.youdian {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.youdian li {
+    float: left;
+    width: 101px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    color: #2e4e82;
+    background: url("/image/2012/youdian-bg.png") no-repeat;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.qz-toptip {
+    position: relative;
+    top: 0;
+    height: 0;
+    zoom: 1;
+}
+
+.qz-toptip p {
+    position: absolute;
+    right: 0;
+}
+
+.qz-toptip p span {
+    float: left;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #888;
+    margin-left: 16px;
+    padding-left: 15px;
+    background: url("/image/2012/resume_detail.png") no-repeat;
+}
+
+.qz-toptip p .rptt1 {
+    background-position: 0 0;
+}
+
+.qz-toptip p .rptt2 {
+    background-position: 0 -19px;
+}
+
+.qz-toptip p span b {
+    font-weight: normal;
+}
+
+.sufferInfo .info {
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sufferInfo .info li {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #eaeaea;
+    font-size: 14px;
+}
+
+.sufferInfo .info li.noborder {
+    border-right: none;
+}
+
+
+/**/
+
+.sufferInfo {
+    margin-top: 40px;
+}
+
+.title-s {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #d4d4d4;
+    color: #999;
+}
+
+.lr-s {
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.b-t {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.lr-s h3 {
+    font-size: 14px;
+}
+
+.lr-s .dv1 {
+    width: 70px;
+    float: left;
+}
+
+.lr-s .dv2 {
+    float: left;
+}
+
+.lr-s.noborder {
+    border: none;
+}
+
+.pp {
+    padding-top: 10px;
+}
+
+.pt0 {
+    padding-top: 0;
+}
+
+.tel-img {
+    position: relative;
+    top: 8px;
 }
 
 
