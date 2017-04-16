@@ -13,7 +13,7 @@ router
     .get('/detail', userController.showDetail)
     .get('/factory', userController.factoryMain)
     .get('/require', userController.require)
-
+    .get('/adminMain', userController.adminMain)
 
 //ajax路由
 .post('/teacher/register', ajaxController.teacherRegister)
