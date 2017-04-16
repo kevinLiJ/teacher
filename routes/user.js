@@ -11,13 +11,15 @@ router
     .get('/resume', userController.showResume)
     .get('/logout', userController.doLogin)
     .get('/detail', userController.showDetail)
+    .get('/admin', userController.showAdmin)
     .get('/factory', userController.factoryMain)
     .get('/require', userController.require)
     .get('/adminMain', userController.adminMain)
 
 //ajax路由
 .post('/teacher/register', ajaxController.teacherRegister)
-    .post('/teacher/login', ajaxController.teacherLogin)
-    // 导出路由
+    //ajax路由
+
+.post('/teacher/login', ajaxController.teacherLogin)
 
 module.exports = router;
