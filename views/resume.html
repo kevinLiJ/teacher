@@ -52,77 +52,50 @@
                         <li class="workTime cate-list">
                             <b class="must-Symbol">*</b>
                             <span class="com-title">工作年限</span>
-                            <div class="com-select selects clear">
-                                <div class="com-select-left  values w205 j1"></div>
-                                <div class="com-select-right">
-                                    <i class="arr-icon icon" id="job"></i>
-                                </div>
-                                <div class="select-list" id="jobTime">
-                                    <ul>
-                                        <li><a href="javascript:void(0);" class="select-option" value='0' value=''>无经验</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='5'>应届生</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='6'>1年以下</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='1'>1-2年</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='2'>3-5年</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='3'>6-10年</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='4'>10年以上</a></li>
-                                    </ul>
-                                </div>
-                                <input type="hidden" class="key" name="workingLife" id="txtWorkYears" value="3">
-                            </div>
+                            <select name="" id="" value="期望薪资" class="select">
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>无经验</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>1年以下</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>1-2年</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>2-3年</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>3以上</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>应届生</a></option>                                 
+                            </select>
                         </li>
                         <li class="salary cate-list">
+                            <b class="must-Symbol">*</b>
                             <span class="com-title">期望薪资</span>
-                            <div class="com-select selects clear">
-                                <div class="com-select-left values w205 s1"></div>
-                                <div class="com-select-right">
-                                    <i class="arr-icon icon" id="sal"></i>
-                                </div>
-                                <div class="select-list" id="salary">
-                                    <ul>
-                                        <li><a href="javascript:void(0);" class="select-option" value='0'>面议</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='1'>1000元以下</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='2'>1000-2000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='3'>2000-3000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='4'>3000-5000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='5'>5000-8000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='6'>8000-12000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='7'>12000-20000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='8'>20000-25000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='9'>25000元以上</a></li>
-                                    </ul>
-                                </div>
-                                <input type="hidden" class="key" id="txtSalary" name="salaryExpectation" value="1000">
-                            </div>
-                            <li class="education cate-list">
-                                <b class="must-Symbol">*</b>
-                                <span class="com-title">最高学历</span>
-                                <div class="com-select selects clear">
-                                    <div class="com-select-left values w205 r3"></div>
-                                    <div class="com-select-right">
-                                        <i class="arr-icon icon" id="rec"></i>
-                                    </div>
-                                    <div class="select-list" id="record">
-                                        <ul>
-                                            <li><a href="javascript:void(0);" class="select-option" value='1'>高中以下</a></li>
-                                            <li><a href="javascript:void(0);" class="select-option" value='2'>高中</a></li>
-                                            <li><a href="javascript:void(0);" class="select-option" value='3'>中专/技校</a></li>
-                                            <li><a href="javascript:void(0);" class="select-option" value='4'>大专</a></li>
-                                            <li><a href="javascript:void(0);" class="select-option" value='5'>本科</a></li>
-                                            <li><a href="javascript:void(0);" class="select-option" value='6'>硕士</a></li>
-                                            <li><a href="javascript:void(0);" class="select-option" value='7'>博士</a></li>
-                                            <li><a href="javascript:void(0);" class="select-option" value='8'>MBA/EMBA</a></li>
-                                        </ul>
-                                    </div>
-                                    <input type="hidden" class="key" name="education" id="txtEducation" value="博士">
-                                </div>
-                            </li>
-                            <li id="notAuthTel" class="tel cate-list">
-                                <b class="must-Symbol">*</b>
-                                <span class="com-title">手机号码</span>
-                                <input type="text" data-required data-description='tel' data-describedby='telInfo' class="com-input" maxlength="11" name="phone" id="txtMobile" value="">
-                                <div id="telInfo" class="ErrorInfo"></div>
-                            </li>
+                            <select name="" id="" value="期望薪资" class="select">
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>面议</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>1000元以下</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>1000-2000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>2000-3000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>3000-4000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>5000-8000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>12000-20000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>20000-25000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>25000元以上</a></option>
+                                                                
+                            </select>
+                        </li>
+                        <li class="education cate-list">
+                            <b class="must-Symbol">*</b>
+                            <span class="com-title">最高学历</span>
+                            <select name="" id="" value="期望薪资" class="select">
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>高中以下</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>高中</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>中专</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>大专</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>本科</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>硕士</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>博士</a></option>                                  
+                            </select>
+                        </li>
+                        <li id="notAuthTel" class="tel cate-list">
+                            <b class="must-Symbol">*</b>
+                            <span class="com-title">手机号码</span>
+                            <input type="text" data-required data-description='tel' data-describedby='telInfo' class="com-input" maxlength="11" name="phone" id="txtMobile" value="">
+                            <div id="telInfo" class="ErrorInfo"></div>
+                        </li>
                     </ul>
                 </div>
             </div>

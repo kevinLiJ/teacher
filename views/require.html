@@ -26,11 +26,13 @@
                 </div>
                 <div class="com-content">
                     <ul class="com-list">
-                        <li class="name cate-list">
+                        <li class="birthday cate-list">
                             <b class="must-Symbol">*</b>
-                            <span class="com-title">公司名称</span>
-                            <input type="text" data-required data-description='tcName' data-describedby='tcNameInfo' class="com-input" id="txtUserName" name="username" value="">
-                            <div id="tcNameInfo" class="ErrorInfo"></div>
+                            <span class="com-title">招聘职位</span>
+                            <div class="com-select selects clear">
+                                <input type="text" data-required data-description='dateBir' data-describedby='dateBirInfo' class="dateBir" name="releaseDate" data-date-language='zh-CN' data-provide='datepicker' data-date-end-date='0d' data-date-format='yyyy-mm-dd'>
+                            </div>
+                            <div id="dateBirInfo" class="ErrorInfo"></div>
                         </li>
                         <li class="birthday cate-list">
                             <b class="must-Symbol">*</b>
@@ -40,54 +42,64 @@
                             </div>
                             <div id="dateBirInfo" class="ErrorInfo"></div>
                         </li>
+                        <li class="name cate-list">
+                            <b class="must-Symbol">*</b>
+                            <span class="com-title">公司名称</span>
+                            <input type="text" data-required data-description='tcName' data-describedby='tcNameInfo' class="com-input" id="txtUserName" name="username" value="">
+                            <div id="tcNameInfo" class="ErrorInfo"></div>
+                        </li>
+
+                        <li class="name cate-list">
+                            <b class="must-Symbol">*</b>
+                            <span class="com-title">公司性质</span>
+                            <input type="text" data-required data-description='tcName' data-describedby='tcNameInfo' class="com-input" id="txtUserName" name="username" value="">
+                            <div id="tcNameInfo" class="ErrorInfo"></div>
+                        </li>
+                        <li class="name cate-list">
+                            <b class="must-Symbol">*</b>
+                            <span class="com-title">公司规模</span>
+                            <input type="text" data-required data-description='tcName' data-describedby='tcNameInfo' class="com-input" id="txtUserName" name="username" value="">
+                            <div id="tcNameInfo" class="ErrorInfo"></div>
+                        </li>
                         <li class="workTime cate-list">
                             <b class="must-Symbol">*</b>
                             <span class="com-title">学历要求</span>
-                            <div class="com-select selects clear">
-                                <div class="com-select-left  values w205 j1"></div>
-                                <div class="com-select-right">
-                                    <i class="arr-icon icon" id="job"></i>
-                                </div>
-                                <div class="select-list" id="jobTime">
-                                    <ul>
-                                        <li><a href="javascript:void(0);" class="select-option" value='专科'>专科</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='本科'> 本科</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='研究生'>研究生</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='无要求'>无要求</a></li>
-                                    </ul>
-                                </div>
-                                <input type="hidden" class="key" name="education" id="txtWorkYears" value="">
-                            </div>
+                            <select name="" id="" class="select">
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>无要求</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>高中以上</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>专科以上</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>本科以上</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>硕士</a></option>                                 
+                            </select>
                         </li>
                         <li class="salary cate-list">
-                            <span class="com-title">薪资待遇</span>
-                            <div class="com-select selects clear">
-                                <div class="com-select-left values w205 s1"></div>
-                                <div class="com-select-right">
-                                    <i class="arr-icon icon" id="sal"></i>
-                                </div>
-                                <div class="select-list" id="salary">
-                                    <ul>
-                                        <li><a href="javascript:void(0);" class="select-option" value='面议'>面议</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='1000元以下'>1000元以下</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='1000-2000元'>1000-2000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='2000-3000元'>2000-3000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='3000-5000元'>3000-5000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='5000-8000元'>5000-8000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='8000-12000元'>8000-12000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='12000-20000元'>12000-20000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='20000-25000元'>20000-25000元</a></li>
-                                        <li><a href="javascript:void(0);" class="select-option" value='25000元以上'>25000元以上</a></li>
-                                    </ul>
-                                </div>
-                                <input type="hidden" class="key" id="txtSalary" name="salary" value=111.22>
-                            </div>
-                            <li id="notAuthTel" class="tel cate-list">
-                                <b class="must-Symbol">*</b>
-                                <span class="com-title">联系方式</span>
-                                <input type="text" data-required data-description='tel' data-describedby='telInfo' class="com-input" maxlength="11" name="phone" id="txtMobile" value="">
-                                <div id="telInfo" class="ErrorInfo"></div>
-                            </li>
+                            <b class="must-Symbol">*</b>
+                            <span class="com-title">工作年限</span>
+                            <select name="" id="" class="select">
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>面议</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>1000元以下</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>1000-2000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>2000-3000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>3000-4000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>5000-8000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>12000-20000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>20000-25000元</a></option>
+                                <option><a href="javascript:void(0);" class="select-option" value='0'>25000元以上</a></option>
+                                                                             
+                            </select>
+                        </li>
+                        <li id="notAuthTel" class="tel cate-list">
+                            <b class="must-Symbol">*</b>
+                            <span class="com-title">联系方式</span>
+                            <input type="text" data-required data-description='tel' data-describedby='telInfo' class="com-input" maxlength="11" name="phone" id="txtMobile" value="">
+                            <div id="telInfo" class="ErrorInfo"></div>
+                        </li>
+                        <li id="notAuthTel" class="tel cate-list">
+                            <b class="must-Symbol">*</b>
+                            <span class="com-title">联系地址</span>
+                            <input type="text" data-required data-description='tel' data-describedby='telInfo' class="com-input" maxlength="11" name="phone" id="txtMobile" value="">
+                            <div id="telInfo" class="ErrorInfo"></div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -104,14 +116,12 @@
                             <span class="com-title">岗位介绍</span>
                             <div class="self-wrap">
                                 <textarea class="self-content" id="txtIntrodSelf" maxlength="500" name="positionInfo"></textarea>
-                                <p class="hint-tips">还可以输入<span class="orange-font" id="totalNum">500</span>个字</p>
                             </div>
                         </li>
                         <li class="self cate-list">
                             <span class="com-title">公司介绍</span>
                             <div class="self-wrap">
                                 <textarea class="self-content" id="txtIntrodSelf" maxlength="500" name="companyInfo"></textarea>
-                                <p class="hint-tips">还可以输入<span class="orange-font" id="totalNum">500</span>个字</p>
                             </div>
                         </li>
                     </ul>

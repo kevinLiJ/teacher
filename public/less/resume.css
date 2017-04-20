@@ -1,22 +1,62 @@
 @charset "utf-8";
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
     margin: 0;
     padding: 0
 }
 
-body, button, input, select, textarea {
+body,
+button,
+input,
+select,
+textarea {
     font: 12px/1.5 Microsoft YaHei, tahoma, arial, \5b8b\4f53, sans-serif
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 100%
 }
 
-address, cite, dfn, em, var {
+address,
+cite,
+dfn,
+em,
+var {
     font-style: normal
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
     font-family: courier new, courier, monospace
 }
 
@@ -24,23 +64,28 @@ small {
     font-size: 12px
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none
 }
 
 a {
     text-decoration: none
-
 }
+
 legend {
     color: #000
 }
 
-fieldset, img {
+fieldset,
+img {
     border: 0
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
     font-size: 100%
 }
 
@@ -48,27 +93,30 @@ table {
     border-collapse: collapse;
     border-spacing: 0
 }
+
 .inspan1 {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 50px;
     font-weight: bold;
-    color: 	#00B2EE;
+    color: #00B2EE;
     line-height: 58px;
     margin-top: 5px;
-    
 }
+
 .inspan1:hover {
     text-decoration: none;
 }
 
-.ks-clear:after, .clear:after {
+.ks-clear:after,
+.clear:after {
     content: '\20';
     display: block;
     height: 0;
     clear: both
 }
 
-.ks-clear, .clear {
+.ks-clear,
+.clear {
     *zoom: 1
 }
 
@@ -143,7 +191,7 @@ table {
     height: 40px;
     line-height: 40px;
     padding: 10px 0;
-    margin:10px;
+    margin: 10px;
 }
 
 .title-font {
@@ -182,14 +230,14 @@ table {
     float: left;
     cursor: pointer;
     background-color: #fff;
-
 }
+
 .com-select input {
     width: 40px;
     height: 40px;
     outline: none;
-    border:none;
-    padding-left:10px;
+    border: none;
+    padding-left: 10px;
 }
 
 .com-input {
@@ -227,9 +275,11 @@ table {
     height: 6px;
     background-position: 0 -160px
 }
+
 .ErrorInfo {
-    color:red;
+    color: red;
 }
+
 .com-select.focus {
     border: 1px solid #ffc283;
     border-radius: 3px 3px 0 0
@@ -389,7 +439,6 @@ table {
     _height: 380px
 }
 
-
 .select-list li {
     padding: 0;
     margin: 0;
@@ -402,12 +451,16 @@ table {
     text-overflow: ellipsis
 }
 
-.birthday .select-list li, .driving .select-list li, .certificate .select-list li {
+.birthday .select-list li,
+.driving .select-list li,
+.certificate .select-list li {
     width: 245px \0
 }
+
 .birthday .dateBir {
     width: 250px;
 }
+
 .select-option {
     display: block;
     padding: 0 10px;
@@ -500,6 +553,17 @@ table {
 
 .search-list li:hover {
     background-color: #efefef
+}
+
+.select {
+    display: block;
+    float: left;
+    width: 242px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    padding: 0 10px
 }
 
 .select-icon {
@@ -697,7 +761,8 @@ table {
     width: 72px
 }
 
-.noGroup, .noGroup ul {
+.noGroup,
+.noGroup ul {
     width: 476px
 }
 
@@ -733,7 +798,8 @@ table {
     width: 338px
 }
 
-.language .noGroup, .language .noGroup ul {
+.language .noGroup,
+.language .noGroup ul {
     width: 340px
 }
 
@@ -893,15 +959,16 @@ table {
 
 .icon-cirArr {
     /*background: #00B2EE;*/
-    color:white;
+    color: white;
     float: right;
     width: 40px;
     height: 20px;
     cursor: pointer;
-    background:#00B2EE;
+    background: #00B2EE;
     outline: none;
-    border:none;
+    border: none;
 }
+
 .self-wrap {
     float: left;
     height: 145px;
@@ -929,6 +996,7 @@ table {
     text-align: right;
     margin-right: 10px
 }
+
 .hint-tips span {
     color: #00B2EE;
 }
@@ -938,6 +1006,7 @@ table {
     margin-top: 60px;
     padding-left: 110px
 }
+
 .save-resume {
     display: block;
     margin-top: 30px;
@@ -958,6 +1027,5 @@ table {
 }
 
 p.inspan1:hover {
- text-decoration: none;   
-
+    text-decoration: none;
 }
