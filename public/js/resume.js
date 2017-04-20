@@ -31,10 +31,12 @@ $("#other-sel").click(function() {
 $("#man").click(function() {
     $(this).addClass("selected");
     $("#woman").removeClass("selected");
+    $('#txtSex').val('male');
 })
 $("#woman").click(function() {
     $(this).addClass("selected");
     $("#man").removeClass("selected");
+    $('#txtSex').val('female');
 })
 
 $("#submit").click(function() {
@@ -69,9 +71,11 @@ $("#resumeId").validate({
 
 $("#submit").click(function() {
     $.ajax({
-        url: '',
+        url: '/teacher/submitTeacherInfo',
         type: 'post',
         data: $('#resumeId').serialize(),
-        success: function() {}
+        success: function(data) {
+            console.log(data.success)
+        }
     })
 })

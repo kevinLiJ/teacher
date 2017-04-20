@@ -5,7 +5,7 @@ $(function() {
     })
     $('#submit').click(function() {
         $.ajax({
-            url: '/teacher/submitTeacherInfo',
+            url: '/teacher/submitCompanyInfo',
             data: $('#resumeId').serialize(),
             type: 'post',
             success: function(data) {

@@ -27,15 +27,20 @@ exports.userLogin = function(req, res) {
     })
 }
 
-//teacher详细信息提交
-//todo 插入数据是否有简便的方法
-exports.submitTeacherInfo = function(req, res) {
-    // var data = [];
-    // for (var key in req.body) {
-    //     data.push(req.body[key])
-    // }
-    //query('INSERT INTO company_info(username,release_date,education,salary,phone,position_info,company_info) VALUES(?,?,?,?,?,?,?)', data, function(error, result) {
+//公司详细信息提交
+exports.submitCompanyInfo = function(req, res) {
     query('INSERT INTO company_info set ?', req.body, function(error, result) {
+        if (error) {
+            console.log(error)
+            res.json({ success: false })
+        }
+        res.json({ success: true })
+    })
+}
+
+//公司详细信息提交
+exports.submitTeacherInfo = function(req, res) {
+    query('INSERT INTO teacher_info set ?', req.body, function(error, result) {
         if (error) {
             console.log(error)
             res.json({ success: false })

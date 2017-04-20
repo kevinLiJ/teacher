@@ -21,6 +21,8 @@ router
     //ajax路由
     .post('/teacher/register', ajaxController.userRegister)
     .post('/teacher/login', ajaxController.userLogin)
+    .post('/teacher/submitCompanyInfo', ajaxController.submitCompanyInfo)
     .post('/teacher/submitTeacherInfo', ajaxController.submitTeacherInfo)
+
 
 module.exports = router;
