@@ -3,18 +3,6 @@
 
 /*search部分开始*/
 
-.search .search-left {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: #00B2EE;
-    line-height: 58px;
-    margin-top: 5px;
-    margin: 20px;
-    float: left;
-    position: absolute;
-}
-
 .search .search-center {
     width: 500px;
     overflow: hidden;

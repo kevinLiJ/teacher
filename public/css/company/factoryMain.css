@@ -1,0 +1,16 @@
+.qz-lb {
+    width: 1000px;
+}
+
+.qz-lb .cl {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.qz-lb dt,
+dd {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}

@@ -18,6 +18,7 @@ router
     .get('/add', userController.add)
     .get('/company', userController.company)
     .get('/company_add', userController.companyAdd)
+    .get('/comDetail', userController.comDetail)
     //ajax路由
     .post('/teacher/register', ajaxController.userRegister)
     .post('/teacher/login', ajaxController.userLogin)

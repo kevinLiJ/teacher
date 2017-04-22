@@ -1,0 +1,172 @@
+.main-content {
+    border-bottom: 1px solid #ddd;
+    margin-top: 90px;
+    border-top: 2px solid #00B2EE;
+}
+
+.cont-qz {
+    padding: 0 30px;
+}
+
+.personInfo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.personInfo .info,
+.personInfo .hope {
+    clear: both;
+    margin-top: 6px;
+    overflow: hidden;
+    height: 24px;
+}
+
+.personInfo .info li,
+.personInfo .hope li {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #eaeaea
+}
+
+.personInfo .info .noborder,
+.personInfo .hope .noborder {
+    border: none;
+}
+
+.personInfo .name {
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+    overflow: hidden;
+    color: #333;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    padding-bottom: 4px;
+}
+
+.s-phone {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.s-phone li {
+    float: left;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 22px;
+    background: url("/image/2012/xxfs-bg2.png") repeat-x;
+    padding: 0 30px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #dd8722;
+    cursor: pointer;
+}
+
+.rz-shouju {
+    font-size: 12px;
+    font-family: 'song';
+    float: left;
+}
+
+.youdian {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.youdian li {
+    float: left;
+    width: 101px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    color: #2e4e82;
+    background: url("/image/2012/youdian-bg.png") no-repeat;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sufferInfo .info {
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sufferInfo .info li {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #eaeaea;
+    font-size: 14px;
+}
+
+.sufferInfo .info li.noborder {
+    border-right: none;
+}
+
+
+/**/
+
+.sufferInfo {
+    margin-top: 40px;
+}
+
+.title-s {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #d4d4d4;
+    color: #999;
+}
+
+.lr-s {
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.b-t {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.lr-s h3 {
+    font-size: 14px;
+}
+
+.lr-s .dv1 {
+    width: 70px;
+    float: left;
+}
+
+.lr-s .dv2 {
+    float: left;
+}
+
+.lr-s.noborder {
+    border: none;
+}
+
+.pp {
+    padding-top: 10px;
+}
+
+.pt0 {
+    padding-top: 0;
+}
+
+.tel-img {
+    position: relative;
+    top: 8px;
+}
