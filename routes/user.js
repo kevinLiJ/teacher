@@ -23,6 +23,8 @@ router
     .post('/teacher/login', ajaxController.userLogin)
     .post('/teacher/submitCompanyInfo', ajaxController.submitCompanyInfo)
     .post('/teacher/submitTeacherInfo', ajaxController.submitTeacherInfo)
+    //查询老师信息
+    .get('/teacher/queryTeacherList', ajaxController.queryTeacherList)
     .post('/teacher/queryTeacherInfo', ajaxController.queryTeacherInfo)
     .get('/administrator/queryCompanyInfo', ajaxController.queryCompanyInfo)
 

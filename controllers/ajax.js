@@ -66,7 +66,18 @@ exports.submitTeacherInfo = function(req, res) {
     })
 }
 
-//查询老师详细信息
+//查询老师所有数据
+exports.queryTeacherList = function(req, res) {
+    query('SELECT * FROM teacher_info', function(error, result) {
+        if (error) {
+            console.log(error)
+            res.json({ success: false })
+        }
+        res.json(result)
+    })
+}
+
+//查询某个老师的详细数据
 exports.queryTeacherInfo = function(req, res) {
     query('SELECT * FROM teacher_info where id=?', req.body.id, function(error, result) {
         if (error) {
