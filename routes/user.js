@@ -4,7 +4,10 @@ var userController = require('../controllers/user');
 var ajaxController = require('../controllers/ajax');
 
 router
-// 当请求路径是login时，处理函数是showLogin
+    .get('/home', function(req, res) {
+        res.render('index')
+    })
+    // 当请求路径是login时，处理函数是showLogin
     .get('/', userController.showMain)
     // 公共部分-登录页
     .get('/common/login', userController.showLogin)
