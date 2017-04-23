@@ -48,3 +48,13 @@ exports.submitTeacherInfo = function(req, res) {
         res.json({ success: true })
     })
 }
+
+exports.queryCompanyInfo = function(req, res) {
+    query('SELECT * FROM user', function(error, results, fields) {
+        if (error) {
+            console.log(error)
+            res.json({ success: false })
+        }
+        res.json(results);
+    })
+}

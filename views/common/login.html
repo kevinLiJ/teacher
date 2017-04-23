@@ -26,11 +26,11 @@
     </div>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script>
-        // var remoteUrl = "http://192.168.1.8:3000";
+        // var remoteUrl = "http://192.16";
         $('#form').on('submit', function(e) {
             e.preventDefault()
             $.ajax({
-                url: '/teacher/login',
+                url: '../teacher/login',
                 type: 'post',
                 data: $(this).serialize(),
                 dataType: 'json'

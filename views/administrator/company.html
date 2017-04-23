@@ -21,16 +21,7 @@
                         <li><a href="#">欢迎来到同城家教</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-
-                        <form class="navbar-form navbar-left">
-                            <a href="/login" class="btn ">登陆</a>
-                            <a href="/register" class="btn ">注册</a>
-                        </form>
-
-
-                        <li><a href="/logout">退出</a></li>
-                        <li><a href="/resume">简历</a></li>
-
+                        <li><a href="/common/logout">退出</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -50,12 +41,12 @@
         <div class="navs">
             <ul class="list-unstyled">
                 <li>
-                    <a href="/admin">
+                    <a href="/userApplicant/admin">
                         <i class="fa fa-bell"></i> 应聘者管理
                     </a>
                 </li>
                 <li>
-                    <a href="/company">
+                    <a href="/userCompany/company">
                         <i class="fa fa-bell"></i> 公司管理
                     </a>
                 </li>
@@ -74,7 +65,7 @@
                     <li><a href="javascript:;">公司列表</a></li>
                 </ol>
                 <div class="page-title">
-                    <a href="/company_add" class="btn btn-success btn-sm pull-right">添加讲师</a>
+                    <a href="/userCompany/company_add" class="btn btn-success btn-sm pull-right">添加讲师</a>
                 </div>
                 <div class="panel panel-default">
                     <table class="table table-striped table-bordered table-hover">
@@ -86,17 +77,8 @@
                                 <th>昵称</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>15732071175@163.com</td>
-                                <td>111</td>
-                                <td>例如</td>
-                                <td>
-                                    <a href="#teacherModal" data-toggle="modal" class="btn btn-info btn-xs">查 看</a>
-                                    <a href="javascript::" class="btn btn-warning btn-xs">删 除</a>
-                                </td>
-                            </tr>
+                        <tbody id="tplCompany">
+
                         </tbody>
                     </table>
                 </div>
@@ -114,15 +96,8 @@
                 </div>
                 <div class="panel-body">
                     <table class="table table-bordered table-condensed">
-                        <tbody>
-                            <tr>
-                                <th>邮箱</th>
-                                <td>123@123</td>
-                            </tr>
-                            <tr>
-                                <th>昵称:</th>
-                                <td colspan="3">例如</td>
-                            </tr>
+                        <tbody id="tplCompany">
+
                         </tbody>
                     </table>
                 </div>
@@ -131,5 +106,35 @@
     </div>
 
 </body>
+<script src="/public/assets/jquery/jquery.js"></script>
+<script src="/public/assets/artTemplate/template.js"></script>
+<script type="text/template" id="companyTpl">
+    {{each data as value}}
+    <tr>
+        <th>邮箱</th>
+        <td>{{value.email}}</td>
+    </tr>
+    <tr>
+        <th>昵称:</th>
+        <td colspan="3">{{value.username}}</td>
+    </tr>
+    {{/each}}
+</script>
+<script>
+    $.ajax({
+        type: 'get',
+        url: '../administrator/queryCompanyInfo',
+        dataType: 'json',
+        success: function(data) {
+            var data = $.makeArray(data);
+            console.log(data);
+            // console.log(data[0])
+            var html = template('companyTpl', data);
+            console.log(html);
+            $("#tplCompany").html(html);
+
+        }
+    })
+</script>
 
 </html>
