@@ -21,16 +21,7 @@
                         <li><a href="#">欢迎来到同城家教</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-
-                        <form class="navbar-form navbar-left">
-                            <a href="/login" class="btn ">登陆</a>
-                            <a href="/register" class="btn ">注册</a>
-                        </form>
-
-
-                        <li><a href="/logout">退出</a></li>
-                        <li><a href="/resume">简历</a></li>
-
+                        <li><a href="/common/logout">退出</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -39,6 +30,7 @@
         </nav>
     </header>
     <!-- 侧边栏 -->
+    <!-- <?php echo $_SERVER['PATH_INFO'] ?> -->
     <div class="aside">
         <!-- 个人资料 -->
         <div class="profile">
@@ -49,12 +41,12 @@
         <div class="navs">
             <ul class="list-unstyled">
                 <li>
-                    <a href="/admin">
+                    <a href="/userApplicant/admin">
                         <i class="fa fa-bell"></i> 应聘者管理
                     </a>
                 </li>
                 <li>
-                    <a href="/company">
+                    <a href="/userCompany/company">
                         <i class="fa fa-bell"></i> 公司管理
                     </a>
                 </li>

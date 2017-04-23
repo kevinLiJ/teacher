@@ -5,26 +5,25 @@ var ajaxController = require('../controllers/ajax');
 
 router
 // 当请求路径是login时，处理函数是showLogin
-    .get('/login', userController.showLogin)
-    .get('/register', userController.showRegister)
     .get('/', userController.showMain)
-    .get('/resume', userController.showResume)
-    .get('/logout', userController.doLogin)
-    .get('/detail', userController.showDetail)
-    .get('/admin', userController.showAdmin)
-    .get('/factoryMain', userController.factoryMain)
-    .get('/require', userController.require)
-    // .get('/adminMain', userController.adminMain)
-    .get('/add', userController.add)
-    .get('/company', userController.company)
-    .get('/company_add', userController.companyAdd)
-    .get('/comDetail', userController.comDetail)
+    .get('/common/login', userController.showLogin)
+    .get('/common/register', userController.showRegister)
+    .get('/common/logout', userController.doLogin)
+    .get('/applicant/resume', userController.showResume)
+    .get('/applicant/detail', userController.showDetail)
+    .get('/userApplicant/admin', userController.showAdmin)
+    .get('/userApplicant/add', userController.add)
+    .get('/userCompany/company', userController.company)
+    .get('/userCompany/company_add', userController.companyAdd)
+    .get('/company/factoryMain', userController.factoryMain)
+    .get('/company/require', userController.require)
+    .get('/company/comDetail', userController.comDetail)
     //ajax路由
     .post('/teacher/register', ajaxController.userRegister)
     .post('/teacher/login', ajaxController.userLogin)
     .post('/teacher/submitCompanyInfo', ajaxController.submitCompanyInfo)
     .post('/teacher/submitTeacherInfo', ajaxController.submitTeacherInfo)
     .post('/teacher/queryTeacherInfo', ajaxController.queryTeacherInfo)
-
+    .get('/administrator/queryCompanyInfo', ajaxController.queryCompanyInfo)
 
 module.exports = router;

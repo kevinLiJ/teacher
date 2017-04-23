@@ -73,8 +73,15 @@ exports.queryTeacherInfo = function(req, res) {
             console.log(error)
             res.json({ success: false })
         }
-        console.log(req.body.id)
-        console.log(result)
         res.json(result[0])
+    })
+}
+exports.queryCompanyInfo = function(req, res) {
+    query('SELECT * FROM user', function(error, results, fields) {
+        if (error) {
+            console.log(error)
+            res.json({ success: false })
+        }
+        res.json(results);
     })
 }
