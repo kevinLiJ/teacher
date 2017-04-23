@@ -92,11 +92,11 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="panel-title">公司信息</h4>
+                    <h4 class="panel-title">应聘者信息</h4>
                 </div>
                 <div class="panel-body">
                     <table class="table table-bordered table-condensed">
-                        <tbody id="tplCompany">
+                        <tbody id="teacherModal">
 
                         </tbody>
                     </table>
@@ -108,7 +108,22 @@
 </body>
 <script src="/public/assets/jquery/jquery.js"></script>
 <script src="/public/assets/artTemplate/template.js"></script>
+<script src="/public/assets/bootstrap/js/bootstrap.js"></script>
 <script type="text/template" id="companyTpl">
+    {{each data as value}}
+    <tr>
+        <th>邮箱</th>
+        <td>{{value.email}}</td>
+        <th>昵称:</th>
+        <td colspan="3">{{value.username}}</td>
+        <td class="teacherBtns" data-id='{{value.id}}' data-type='{{value.type}}'>
+            <a href="#teacherModal" data-toggle="modal" class="btn btn-info btn-xs">查 看</a>
+            <a href="javascript::" class="btn btn-warning btn-xs">删 除</a>
+        </td>
+    </tr>
+    {{/each}}
+</script>
+<script type="text/template" id='teacherInfoModal'>
     {{each data as value}}
     <tr>
         <th>邮箱</th>
@@ -118,6 +133,10 @@
         <th>昵称:</th>
         <td colspan="3">{{value.username}}</td>
     </tr>
+    <tr>
+        <th>类型:</th>
+        <td colspan="3">{{value.type}}</td>
+    </tr>
     {{/each}}
 </script>
 <script>
@@ -126,13 +145,34 @@
         url: '../administrator/queryCompanyInfo',
         dataType: 'json',
         success: function(data) {
-            var data = $.makeArray(data);
-            console.log(data);
+            // var data = $.makeArray(data);
+            // console.log(data);
             // console.log(data[0])
-            var html = template('companyTpl', data);
-            console.log(html);
+            var html = template('companyTpl', {
+                data: data
+            });
+            // console.log(html);
             $("#tplCompany").html(html);
 
+            $(".teacherBtns").find("a:eq(0)").click(function() {
+                var id = $(this).parents('td').attr('data-id');
+                $.ajax({
+                    type: "get",
+                    // 接口地址
+                    url: "/administrator/queryCompanyModel",
+                    data: {
+                        id: id
+                    },
+                    dataType: "json",
+                    success: function(data) {
+                        console.log(1);
+                        var html = template('teacherInfoModal', {
+                            data: data
+                        });
+                        $('#teacherModal').html(html);
+                    }
+                })
+            })
         }
     })
 </script>

@@ -58,3 +58,23 @@ exports.queryCompanyInfo = function(req, res) {
         res.json(results);
     })
 }
+
+exports.queryCompanyAdd = function(req, res) {
+    query('INSERT INTO user set ?', req.body, function(error, result) {
+        if (error) {
+            console.log(error)
+            res.json({ success: false })
+        }
+        res.json({ success: true })
+    })
+}
+exports.queryCompanyModel = function(req, res) {
+    var reqId = req.body.id
+    query('SELECT * FROM user where id=?', [reqId], function(error, result) {
+        if (error) {
+            console.log(error)
+            res.json({ success: false })
+        }
+        res.json(result)
+    })
+}
