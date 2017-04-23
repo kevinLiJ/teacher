@@ -87,11 +87,23 @@ exports.queryTeacherInfo = function(req, res) {
         res.json(result[0])
     })
 }
-exports.queryCompanyInfo = function(req, res) {
-    query('SELECT * FROM user', function(error, results, fields) {
+
+//查询某个公司的详细数据
+exports.queryCompanyInfo1 = function(req, res) {
+    console.log(req.body.id)
+    query('SELECT * FROM company_info where id = ?', req.body.id, function(error, result) {
         if (error) {
             console.log(error)
             res.json({ success: false })
+        }
+        res.json(result[0])
+    })
+}
+exports.queryCompanyInfo = function(req, res) {
+    query('SELECT * FROM user', function(error, results, fields) {
+        if (error) {
+            console.log(error);
+            res.json({ success: false });
         }
         res.json(results);
     })

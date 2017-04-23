@@ -25,9 +25,10 @@ router
     .post('/teacher/submitTeacherInfo', ajaxController.submitTeacherInfo)
     //查询老师信息
     .get('/teacher/queryTeacherList', ajaxController.queryTeacherList)
-    .post('/teacher/queryTeacherInfo', ajaxController.queryTeacherInfo)
-    .get('/administrator/queryCompanyInfo', ajaxController.queryCompanyInfo)
+    .get('/teacher/queryTeacherInfo', ajaxController.queryTeacherInfo)
+    .post('/administrator/queryCompanyInfo', ajaxController.queryCompanyInfo)
     .post('/administrator/queryCompanyAdd', ajaxController.queryCompanyAdd)
     .get('/administrator/queryCompanyModel', ajaxController.queryCompanyModel)
+    .post('/company/queryCompanyInfo1', ajaxController.queryCompanyInfo1)
 
 module.exports = router;
