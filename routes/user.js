@@ -11,13 +11,13 @@ router
     .get('/common/logout', userController.doLogin)
     .get('/applicant/resume', userController.showResume)
     .get('/applicant/detail', userController.showDetail)
+    .get('/company/comDetail', userController.comDetail)
+    .get('/company/factoryMain', userController.factoryMain)
+    .get('/company/require', userController.require)
     .get('/userApplicant/admin', userController.showAdmin)
     .get('/userApplicant/add', userController.add)
     .get('/userCompany/company', userController.company)
     .get('/userCompany/company_add', userController.companyAdd)
-    .get('/company/factoryMain', userController.factoryMain)
-    .get('/company/require', userController.require)
-    .get('/company/comDetail', userController.comDetail)
     //ajax路由
     .post('/teacher/register', ajaxController.userRegister)
     .post('/teacher/login', ajaxController.userLogin)
@@ -27,5 +27,7 @@ router
     .get('/teacher/queryTeacherList', ajaxController.queryTeacherList)
     .post('/teacher/queryTeacherInfo', ajaxController.queryTeacherInfo)
     .get('/administrator/queryCompanyInfo', ajaxController.queryCompanyInfo)
+    .post('/administrator/queryCompanyAdd', ajaxController.queryCompanyAdd)
+    .get('/administrator/queryCompanyModel', ajaxController.queryCompanyModel)
 
 module.exports = router;
