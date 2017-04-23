@@ -24,6 +24,7 @@ router
     .post('/teacher/login', ajaxController.userLogin)
     .post('/teacher/submitCompanyInfo', ajaxController.submitCompanyInfo)
     .post('/teacher/submitTeacherInfo', ajaxController.submitTeacherInfo)
+    .post('/teacher/queryTeacherInfo', ajaxController.queryTeacherInfo)
 
 
 module.exports = router;
