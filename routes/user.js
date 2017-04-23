@@ -38,6 +38,10 @@ router
     // 应聘者-提交公司具体信息
     .post('/teacher/submitCompanyInfo', ajaxController.submitCompanyInfo)
     .post('/teacher/submitTeacherInfo', ajaxController.submitTeacherInfo)
+    //查询老师信息
+    .get('/teacher/queryTeacherList', ajaxController.queryTeacherList)
+    .get('/company/queryCompanyList', ajaxController.queryCompanyList)
+    .post('/company/queryCompanyInfo1', ajaxController.queryCompanyInfo1)
     .post('/teacher/queryTeacherInfo', ajaxController.queryTeacherInfo)
     // 用户管理-公司管理-首页列表渲染
     .get('/administrator/queryCompanyInfo', ajaxController.queryCompanyInfo)
