@@ -100,7 +100,7 @@
             var formId = $("#formId").serialize();
             $.ajax({
                 type: "post",
-                url: "../administrator/queryApplicantAdd",
+                url: "/administrator/queryApplicantAdd",
                 data: formId,
                 dataType: "json",
                 success: function(data) {

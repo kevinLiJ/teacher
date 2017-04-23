@@ -30,7 +30,7 @@
         $('#form').on('submit', function(e) {
             e.preventDefault()
             $.ajax({
-                url: '../teacher/login',
+                url: '/teacher/login',
                 type: 'post',
                 data: $(this).serialize(),
                 dataType: 'json'
@@ -39,7 +39,7 @@
                     if (data.type === '1') {
                         window.location.href = '/'
                     } else if (data.type === '2') {
-                        window.location.href = '/factoryMain'
+                        window.location.href = '/company/factoryMain'
                     }
 
                 }
