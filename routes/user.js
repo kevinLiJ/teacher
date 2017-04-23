@@ -5,10 +5,10 @@ var ajaxController = require('../controllers/ajax');
 
 router
 // 当请求路径是login时，处理函数是showLogin
+    .get('/', userController.showMain)
     .get('/common/login', userController.showLogin)
     .get('/common/register', userController.showRegister)
     .get('/common/logout', userController.doLogin)
-    .get('/', userController.showMain)
     .get('/applicant/resume', userController.showResume)
     .get('/applicant/detail', userController.showDetail)
     .get('/company/comDetail', userController.comDetail)
@@ -23,6 +23,7 @@ router
     .post('/teacher/login', ajaxController.userLogin)
     .post('/teacher/submitCompanyInfo', ajaxController.submitCompanyInfo)
     .post('/teacher/submitTeacherInfo', ajaxController.submitTeacherInfo)
+    .post('/teacher/queryTeacherInfo', ajaxController.queryTeacherInfo)
     .get('/administrator/queryCompanyInfo', ajaxController.queryCompanyInfo)
     .post('/administrator/queryCompanyAdd', ajaxController.queryCompanyAdd)
     .get('/administrator/queryCompanyModel', ajaxController.queryCompanyModel)
