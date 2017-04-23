@@ -4,7 +4,7 @@ module.exports = function(sqlStatement, data, callback) {
     var connection = mysql.createConnection({
         host: 'localhost',
         user: 'root',
-        password: '1234',
+        password: '',
         database: 'website'
     });
 
@@ -39,4 +39,5 @@ module.exports = function(sqlStatement, data, callback) {
     //   if (error) throw error;
     //   console.log(results[0].id);
     // });
+    // DELETE * FROM table_name
 }
