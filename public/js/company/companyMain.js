@@ -15,7 +15,7 @@ $(function() {
                         <dd class='col-lg-2'>${element.workingLife}</dd>
                         <dd class='col-lg-1'>${element.education}</dd>
                         <dd class='col-lg-2'>${element.salaryExpectation}</dd>
-                        <dd class='col-lg-1'><a href="/company/comDetail${element.id}">详情</a></dd>
+                        <dd class='col-lg-1'><a href="/company/comDetail?id=${element.id}">详情</a></dd>
                     </dl> 
                     `
             }
