@@ -1,6 +1,6 @@
 $(function() {
     $.ajax({
-        url: '/company/queryCompanyInfo1',
+        url: '/company/queryCompanyList',
         type: 'get',
         success: function(data) {
             var html = ``

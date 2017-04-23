@@ -89,6 +89,17 @@ exports.queryTeacherInfo = function(req, res) {
 }
 
 //查询某个公司的详细数据
+exports.queryCompanyList = function(req, res) {
+    query('SELECT * FROM company_info', function(error, result) {
+        if (error) {
+            console.log(error)
+            res.json({ success: false })
+        }
+        res.json(result)
+    })
+}
+
+//查询某个公司的详细数据
 exports.queryCompanyInfo1 = function(req, res) {
     console.log(req.body.id)
     query('SELECT * FROM company_info where id = ?', req.body.id, function(error, result) {
@@ -99,32 +110,90 @@ exports.queryCompanyInfo1 = function(req, res) {
         res.json(result[0])
     })
 }
-exports.queryCompanyInfo = function(req, res) {
-    query('SELECT * FROM user', function(error, results, fields) {
-        if (error) {
-            console.log(error);
-            res.json({ success: false });
-        }
-        res.json(results);
-    })
-}
 
+// 公司管理 列表渲染
+exports.queryCompanyInfo = function(req, res) {
+        query('SELECT * FROM user where type=2', function(error, results, fields) {
+            if (error) {
+                console.log(error)
+                res.json({ success: false })
+            }
+            res.json(results);
+        })
+    }
+    // 公司管理添加信息
 exports.queryCompanyAdd = function(req, res) {
-    query('INSERT INTO user set ?', req.body, function(error, result) {
+        query('INSERT INTO user set ?', req.body, function(error, result) {
+            if (error) {
+                console.log(error)
+                res.json({ success: false })
+            }
+            res.json({ success: true })
+        })
+    }
+    // 公司管理查看部分，模态框
+exports.queryCompanyModel = function(req, res) {
+        var reqId = req.body.id
+        query('SELECT * FROM user where id=?', reqId, function(error, result) {
+            if (error) {
+                console.log(error)
+                res.json({ success: false })
+            }
+            res.json(result)
+        })
+    }
+    // 公司管理删除部分
+exports.queryCompanyDelete = function(req, res) {
+        var reqId = req.body.id
+        query('DELETE FROM user where id=?', reqId, function(error, result) {
+            if (error) {
+                console.log(error)
+                res.json({ success: false })
+            }
+            res.json({ success: true })
+        })
+
+    }
+    // 应聘者管理列表渲染
+exports.queryApplicantInfo = function(req, res) {
+        query('SELECT * FROM user where type=1', function(error, results, fields) {
+            if (error) {
+                console.log(error)
+                res.json({ success: false })
+            }
+            res.json(results);
+        })
+    }
+    // 公司管理添加信息
+exports.queryApplicantAdd = function(req, res) {
+        query('INSERT INTO user set ?', req.body, function(error, result) {
+            if (error) {
+                console.log(error)
+                res.json({ success: false })
+            }
+            res.json({ success: true })
+        })
+    }
+    // 公司管理查看部分，模态框
+exports.queryApplicantModel = function(req, res) {
+        var reqId = req.body.id
+        query('SELECT * FROM user where id=?', reqId, function(error, result) {
+            if (error) {
+                console.log(error)
+                res.json({ success: false })
+            }
+            res.json(result)
+        })
+    }
+    // 公司管理删除部分
+exports.queryApplicantDelete = function(req, res) {
+    var reqId = req.body.id
+    query('DELETE FROM user where id=?', reqId, function(error, result) {
         if (error) {
             console.log(error)
             res.json({ success: false })
         }
         res.json({ success: true })
     })
-}
-exports.queryCompanyModel = function(req, res) {
-    var reqId = req.body.id
-    query('SELECT * FROM user where id=?', [reqId], function(error, result) {
-        if (error) {
-            console.log(error)
-            res.json({ success: false })
-        }
-        res.json(result)
-    })
+
 }

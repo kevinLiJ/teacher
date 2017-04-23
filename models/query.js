@@ -39,4 +39,5 @@ module.exports = function(sqlStatement, data, callback) {
     //   if (error) throw error;
     //   console.log(results[0].id);
     // });
+    // DELETE * FROM table_name
 }
