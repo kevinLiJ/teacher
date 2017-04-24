@@ -1,4 +1,5 @@
 $(function() {
+    $('#require').attr('href', '/company/require' + window.location.hash);
     $.ajax({
         url: '/teacher/queryTeacherList',
         type: 'get',

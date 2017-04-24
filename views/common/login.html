@@ -37,9 +37,9 @@
             }).then(function(data) {
                 if (data.success) {
                     if (data.type === '1') {
-                        window.location.href = '/'
+                        window.location.href = '/#' + data.id
                     } else if (data.type === '2') {
-                        window.location.href = '/company/factoryMain'
+                        window.location.href = '/company/factoryMain#' + data.id
                     }
 
                 }

@@ -1,4 +1,7 @@
 $(function() {
+    $(function() {
+        $('#resume').attr('href', '/applicant/resume' + window.location.hash)
+    })
     $.ajax({
         url: '/company/queryCompanyList',
         type: 'get',

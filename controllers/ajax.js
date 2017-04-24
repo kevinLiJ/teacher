@@ -17,7 +17,8 @@ exports.userRegister = function(req, res) {
                 res.json({ success: false })
                 return;
             }
-            var tableName = result[0].type === '1' ? 'company_info' : 'teacher_info';
+            var tableName = result[0].type === '2' ? 'company_info' : 'teacher_info';
+            console.log(tableName)
             query('INSERT INTO ' + tableName + '(id) VALUES(?)', result[0].id, function(error, result) {
                 if (error) {
                     res.json({ success: false })
@@ -31,14 +32,14 @@ exports.userRegister = function(req, res) {
 
 }
 
-// teacher登录
+// user登录
 exports.userLogin = function(req, res) {
     var reqEmail = req.body.email;
     var reqPassword = req.body.password;
     query('SELECT * FROM user where email=?', [reqEmail], function(error, result) {
         var resData = { success: false };
         if (reqPassword == result[0].password) {
-            var resData = { success: true, type: result[0].type };
+            var resData = { success: true, type: result[0].type, id: result[0].id };
         }
         res.json(resData)
     })
@@ -57,7 +58,9 @@ exports.submitCompanyInfo = function(req, res) {
 
 //公司详细信息提交
 exports.submitTeacherInfo = function(req, res) {
-    query('INSERT INTO teacher_info set ?', req.body, function(error, result) {
+    var id = parseInt(req.body.id);
+    delete req.body.id;
+    query('UPDATE teacher_info SET name=? WHERE id=?', [req.body, id], function(error, result) {
         if (error) {
             console.log(error)
             res.json({ success: false })
@@ -84,6 +87,7 @@ exports.queryTeacherInfo = function(req, res) {
             console.log(error)
             res.json({ success: false })
         }
+        console.log(result)
         res.json(result[0])
     })
 }

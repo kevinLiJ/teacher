@@ -1,6 +1,9 @@
 /**
  * Created by 董丽茹 on 2017/3/20.
  */
+
+
+
 function Click(id1, id2, ele1, ele2) {
     id1.click(function() {
         id2.css("display", "block");
@@ -40,42 +43,56 @@ $("#woman").click(function() {
 })
 
 $("#submit").click(function() {
-    $("#man").css("display", "none");
-    $("#woman").css("display", "none");
-})
-$("#resumeId").validate({
-    sendForm: false,
-    valid: function() {
-        $(this).ajaxSubmit({
+        $("#man").css("display", "none");
+        $("#woman").css("display", "none");
+    })
+    // $("#resumeId").validate({
+    //     sendForm: false,
+    //     valid: function() {
+    //         $(this).ajaxSubmit({
 
-        })
-    },
-    eachInvalidField: function() {
-        $(this).closest('.form-group').removeClass('has-success').addClass('has-error');
-    },
-    eachValidField: function() {
-        $(this).closest('.form-group').removeClass('has-error').addClass('has-success');
-    },
-    description: {
-        tcName: {
-            required: '姓名不能为空'
-        },
-        dateBir: {
-            required: '出生年份不能为空'
-        },
-        tel: {
-            required: '手机号不能为空'
-        }
-    }
-});
+//         })
+//     },
+//     eachInvalidField: function() {
+//         $(this).closest('.form-group').removeClass('has-success').addClass('has-error');
+//     },
+//     eachValidField: function() {
+//         $(this).closest('.form-group').removeClass('has-error').addClass('has-success');
+//     },
+//     description: {
+//         tcName: {
+//             required: '姓名不能为空'
+//         },
+//         dateBir: {
+//             required: '出生年份不能为空'
+//         },
+//         tel: {
+//             required: '手机号不能为空'
+//         }
+//     }
+// });
 
 $("#submit").click(function() {
+    var userId = window.location.hash.replace('#', '');
     $.ajax({
         url: '/teacher/submitTeacherInfo',
         type: 'post',
-        data: $('#resumeId').serialize(),
+        data: $('#resumeId').serialize() + '&id=' + userId,
+        // data: {
+        //     name: 'lijianyang',
+        //     sex: 'male',
+        //     dateOfBirth: '2017-04-15',
+        //     workingLife: '无经验',
+        //     salaryExpecation: '面议',
+        //     education: '高中以下',
+        //     phone: 15832572358,
+        //     selfIntroduction: 'dddd',
+        //     workExperience: 'ddddd',
+        //     id: 14
+        // },
         success: function(data) {
             console.log(data.success)
         }
     })
+    return false;
 })
