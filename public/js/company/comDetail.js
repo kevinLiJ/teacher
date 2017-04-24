@@ -1,8 +1,9 @@
 $(function() {
+    var teacherId = location.hash.replace('#', '');
     $.ajax({
         url: '/teacher/queryTeacherInfo',
         type: 'post',
-        data: { id: 13 },
+        data: { id: teacherId },
         success: function(data) {
             var html = `
             <div class="personInfo">

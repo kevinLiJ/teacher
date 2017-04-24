@@ -1,8 +1,10 @@
 $(function() {
+    var teacherId = location.hash.replace('#', '');
+    console.log(teacherId)
     $.ajax({
         url: '/company/queryCompanyInfo1',
         type: 'post',
-        data: { id: 8 },
+        data: { id: teacherId },
         success: function(data) {
             var html = `
             <div class="infoTitle-zp">

@@ -17,7 +17,7 @@ $(function() {
                                 </p>
                             </dd>
                             <dd class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                <a href="/applicant/detail?id=${element.id}" class="jianli">详情</a>
+                                <a href="/applicant/detail?#${element.id}" class="jianli">详情</a>
                             </dd>
                         </dl>
                     `

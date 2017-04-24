@@ -3,7 +3,7 @@ $(function() {
         url: '/teacher/queryTeacherList',
         type: 'get',
         success: function(data) {
-            var html = ``
+            var html = ``;
             for (var i = 0; i < data.length - 1; i++) {
                 var element = data[i];
                 html += `
@@ -15,7 +15,7 @@ $(function() {
                         <dd class='col-lg-2'>${element.workingLife}</dd>
                         <dd class='col-lg-1'>${element.education}</dd>
                         <dd class='col-lg-2'>${element.salaryExpectation}</dd>
-                        <dd class='col-lg-1'><a href="/company/comDetail?id=${element.id}">详情</a></dd>
+                        <dd class='col-lg-1'><a href="/company/comDetail?#${element.id}">详情</a></dd>
                     </dl> 
                     `
             }
