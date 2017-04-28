@@ -6,29 +6,60 @@ exports.userRegister = function(req, res) {
     for (var key in req.body) {
         data.push(req.body[key])
     }
-    query('INSERT INTO user(email,password,username,type) VALUES(?,?,?,?)', data, function(error, result) {
+    var obj = {};
+    var reqemail = req.body.email;
+    query('SELECT * FROM user', function(error, result) {
         if (error) {
-            res.json({ success: false })
+            res.json({ success: false });
             return;
         }
-        //在user中插入数据的同时，也要在对应的详细信息中添加一条数据，id相对应，其余数据为空
-        query('SELECT * FROM user ORDER BY id DESC LIMIT 0,1', function(error, result) {
+        console.log(result.length)
+        for (var i = 0; i < result.length; i++) {
+            if (result[i].email == reqemail) {
+                return res.json({
+                    err_code: 1001,
+                    success: true
+                });
+
+            } else if (result[i].email != reqemail) {
+                obj = {
+                    err_code: 200,
+                    success: true
+                }
+
+            }
+
+        }
+        res.json(obj);
+        query('INSERT INTO user(email,password,username,type) VALUES(?,?,?,?)', data, function(error, result) {
             if (error) {
                 res.json({ success: false })
                 return;
             }
-            var tableName = result[0].type === '2' ? 'company_info' : 'teacher_info';
-            console.log(tableName)
-            query('INSERT INTO ' + tableName + '(id) VALUES(?)', result[0].id, function(error, result) {
+            //在user中插入数据的同时，也要在对应的详细信息中添加一条数据，id相对应，其余数据为空
+            query('SELECT * FROM user ORDER BY id DESC LIMIT 0,1', function(error, result) {
                 if (error) {
                     res.json({ success: false })
                     return;
                 }
-                res.json({ success: true })
+                res.json({ success: true });
+                var tableName = result[0].type === '2' ? 'company_info' : 'teacher_info';
+                console.log(tableName)
+                query('INSERT INTO ' + tableName + '(id) VALUES(?,?)', result[0].id, function(error, result) {
+                    if (error) {
+                        res.json({ success: false })
+                        return;
+                    }
+                    res.json({ success: true })
+                })
             })
+
         })
 
+
     })
+
+
 
 }
 
@@ -41,6 +72,8 @@ exports.userLogin = function(req, res) {
         if (reqPassword == result[0].password) {
             var resData = { success: true, type: result[0].type, id: result[0].id };
         }
+        //req.session是根据客户端的session-id拿到服务器的数据
+        req.session.isLogin = true;
         res.json(resData)
     })
 }

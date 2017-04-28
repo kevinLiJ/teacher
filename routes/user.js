@@ -33,6 +33,9 @@ router
     .get('/userCompany/company', userController.company)
     // 用户管理-公司管理-添加页
     .get('/userCompany/company_add', userController.companyAdd)
+    .get('/news/news1', userController.news1)
+    .get('/news/news2', userController.news2)
+    .get('/news/news3', userController.news3)
     //ajax路由
     // 注册验证ajax
     .post('/teacher/register', ajaxController.userRegister)

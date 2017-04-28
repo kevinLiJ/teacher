@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/common/base.css">
+    <link rel="stylesheet" href="/public/css/company/comDetail.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">欢迎来到同城家教</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <% if (!isLogin) { %>
+                            <form class="navbar-form navbar-left">
+                                <a href="/common/login" class="btn btn-primary">登录</a>
+                                <a href="/common/register" class="btn btn-success">注册</a>
+                            </form>
+                            <% } %>
+                                <li><a href="/common/logout">退出</a></li>
+                                <li><a href="/company/require" id="require">招聘要求</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="search container">
+        <div class="search-left">同城家教</div>
+    </div>
+    <div class="main-content container" style="width:998px; border-left:1px solid #ddd; border-right:1px solid #ddd;">
+        <div class="cont-qz" id="teacherInfo">
+            <div class="wa_list">
+                <div class="clear10">
+                    &nbsp;</div>
+                <div class="lstcon">
+                    <div class="con">
+                        <div class="wa_title">
+                            <h1 style="color:#00B2EE; font-size:30px;text-align:center">
+                                “为了孩子好”?背后是父母的贪婪或面子!</h1>
+                        </div>
+                        <div id="txt" class="wa_des">
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;margin-left:310px;">作者：全声洙（韩）</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">曾有学术单位以小孩和父母为对象，针对“对学习抱持的观感”展开问卷调查，发现</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">小孩对于学习的感受大多是郁闷和愧疚，父母则主要是压力和沮丧。</span></b>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">到底为什么学习这件事情，为小孩还有父母带来的，都是偏向负面的感受呢？</span>
+                                </span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">最大的原因之一，就是学习和念书需要投入大量的时间与金钱，子女必须投入长达二十年左右的时间，而父母供吃、供住、供学费，也需要投入不少的金钱。孩子因为在念书上花了许多时间金钱，而对父母感到抱歉愧疚；父母则是付出之后，却觉得孩子怎么只有这样的成绩，而感到失望难过。结果就是，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">亲子之间隔着一个叫学习的障碍物，无法对彼此展颜微笑。</span></b></span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">父亲是股东、母亲是投资人，而孩子是负责创造出收益的角色，但是只要交不出漂亮的成绩，父母与子女之间的关系就会濒临破裂。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">那么孩子对于这种学习的情绪，要用什么方式抒发呢？通常能透过与朋友见面互动来抒压是再好不过的，但是现在的小孩，连要跟朋友见个面部充满困难，所以总是沉溺在手机当中，这种情形让父母感到不妥而将手机没收，于是抒压管道被剥夺、气愤不已的孩子，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">就开始了反抗父母，导致亲子关系崩塌</span></b>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">。</span>
+                                </span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">我们都以为能够考进名门大学的学生，一定是从小到大都一直维持优良的成绩，但是实际调查了首尔大学学生们的状况以后，发现从小就一直维持优秀成绩的学生，只占</span><span style="line-height:2;font-family:SimSun;font-size:16px;">25.7%</span>
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">。事实上他们的成绩分布十分多样化，还包含了低潮克服型和多才多艺型的学生，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">在成绩上曾有过高低起伏的学生，更是占据高达</span></b></span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">55.5%</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">。</span></b>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">在调查结果当中，有许多学生都是到了高中以后，甚至是高三以后，功课才开始变好的。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">普遍被认为是佼佼者的首尔大学管理学院学生，在大学考试能够成功的关键，其实是因为他们拥有</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">自主学习</span></b>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">的态度，按照自己的意愿，选择为自己的学业负责，这种学生才有很高的机率考上首尔大学。</span>
+                                </span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">那么，这些学生是因为参加很多补习才考上的吗？大部分考上首尔大学的学生都有补习的经验，但是最重要的一点，就是他们补习的时间虽然每星期都有</span><span style="line-height:2;font-family:SimSun;font-size:16px;">8.9</span>
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">个小时，平均一天一个多小时，但是</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">他们自己念书的时间，却是每周</span></b></span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">29.5</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">小时</span></b>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">，是前者的三倍之多，也就是他们每天平均有四个小时以上自己念书的时间。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">太多的课外补习，容易让学生的学习态度变得被动，光是不断地听着老师的讲解然后抄笔记，就已经花了不少的时间，但最重要的，是要把课堂上教过的内容消化理解，变成自己的东西。</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">如果无法充分理解和吸收，再怎么样厉害的名师讲座，就算课听了、笔记抄了，也不会有任何效果的。</span></b></span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">所有的家长都说是“为了孩子好”，但是剥去那薄薄一层为了孩子好的外皮，就会看见里头存在的，其实是</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">父母的贪婪或面子</span></b>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">。说到爱一个人的本质，是真正明白并理解对方的内心，但如果父母对子女内心的感受毫不关心，只是一味让子女受到自己贪婪欲整的摆弄，那么两者之间迟早会走向互相背离的道路。</span>
+                                </span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">在很多的学生家长身上都会看见以下行为：明明自己看电视看得很高兴，却要求孩子不准看电视；自己上网上得不亦乐乎，却规定孩子不可以上网；自己智能型手机片刻不离手，却阻止孩子玩智能型手机。可是，却没有一个父母是自己喜欢看书、认真念书，却不准孩子看书或念书的。其实，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">教育子女的不变之道，就是父母以身作则</span></b>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">。</span>
+                                </span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">世上所有父母应该都希望自己成为孩子真正的爸爸妈妈，也害怕自己会受到同遭环境影响，成为所谓的学生家长。比起因为担心成绩和大学考试，而时时操心孩子的功课，更重要的是，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">把亲子关系的和谐及孩子的人格教育摆在最优先的位置。</span></b></span>
+                            </p>
+                            <p style="text-indent:30pt;" align="center">
+                                <span style="font-family:宋体;font-size:15pt;"><b><span style="line-height:2;font-family:SimSun;font-size:16px;"></span></b>
+                                </span><img title="“为了孩子好”?背后是父母的贪婪或面子!" alt="“为了孩子好”?背后是父母的贪婪或面子!" src="/public/images/news1.jpg" width="402" height="276" /><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">与其什么事都帮他们准备好，不停追问他们的功课进度，倒不如相信孩子自然会找到自己的出路，只要适时在一旁给予鼓励，让孩子能够感受到家里是最舒服自在、充满愉快的空间，就是身为父母应尽的重要责任。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">成绩领先，兴趣与动机垫底</span></b><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">PISA</span><span style="line-height:2;font-family:SimSun;font-size:16px;">是</span><span style="line-height:2;font-family:SimSun;font-size:16px;">OECD</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">（经济合作暨发展组织）以世界各国及地区为对象，每三年一次、针对十五岁学生所举行的测验。评比内容涵盖数学、阅读和科学三个领域，施测分为两个阶段，最后由统计出来的总分来评定名次。在</span><span style="line-height:2;font-family:SimSun;font-size:16px;">2012</span>
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">年，全世界有六十五个国家、五十万名学生参加，分数采每个国家各自计分，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">唯独中国是分为不同的城市调查。</span></b></span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">而结果夺得第一的是中国上海，上海学生们的成绩分别是数学六百一十三分、阅读五百七十分及科学五百八十分，在三个领域都得到了最高分，接下来是新加坡第二、香港第三、中国台湾第四、韩国第五名，第六是澳门、然后第七是日本，占据了前面名次的所有国家都位于亚洲，还都是属于东北亚的国家与城市。</span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">但尽管如此，在</span><span style="line-height:2;font-family:SimSun;font-size:16px;">3012</span><span style="line-height:2;font-family:SimSun;font-size:16px;">年</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">PISA</span><span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">的记者座谈会上，亚洲各个国家优异的排名并不是受到众人瞩目的焦点，他们</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">关注的是学生的自杀问题，以及学习兴趣和动机</span></b>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">。实际上，韩国的数学学习动机，在六十五个国家中位居第六十二名（按</span>
+                                </span><span style="line-height:2;font-family:SimSun;font-size:16px;">:</span><span style="line-height:2;font-family:SimSun;font-size:16px;">台湾第五十七名），对数学价值所感受到的工具性动机则是第六十三名（按</span><span style="line-height:2;font-family:SimSun;font-size:16px;">:</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">台湾第六十一名），在学习动机与兴趣这方面，与上回相同调查的结果如出一辙，依然停滞在世界最低层的水平，单就</span><span style="line-height:2;font-family:SimSun;font-size:16px;">OECD</span><span style="line-height:2;font-family:SimSun;font-size:16px;">国家而书，数学的学习动机与兴趣可以算是垫底的，不仅如此，韩国学生的学校满意度也是居于倒数的位置（按：“在学校生活很开心”此项目，台湾第十九名，韩国第六十五名）。</span>
+                            </p>
+                            <p style="text-indent:30pt;" align="center">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;"></span><img title="“为了孩子好”?背后是父母的贪婪或面子!" alt="“为了孩子好”?背后是父母的贪婪或面子!" src="/public/images/news2.jpg" width="417" height="270" /><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">在</span><span style="line-height:2;font-family:SimSun;font-size:16px;">PISA</span><span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">测验中展现高分的韩国教育，近来已经逐渐成为国际社会上的笑柄，包括了《纽约时报》在内，还有英国各家媒体的舆论当中，都针对韩国的教育现况，揭发了</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">父母们对教育过度的狂热，以及被成绩压得喘不过气的学生们</span></b>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">。</span>
+                                </span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">《瑞典日报》</span><span style="line-height:2;font-family:SimSun;font-size:16px;">(Svenska Dagbladet)</span><span style="line-height:2;font-family:SimSun;font-size:16px;">访问了首尔一所男子高中，向大众报导，韩国高中生在结束十二小时的学校课程后，脚步还持续迈向补习班的日常生活。还有报纸刊载了“韩国教育的本质，来自于母亲的压力”及“韩国</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">PISA</span><span style="line-height:2;font-family:SimSun;font-size:16px;">的名次虽然在世界上名列前茅，但背后隐藏的现实，却是孩子们失去对未来做梦的权利。”并且也指出在“丛林一般的校园”当中，为功课竞争所苦的学生，在承受过度压力的情况下，导致层出不穷的集体霸凌及高自杀率。</span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">外国学者们纷纷指出问题的所在，是要如何让韩国的学生们找到学习的乐趣。一般来说考试得到好成绩，自信心应该会增加，但是普遍的情况却是，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">成绩越好，自信心就越低落，考试和竞争导致严重的反效果。</span></b></span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">奥勒冈大学的赵勇</span><span style="line-height:2;font-family:SimSun;font-size:16px;">(Yong Zhao)</span><span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">教授则提到：“韩国必须要开始去思考，未来将要用什么样的方法，才能够让学生感受到学习的乐趣，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">亚洲国家普遍都只是很会考试而已，亚洲国家的学习方式并不是让学生接受教育，而是在为了考试做准备而已。</span></b>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span>
+                                </span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">韩国之所以在数学、阅读或科学领域之中得到好的成绩，但是喜欢这些科目的动机或兴趣却不高的理由，就是一直以来我们都是为了取得好成绩，为了在国际奥林匹亚竞赛中取得好成绩，并非因为喜欢、有兴趣才去学习。而这些名次和成绩，都是靠着补习班老师或父母打造出来的，也就是被动的学习。</span>
+                            </p>
+                            <button style="margin:10px auto;background:#00B2EE;width:50px;height:30px;float:left;border-radius:4px;"><a href="/news/news3" style="color:white;text-decoration:none;">上一篇</a></button>
+                            <button style="margin:10px auto;background:#00B2EE;width:50px;height:30px;float:right;border-radius:4px;"><a href="/news/news2" style="color:white;text-decoration:none;">下一篇</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="right_noborder" class="foot_info container">
+            <p class="right_channel">中国家教人才招聘频道介绍：欢迎您访问中国人才网的 . 中国 . 家教 .招聘频道。中国招聘频道免费为中国家教的人才和招聘单位提供家教招聘信息查询和发布服务，是寻找和发布中国家教人才求职和招聘信息的最佳专业的人才网站。欢迎提出宝贵的意见。最新中国家教人才招聘信息：1.招聘有经验的语文老师2.6000急聘会英语住家家教和早教师3.招聘初高中各科兼职老师4.高新诚聘辅导教师5.招聘围棋象棋兼职老师 移动终端请访问<a href="http://m.liebiao.com/_zhaopin/jiajiaolaoshi/">家教招聘</a>移动版</p>
+        </div>
+        <div style="height:5px;"></div>
+        <div id="quick_area" class="zimuzuhe-bottom active container">
+            <ul class="zimuzuhe">
+            </ul>
+            <div class="zimuzuhe-con f12">
+            </div>
+        </div>
+        <p class="container">
+            <strong class="b-title">中国家教招聘相关分类：</strong>
+            <a href="http://zhaopin.liebiao.com/jiaoshi/">教师/助教招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiajiaolaoshi/">家教招聘</a>
+            <a href="http://zhaopin.liebiao.com/youerjiaoshi/">幼教招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiangshi/">培训师/讲师招聘</a>
+            <a href="http://zhaopin.liebiao.com/zhujiao/">培训策划招聘</a>
+            <a href="http://zhaopin.liebiao.com/peixunzhuli/">培训助理招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiaowurenyuan/">教学/教务管理招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiaoyukaifa/">教育产品开发招聘</a>
+            <a href="http://zhaopin.liebiao.com/jykeyuanrenyuan/">学术研究/科研招聘</a>
+            <a href="http://zhaopin.liebiao.com/jyzhaosheng/">招生/课程顾问招聘</a>
+            <a href="http://zhaopin.liebiao.com/xiaozhang/">校长招聘</a>
+        </p>
+        <p class="container">
+            <strong class="b-title">热点城市家教招聘分类：</strong>
+            <a href="http://beijing.zhaopin.liebiao.com/jiajiaolaoshi/">北京家教招聘</a><a href="http://shanghai.zhaopin.liebiao.com/jiajiaolaoshi/">上海家教招聘</a><a href="http://guangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">广州家教招聘</a>
+            <a href="http://suzhou.zhaopin.liebiao.com/jiajiaolaoshi/">苏州家教招聘</a>
+            <a href="http://shenzhen.zhaopin.liebiao.com/jiajiaolaoshi/">深圳家教招聘</a><a href="http://tianjin.zhaopin.liebiao.com/jiajiaolaoshi/">天津家教招聘</a><a href="http://chongqing.zhaopin.liebiao.com/jiajiaolaoshi/">重庆家教招聘</a>
+            <a href="http://hangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">杭州家教招聘</a>
+            <a href="http://wuxi.zhaopin.liebiao.com/jiajiaolaoshi/">无锡家教招聘</a>
+            <a href="http://jinan.zhaopin.liebiao.com/jiajiaolaoshi/">济南家教招聘</a><a href="http://chengdu.zhaopin.liebiao.com/jiajiaolaoshi/">成都家教招聘</a><a href="http://qingdao.zhaopin.liebiao.com/jiajiaolaoshi/">青岛家教招聘</a>
+            <a href="http://ningbo.zhaopin.liebiao.com/jiajiaolaoshi/">宁波家教招聘</a>
+            <a href="http://shenyang.zhaopin.liebiao.com/jiajiaolaoshi/">沈阳家教招聘</a>
+            <a href="http://wuhan.zhaopin.liebiao.com/jiajiaolaoshi/">武汉家教招聘</a><a href="http://nanjing.zhaopin.liebiao.com/jiajiaolaoshi/">南京家教招聘</a><a href="http://dalian.zhaopin.liebiao.com/jiajiaolaoshi/">大连家教招聘</a>
+            <a href="http://haerbin.zhaopin.liebiao.com/jiajiaolaoshi/">哈尔滨家教招聘</a>
+            <a href="http://foshan.zhaopin.liebiao.com/jiajiaolaoshi/">佛山家教招聘</a>
+            <a href="http://yantai.zhaopin.liebiao.com/jiajiaolaoshi/">烟台家教招聘</a>
+        </p>
+        <div class="bottom-bg">
+            <div class="footer">
+                <div class="bottom_nav">
+                    <a href="http://about.liebiao.com" target="_blank" rel="nofollow">关于列表网</a>
+                    <a href="http://tg.liebiao.com" target="_blank" rel="nofollow">我要推广</a>
+                    <a href="/cgi-bin/del_post_menu.php" target="_blank" rel="nofollow">我要删除信息</a>
+                    <a href="http://help.liebiao.com" target="_blank" rel="nofollow">帮助中心</a>
+                    <a href="http://about.liebiao.com/jobs.html" target="_blank" rel="nofollow">招贤纳士</a>
+                    <a href="http://about.liebiao.com/contact.html" target="_blank" rel="nofollow">联系我们</a>
+                </div>
+                <div>&copy;2017 列表网&nbsp;琼ICP备14000502号-12&nbsp;<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=46010602000129" rel="nofollow" style="color: #888888;" target="_blank">琼公网安备46010602000129</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <!--<script src="/public/js/company/comDetail.js"></script>-->
+</body>
+
+</html>

@@ -9,25 +9,35 @@ exports.showRegister = function(req, res) {
 }
 
 exports.showMain = function(req, res) {
-    res.render('applicant/main');
+    res.render('applicant/main', {
+        isLogin: req.session.isLogin
+    });
 }
 exports.showResume = function(req, res) {
-    res.render('applicant/resume');
+    res.render('applicant/resume', {
+        isLogin: req.session.isLogin
+    });
 }
 exports.doLogin = function(req, res) {
     res.render('common/login');
 }
 exports.showDetail = function(req, res) {
-    res.render('applicant/detail');
+    res.render('applicant/detail', {
+        isLogin: req.session.isLogin
+    });
 }
 exports.showAdmin = function(req, res) {
     res.render('administrator/home');
 }
 exports.factoryMain = function(req, res) {
-    res.render('company/factoryMain');
+    res.render('company/factoryMain', {
+        isLogin: req.session.isLogin
+    });
 }
 exports.require = function(req, res) {
-    res.render('company/require');
+    res.render('company/require', {
+        isLogin: req.session.isLogin
+    });
 }
 exports.add = function(req, res) {
     res.render('administrator/add.html');
@@ -39,5 +49,22 @@ exports.companyAdd = function(req, res) {
     res.render('administrator/company_add');
 }
 exports.comDetail = function(req, res) {
-    res.render('company/comDetail');
+    res.render('company/comDetail', {
+        isLogin: req.session.isLogin
+    });
+}
+exports.news1 = function(req, res) {
+    res.render('news/news1', {
+        isLogin: req.session.isLogin
+    });
+}
+exports.news2 = function(req, res) {
+    res.render('news/news2', {
+        isLogin: req.session.isLogin
+    });
+}
+exports.news3 = function(req, res) {
+    res.render('news/news3', {
+        isLogin: req.session.isLogin
+    });
 }

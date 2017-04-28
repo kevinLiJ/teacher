@@ -69,6 +69,7 @@
     border: 1px solid #dd8722;
     background: #00B2EE;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .rz-shouju {
@@ -170,4 +171,8 @@
 .tel-img {
     position: relative;
     top: 8px;
+}
+
+.community .c-content {
+    margin-left: -9px;
 }

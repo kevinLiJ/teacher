@@ -4,7 +4,7 @@ module.exports = function(sqlStatement, data, callback) {
     var connection = mysql.createConnection({
         host: 'localhost',
         user: 'root',
-        password: '1234',
+        password: '',
         database: 'website'
     });
 
@@ -16,7 +16,7 @@ module.exports = function(sqlStatement, data, callback) {
 
     //数据库相关操作
 
-    // //添加数据1
+    // //添加数据1 
     // connection.query("INSERT INTO test(id,name) VALUES(222,'dong')", function (error, results) {
     //   if (error) throw error;
     //   console.log(results);

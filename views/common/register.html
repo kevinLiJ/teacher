@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>注册</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/public/css/common/login.css">
 </head>
 
@@ -14,40 +14,46 @@
     <div class="container">
         <form class="form-signin" id="form">
             <h2 class="form-signin-heading">Please sign up</h2>
-            <input name="email" type="email" class="form-control" placeholder="邮箱" required autofocus>
+            <input name="email" type="email" class="form-control" placeholder="邮箱" required autofocus id="email">
             <input name="password" type="password" class="form-control" placeholder="密码" required>
             <input name="username" type="text" id="inputPassword" class="form-control" placeholder="昵称" required>
-            <select name="type" id="">
+            <select name="type" id="select">
                 <option value="1">应聘者</option>
                 <option value="2">公司招聘者</option>
-                <option value="3">管理员</option>
+                <!--<option value="3">管理员</option>-->
             </select>
-            <div class="checkbox">
-                <label>
-          <input type="checkbox" value="remember-me"> 记住我
-        </label>
-            </div>
+            <span class="error">该邮箱已经被注册过了哦！</span>
             <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
         </form>
     </div>
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/public/assets/jquery/jquery.js"></script>
+    <script src="/public/assets/bootstrap/js/bootstrap.js"></script>
     <script>
         // var remoteUrl = "http://192.168.1.8:3000"
         $('#form').on('submit', function(e) {
-            e.preventDefault()
-            $.ajax({
-                url: '/teacher/register',
-                type: 'post',
-                data: $(this).serialize(),
-                dataType: 'json',
-                success: function(data) {
-                    window.location.href = '/common/login'
-                },
-                error: function() {
-                    console.log(1);
-                }
+                e.preventDefault()
+                $.ajax({
+                    url: '/teacher/register',
+                    type: 'post',
+                    data: $(this).serialize(),
+                    dataType: 'json',
+                    success: function(data) {
+                        if (data.err_code == 1001) {
+                            $('.error').css('display', 'block');
+                        } else if (data.err_code == 200) {
+                            window.location.href = '/common/login'
+                        }
+
+                    },
+                    error: function() {
+                        console.log(1);
+                    }
+                })
+
             })
-        })
+            // $('#email').on('focus', function() {
+            //     $('.error').css('display', 'none');
+            // })
     </script>
 </body>
 

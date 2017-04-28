@@ -17,24 +17,20 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
-
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
                     <ul class="nav navbar-nav">
                         <li><a href="#">欢迎来到同城家教</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-
-                        <form class="navbar-form navbar-left">
-                            <a href="/login" class="btn ">登录</a>
-                            <a href="/register" class="btn ">注册</a>
-                        </form>
-
-
-                        <li><a href="/logout">退出</a></li>
-                        <li><a href="/resume">简历</a></li>
-
+                        <% if (!isLogin) { %>
+                            <form class="navbar-form navbar-left">
+                                <a href="/common/login" class="btn btn-primary">登录</a>
+                                <a href="/common/register" class="btn btn-success">注册</a>
+                            </form>
+                            <% } %>
+                                <li><a href="/common/logout">退出</a></li>
+                                <li><a href="/company/require" id="require">招聘要求</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -57,6 +53,35 @@
                     <div class="detail-con" style="margin-top:0">
                         <div style=" margin:0 auto; width:780px;" id="companyDetail">
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="community container">
+        <div class="c-content w clearfix">
+            <div class="one">
+                <div class="pack">
+                    <div class=father><img src="/public/images/72.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news1">【热点】“为了孩子好”背后是父母的贪婪或面子!</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="two">
+                <div class="pack">
+                    <div class=father><img src="/public/images/75.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news2">【热点】读书和不读书，过的是不一样的人生！</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="three">
+                <div class="pack">
+                    <div class=father><img src="/public/images/58.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news3">【热点】教育孩子给思维给理念才是上策！</a></p>
                     </div>
                 </div>
             </div>

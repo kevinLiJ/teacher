@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/common/base.css">
+    <link rel="stylesheet" href="/public/css/company/comDetail.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">欢迎来到同城家教</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <% if (!isLogin) { %>
+                            <form class="navbar-form navbar-left">
+                                <a href="/common/login" class="btn btn-primary">登录</a>
+                                <a href="/common/register" class="btn btn-success">注册</a>
+                            </form>
+                            <% } %>
+                                <li><a href="/common/logout">退出</a></li>
+                                <li><a href="/company/require" id="require">招聘要求</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="search container">
+        <div class="search-left">同城家教</div>
+    </div>
+    <div class="main-content container" style="width:998px; border-left:1px solid #ddd; border-right:1px solid #ddd;">
+        <div>
+            <div class="wa_list">
+                <div class="lstcon">
+                    <div class="con">
+                        <div class="wa_title">
+                            <h1 style="color:#00B2EE; font-size:30px;text-align:center;margin:10px auto;">
+                                教育孩子给钱是下策, 给能力是中策, 这才是上策！</h1>
+                        </div>
+                        <div id="txt" class="wa_des">
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">著名教育学者陈忠联老师说：“教育孩子给钱是下策，给能力是中策，给思维给理念才是上策。”教育理念是教育的方向，方向正确教育才有意义。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">我国教育改革改了好几次，但最终结局都是“轰轰烈烈谈素质教育，扎扎实实干应试教育”。</span><span style="font-size:15pt;"> </span><span style="line-height:2;font-family:SimSun;font-size:16px;">为什么？其实，最重要的原因就是大众的教育理念没有实质性改变，旧的教育理念还根深蒂固。</span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">课外阅读量太低是中国教育的失误。中国是人均读书最少的国家之一。一个人的进步需要阅读。提升素养、学会思考、学会创新都离不开阅读。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">作者：黄林波；本文来源：黄林波老师演讲《从平凡到卓越的梦想</span><span style="font-size:15pt;"> </span><span style="line-height:2;font-family:SimSun;font-size:16px;">离我们并不遥远》</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">(</span><span style="line-height:2;font-family:SimSun;font-size:16px;">内容有所删减</span><span style="line-height:2;font-family:SimSun;font-size:16px;">)</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">。</span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">........................................</span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">小的时候中国人更聪明，长大以后美国人更聪明</span></b><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">我想向大家提一个问题：</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span><span style="line-height:2;font-family:SimSun;font-size:16px;">中国人更聪明还是美国人更聪明？</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">也许有些同学认为中国人更聪明，也许有些同学认为美国人更聪明。不过，我个人有一个特殊的看法，我认为小的时候中国人更聪明，长大以后美国人更聪明。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">为什么这么说呢？大家先听我讲一个故事：有一个中国孩子跟随父母出国，转学到美国的一所新学校。美国这所学校的校长了解到孩子已经读小学三年级的情况后，想考察一下孩子的学习水平，就问了他一个问题</span><span style="line-height:2;font-family:SimSun;font-size:16px;">——“</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">你能不能从</span><span style="line-height:2;font-family:SimSun;font-size:16px;">1</span><span style="line-height:2;font-family:SimSun;font-size:16px;">数到</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">100</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">？</span><span style="line-height:2;font-family:SimSun;font-size:16px;">”</span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">听到这个问题，这位中国家长感到很奇怪：明明知道孩子已经读小学三年级了，美国校长怎么还问那么幼稚的问题呀？这么简单的问题，我们中国的孩子哪一个不是幼儿园就会了？后来，他了解了一下才知道，在美国读小学三年级的孩子，能从</span><span style="line-height:2;font-family:SimSun;font-size:16px;">1</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">数到</span><span style="line-height:2;font-family:SimSun;font-size:16px;">100</span><span style="line-height:2;font-family:SimSun;font-size:16px;">的算是有中等水平的了。由此可见，小的时候我们中国人更聪明。</span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">那为什么又说长大以后美国人更聪明呢？美国的孩子小时候读书考试考不过我们。但是长大以后，他们却是发明创造的高手。现在我们身边用的现代科技产品，象电灯、电视、飞机、互联网，都是美国人创新研制出来的。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">美国人为什么能后来居上，而且创新能力特别强呢？我认为，他们相对超前的教育思维和教育理念起了很重要的作用。甚至可以说，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">美国之所以能成为全世界的老大，很大程度上也是因为他们的思维和理念比人家领先了一步。</span></b></span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">教育孩子给钱是下策，给能力是中策，给思维给理念才是上策</span></b><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">其实，思维和理念不仅是拉开国与国之间差距的重要因素，也是拉开人与人之间差距的关键因素。华人首富李嘉诚为什么能缔造他的商业神话？原因很简单，就是他的思维比人家领先一步。从塑胶花到房地产，从股市到</span><span style="line-height:2;font-family:SimSun;font-size:16px;">IT</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">业，每一次投资，他都比人家抢先一步。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">思维和理念对教育而言更是重中之重。著名教育学者陈忠联老师说：</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">教育孩子给钱是下策，给能力是中策，给思维给理念才是上策。</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">”</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">教育理念是教育的方向，方向正确教育才有意义。</span></b>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">我国教育改革改了好几次，但最终结局都是</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span><span style="line-height:2;font-family:SimSun;font-size:16px;">轰轰烈烈谈素质教育，扎扎实实干应试教育</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span><span style="line-height:2;font-family:SimSun;font-size:16px;">。</span><span style="font-size:15pt;"> </span><span style="line-height:2;font-family:SimSun;font-size:16px;">为什么？其实，最重要的原因就是大众的教育理念没有实质性改变，旧的教育理念还根深蒂固。</span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">不教做人，何谈培养杰出人才</span></b><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">不一样的教育就会有不一样的人生。一个人能不能成才，关键因素不是先天的智商，而是后天的教育。品行优良不优良，思维高远不高远，意志坚强不坚强，人格健全不健全，这些才是决定一个人能不能成才的关键因素，而这些因素的培养主要靠后天的教育。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">讲到做人，那做人包括哪些方面呢？按照现在比较新的提法，做人主要指</span><span style="line-height:2;font-family:SimSun;font-size:16px;">3Q</span><span style="line-height:2;font-family:SimSun;font-size:16px;">：品商、情商、逆商。</span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">品商</span></b><span style="line-height:2;font-family:SimSun;font-size:16px;">是指品德修养。它是做人的根本。</span><span style="line-height:2;font-family:SimSun;font-size:16px;">2013</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">年上海复旦大学医学院发生了一起震惊全国的投毒案。一位姓林的硕士研究生因为生活琐事和室友不和，于是就在宿舍的饮水机里下毒，把同学毒死了。这位林同学才华横溢，是医学院的高材生，发表了很多高质量的的医学论文，现在正是回报父母，造福社会的时候。但让人遗憾的是，这位本来很有前途的医学硕士，因为品德败坏，心胸狭隘，最后害了别人，也害了自己。没有品德做根基，培养杰出人才就会成为一句空话。</span>
+                            </p>
+                            <p style="text-indent:30.1pt;" align="center">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;"></span><img title="教育孩子给钱是下策, 给能力是中策, 这才是上策！" alt="教育孩子给钱是下策, 给能力是中策, 这才是上策！" src="/public/images/news5.png" width="371" height="254" /><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">情商</span></b><span style="line-height:2;font-family:SimSun;font-size:16px;">是指做人的表现。一般而言，智商高，情商也高的人</span><span style="line-height:2;font-family:SimSun;font-size:16px;">——</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">春风得意；智商不高，情商高的人</span><span style="line-height:2;font-family:SimSun;font-size:16px;">——</span><span style="line-height:2;font-family:SimSun;font-size:16px;">贵人相助；智商高，情商不高的人</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">——</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">怀才不遇；智商不高，情商也不高的人</span><span style="line-height:2;font-family:SimSun;font-size:16px;">——</span><span style="line-height:2;font-family:SimSun;font-size:16px;">一事无成。</span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">逆商</span></b><span style="line-height:2;font-family:SimSun;font-size:16px;">是指有勇气，敢担当，有抗挫折的能力。现在很多国际大公司的</span><span style="line-height:2;font-family:SimSun;font-size:16px;">CE0</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">，智商不一定很高，但逆商往往是很高的。比如阿里巴巴和淘宝网的创始人马云，你说他智商高吗？他高考考了三次才考上大学。据他自己说，他对网络技术一窍不通。他上网只会做两件事情：浏览网页和收发邮件。如果需要拷贝什么东西，他就不会弄，需要叫助手过来帮忙了。由此可见，他的智商并不高。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">但是，马云的逆商却是超乎常人的。他有段很经典的演讲：</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span><span style="line-height:2;font-family:SimSun;font-size:16px;">今天很残酷，明天更残酷，后天会很美好，但绝大多数人就死在明天晚上，却见不到后天的太阳，所以我们干什么都要坚持</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">!”</span><span style="line-height:2;font-family:SimSun;font-size:16px;">这些话就充分体现了马云百折不挠的逆商。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">思考是成功之父，重视提问就是重视思考</span></b><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">我们常说</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span><span style="line-height:2;font-family:SimSun;font-size:16px;">失败是成功之母</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span><span style="line-height:2;font-family:SimSun;font-size:16px;">，那什么是</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">成功之父</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span><span style="line-height:2;font-family:SimSun;font-size:16px;">呢？就是反省！就是思考！如果你失败了，不去反思为什么会失败，不去找出失败的原因，成功会降临到你头上吗？所以我认为</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">思考是成功之父</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span><span style="line-height:2;font-family:SimSun;font-size:16px;">。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">思考越深入，解决问题才会越彻底。面对同样一件事情，因为思考的深度不同，人与人之间的差距就产生了。</span></b><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">思考很重要，可是我们中国的家长往往不把思考当一回事。原复旦大学校长杨福家教授讲到我们国家跟西方有很大的文化差异时，提到这么一个细节。中国的家长看到孩子从学校回来，问他的是</span><span style="line-height:2;font-family:SimSun;font-size:16px;">: “</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">你今天考了几分啊？</span><span style="line-height:2;font-family:SimSun;font-size:16px;">”</span><span style="line-height:2;font-family:SimSun;font-size:16px;">而英美国家家长问的是：</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">“</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">你今天提了几个问题呀？</span><span style="line-height:2;font-family:SimSun;font-size:16px;">”</span><span style="line-height:2;font-family:SimSun;font-size:16px;">为什么西方教育那么重视提问题呢？其实，提问题就是思考的开始，重视提问题就是重视思考。</span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">美国的氢弹之父泰勒每次进实验室都要问问题，每天至少提十个问题。不过，他十个问题里面往往有八九个都是错的，而他的伟大创造就在那一两个正确的问题上。所以也许你提一百个问题，九十九个都错了，没关系！可能就是那一个正确的问题让你一举成名、永垂青史！</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">创新让一分耕耘变十分收获</span></b><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">也许大家对创新的重要性没有切身体会。这里，我给大家讲讲苹果手机利润分配的问题。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">苹果手机是美国乔布斯的创新成果，而我们中国则是它最大也是最重要的代工生产基地。根据美国学者的一份研究报告，每卖出一台苹果手机，美国苹果公司就能获得其中利润的</span><span style="line-height:2;font-family:SimSun;font-size:16px;">58%</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">。而作为苹果手机的主要组装地，中国从中获得的利润仅有</span><span style="line-height:2;font-family:SimSun;font-size:16px;">2%</span><span style="line-height:2;font-family:SimSun;font-size:16px;">。也就是说，如果一台苹果手机卖</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">5000</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">块钱，美国苹果公司就可以轻轻松松获得大约</span><span style="line-height:2;font-family:SimSun;font-size:16px;">3000</span><span style="line-height:2;font-family:SimSun;font-size:16px;">块钱的高额利润，而我们辛辛苦苦加工组装却只能赚大约</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">100</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">块的血汗钱。为什么？因为苹果手机不是我们的创新，它是</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span><span style="line-height:2;font-family:SimSun;font-size:16px;">美国创造</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">，不是</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span><span style="line-height:2;font-family:SimSun;font-size:16px;">中国创造</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">！</span>
+                            </p>
+                            <p style="text-indent:30pt;" align="center">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;"></span><img title="教育孩子给钱是下策, 给能力是中策, 这才是上策！" alt="教育孩子给钱是下策, 给能力是中策, 这才是上策！" src="/public/images/news6.png" width="386" height="262" /><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">创新从哪里来？清华大学的钱颖一教授认为，创新有三个基本元素：好奇心，想象力和批判性思维。这三个元素是相互关联的。</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">好奇心是驱动力，推动我们去探寻；依靠想象力，我们拓展思维空间，去超越现实的局限；而批判性思维让我们挑战已有的知识，永远去寻找新的、更好的答案。</span></b></span>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">创新有时是灵光闪现，偶尔得之。但更多时候，它是属于有准备头脑的人的。如果我们想要创新如约而至，我们平时就要养成发散思维和逆向思维的习惯。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">从来都说</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span><span style="line-height:2;font-family:SimSun;font-size:16px;">一分耕耘，一分收获</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span><span style="line-height:2;font-family:SimSun;font-size:16px;">，但创新却有可能是</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">一分耕耘，十分收获，甚至有可能是百分收获万分收获</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span><span style="line-height:2;font-family:SimSun;font-size:16px;">。</span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">课外阅读量太低是中国教育的失误</span></b><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">我这里讲的阅读主要是指课外阅读。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">有些人担心课外阅读会影响学习成绩，其实这个观点是非常错误的。有调查发现，在小学阶段，有阅读习惯和没阅读习惯的学生成绩差别不大。但随着时间的推移，到了初中、高中直至走入社会，有阅读习惯的人就会把没有阅读习惯的人远远地甩在身后。为什么？因为一个人见识面广了，各方面的知识是会融会贯通的。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30.1pt;">
+                                <b><span style="line-height:2;font-family:SimSun;font-size:16px;">我们前面提到</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">为什么美国人能后来居上？</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">”</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">其实，重视阅读也是他们的一大法宝。美国是一个非常重视阅读的国家，美国学生的阅读量大约是我国同龄学生的十倍。</span></b>
+                                <span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">阿根廷文学大师博尓赫斯说：</span><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span><span style="line-height:2;font-family:SimSun;font-size:16px;">如果有天堂，天堂应该是图书馆的模样。</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span><span style="line-height:2;font-family:SimSun;font-size:16px;">美国的各个社区都有图书馆，布置得很漂亮。他们各个社区经常搞读书分享活动，邀请家长一起参加，孩子们轮流上台眉飞色舞地讲述自己的读书体会，然后大家都称赞他：</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">“Good</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">！</span><span style="line-height:2;font-family:SimSun;font-size:16px;">Good</span><span style="line-height:2;font-family:SimSun;font-size:16px;">！</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">孩子们就会感到很高兴很快乐。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">据第九次全国国民阅读调查显示，</span><span style="line-height:2;font-family:SimSun;font-size:16px;">2011</span><span style="line-height:2;font-family:SimSun;font-size:16px;">年，中国人均读书</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">4.3</span><span style="line-height:2;font-family:SimSun;font-size:16px;">本，韩国</span><span style="line-height:2;font-family:SimSun;font-size:16px;">11</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">本、法国</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">20</span><span style="line-height:2;font-family:SimSun;font-size:16px;">本、日本</span><span style="line-height:2;font-family:SimSun;font-size:16px;">40</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">本、犹太人</span>
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">64</span><span style="line-height:2;font-family:SimSun;font-size:16px;">本。中国成为人均读书最少的国家之一。一个人的进步需要阅读。提升素养、学会思考、学会创新都离不开阅读。</span><span style="font-size:15pt;"></span>
+                            </p>
+                            <p style="text-indent:30pt;">
+                                <span style="line-height:2;font-family:SimSun;font-size:16px;">有位旅居上海的印度工程师孟美莎根据自身的观察和对比，写了一篇文章，叫《令人忧虑：不阅读的中国人》。他在文章最后指出，如果中国人因为不阅读而疏远了灵魂，那未来的中国将很可能为此付出代价。</span>
+                            </p>
+                            <button style="margin:10px auto;background:#00B2EE;width:50px;height:30px;float:left;border-radius:4px;"><a href="/news/news2" style="color:white;text-decoration:none;">上一篇</a></button>
+                            <button style="margin:10px auto;background:#00B2EE;width:50px;height:30px;float:right;border-radius:4px;"><a href="/news/news1" style="color:white;text-decoration:none;">下一篇</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="right_noborder" class="foot_info container">
+            <p class="right_channel">中国家教人才招聘频道介绍：欢迎您访问中国人才网的 . 中国 . 家教 .招聘频道。中国招聘频道免费为中国家教的人才和招聘单位提供家教招聘信息查询和发布服务，是寻找和发布中国家教人才求职和招聘信息的最佳专业的人才网站。欢迎提出宝贵的意见。最新中国家教人才招聘信息：1.招聘有经验的语文老师2.6000急聘会英语住家家教和早教师3.招聘初高中各科兼职老师4.高新诚聘辅导教师5.招聘围棋象棋兼职老师 移动终端请访问<a href="http://m.liebiao.com/_zhaopin/jiajiaolaoshi/">家教招聘</a>移动版</p>
+        </div>
+        <div style="height:5px;"></div>
+        <div id="quick_area" class="zimuzuhe-bottom active container">
+            <ul class="zimuzuhe">
+            </ul>
+            <div class="zimuzuhe-con f12">
+            </div>
+        </div>
+        <p class="container">
+            <strong class="b-title">中国家教招聘相关分类：</strong>
+            <a href="http://zhaopin.liebiao.com/jiaoshi/">教师/助教招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiajiaolaoshi/">家教招聘</a>
+            <a href="http://zhaopin.liebiao.com/youerjiaoshi/">幼教招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiangshi/">培训师/讲师招聘</a>
+            <a href="http://zhaopin.liebiao.com/zhujiao/">培训策划招聘</a>
+            <a href="http://zhaopin.liebiao.com/peixunzhuli/">培训助理招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiaowurenyuan/">教学/教务管理招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiaoyukaifa/">教育产品开发招聘</a>
+            <a href="http://zhaopin.liebiao.com/jykeyuanrenyuan/">学术研究/科研招聘</a>
+            <a href="http://zhaopin.liebiao.com/jyzhaosheng/">招生/课程顾问招聘</a>
+            <a href="http://zhaopin.liebiao.com/xiaozhang/">校长招聘</a>
+        </p>
+        <p class="container">
+            <strong class="b-title">热点城市家教招聘分类：</strong>
+            <a href="http://beijing.zhaopin.liebiao.com/jiajiaolaoshi/">北京家教招聘</a><a href="http://shanghai.zhaopin.liebiao.com/jiajiaolaoshi/">上海家教招聘</a><a href="http://guangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">广州家教招聘</a>
+            <a href="http://suzhou.zhaopin.liebiao.com/jiajiaolaoshi/">苏州家教招聘</a>
+            <a href="http://shenzhen.zhaopin.liebiao.com/jiajiaolaoshi/">深圳家教招聘</a><a href="http://tianjin.zhaopin.liebiao.com/jiajiaolaoshi/">天津家教招聘</a><a href="http://chongqing.zhaopin.liebiao.com/jiajiaolaoshi/">重庆家教招聘</a>
+            <a href="http://hangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">杭州家教招聘</a>
+            <a href="http://wuxi.zhaopin.liebiao.com/jiajiaolaoshi/">无锡家教招聘</a>
+            <a href="http://jinan.zhaopin.liebiao.com/jiajiaolaoshi/">济南家教招聘</a><a href="http://chengdu.zhaopin.liebiao.com/jiajiaolaoshi/">成都家教招聘</a><a href="http://qingdao.zhaopin.liebiao.com/jiajiaolaoshi/">青岛家教招聘</a>
+            <a href="http://ningbo.zhaopin.liebiao.com/jiajiaolaoshi/">宁波家教招聘</a>
+            <a href="http://shenyang.zhaopin.liebiao.com/jiajiaolaoshi/">沈阳家教招聘</a>
+            <a href="http://wuhan.zhaopin.liebiao.com/jiajiaolaoshi/">武汉家教招聘</a><a href="http://nanjing.zhaopin.liebiao.com/jiajiaolaoshi/">南京家教招聘</a><a href="http://dalian.zhaopin.liebiao.com/jiajiaolaoshi/">大连家教招聘</a>
+            <a href="http://haerbin.zhaopin.liebiao.com/jiajiaolaoshi/">哈尔滨家教招聘</a>
+            <a href="http://foshan.zhaopin.liebiao.com/jiajiaolaoshi/">佛山家教招聘</a>
+            <a href="http://yantai.zhaopin.liebiao.com/jiajiaolaoshi/">烟台家教招聘</a>
+        </p>
+        <div class="bottom-bg">
+            <div class="footer">
+                <div class="bottom_nav">
+                    <a href="http://about.liebiao.com" target="_blank" rel="nofollow">关于列表网</a>
+                    <a href="http://tg.liebiao.com" target="_blank" rel="nofollow">我要推广</a>
+                    <a href="/cgi-bin/del_post_menu.php" target="_blank" rel="nofollow">我要删除信息</a>
+                    <a href="http://help.liebiao.com" target="_blank" rel="nofollow">帮助中心</a>
+                    <a href="http://about.liebiao.com/jobs.html" target="_blank" rel="nofollow">招贤纳士</a>
+                    <a href="http://about.liebiao.com/contact.html" target="_blank" rel="nofollow">联系我们</a>
+                </div>
+                <div>&copy;2017 列表网&nbsp;琼ICP备14000502号-12&nbsp;<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=46010602000129" rel="nofollow" style="color: #888888;" target="_blank">琼公网安备46010602000129</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <!--<script src="/public/js/company/comDetail.js"></script>-->
+</body>
+
+</html>

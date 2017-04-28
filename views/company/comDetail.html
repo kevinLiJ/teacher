@@ -22,12 +22,14 @@
                         <li><a href="#">欢迎来到同城家教</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <form class="navbar-form navbar-left">
-                            <a href="/login" class="btn ">登陆</a>
-                            <a href="/register" class="btn ">注册</a>
-                        </form>
-                        <li><a href="/logout">退出</a></li>
-                        <li><a href="/require">招聘要求</a></li>
+                        <% if (!isLogin) { %>
+                            <form class="navbar-form navbar-left">
+                                <a href="/common/login" class="btn btn-primary">登录</a>
+                                <a href="/common/register" class="btn btn-success">注册</a>
+                            </form>
+                            <% } %>
+                                <li><a href="/common/logout">退出</a></li>
+                                <li><a href="/company/require" id="require">招聘要求</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -42,6 +44,87 @@
         <div class="cont-qz" id="teacherInfo">
         </div>
     </div>
+    <div class="community container">
+        <div class="c-content w clearfix">
+            <div class="one">
+                <div class="pack">
+                    <div class=father><img src="/public/images/72.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news1">【热点】“为了孩子好”背后是父母的贪婪或面子!</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="two">
+                <div class="pack">
+                    <div class=father><img src="/public/images/75.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news2">【热点】读书和不读书，过的是不一样的人生！</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="three">
+                <div class="pack">
+                    <div class=father><img src="/public/images/58.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news3">【热点】教育孩子给思维给理念才是上策！</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div id="right_noborder" class="foot_info container">
+            <p class="right_channel">中国家教人才招聘频道介绍：欢迎您访问中国人才网的 . 中国 . 家教 .招聘频道。中国招聘频道免费为中国家教的人才和招聘单位提供家教招聘信息查询和发布服务，是寻找和发布中国家教人才求职和招聘信息的最佳专业的人才网站。欢迎提出宝贵的意见。最新中国家教人才招聘信息：1.招聘有经验的语文老师2.6000急聘会英语住家家教和早教师3.招聘初高中各科兼职老师4.高新诚聘辅导教师5.招聘围棋象棋兼职老师 移动终端请访问<a href="http://m.liebiao.com/_zhaopin/jiajiaolaoshi/">家教招聘</a>移动版</p>
+        </div>
+        <div style="height:5px;"></div>
+        <div id="quick_area" class="zimuzuhe-bottom active container">
+            <ul class="zimuzuhe">
+            </ul>
+            <div class="zimuzuhe-con f12">
+            </div>
+        </div>
+        <p class="container">
+            <strong class="b-title">中国家教招聘相关分类：</strong>
+            <a href="http://zhaopin.liebiao.com/jiaoshi/">教师/助教招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiajiaolaoshi/">家教招聘</a>
+            <a href="http://zhaopin.liebiao.com/youerjiaoshi/">幼教招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiangshi/">培训师/讲师招聘</a>
+            <a href="http://zhaopin.liebiao.com/zhujiao/">培训策划招聘</a>
+            <a href="http://zhaopin.liebiao.com/peixunzhuli/">培训助理招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiaowurenyuan/">教学/教务管理招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiaoyukaifa/">教育产品开发招聘</a>
+            <a href="http://zhaopin.liebiao.com/jykeyuanrenyuan/">学术研究/科研招聘</a>
+            <a href="http://zhaopin.liebiao.com/jyzhaosheng/">招生/课程顾问招聘</a>
+            <a href="http://zhaopin.liebiao.com/xiaozhang/">校长招聘</a>
+        </p>
+        <p class="container">
+            <strong class="b-title">热点城市家教招聘分类：</strong>
+            <a href="http://beijing.zhaopin.liebiao.com/jiajiaolaoshi/">北京家教招聘</a><a href="http://shanghai.zhaopin.liebiao.com/jiajiaolaoshi/">上海家教招聘</a><a href="http://guangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">广州家教招聘</a><a href="http://suzhou.zhaopin.liebiao.com/jiajiaolaoshi/">苏州家教招聘</a>
+            <a href="http://shenzhen.zhaopin.liebiao.com/jiajiaolaoshi/">深圳家教招聘</a><a href="http://tianjin.zhaopin.liebiao.com/jiajiaolaoshi/">天津家教招聘</a><a href="http://chongqing.zhaopin.liebiao.com/jiajiaolaoshi/">重庆家教招聘</a><a href="http://hangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">杭州家教招聘</a>
+            <a href="http://wuxi.zhaopin.liebiao.com/jiajiaolaoshi/">无锡家教招聘</a>
+            <a href="http://jinan.zhaopin.liebiao.com/jiajiaolaoshi/">济南家教招聘</a><a href="http://chengdu.zhaopin.liebiao.com/jiajiaolaoshi/">成都家教招聘</a><a href="http://qingdao.zhaopin.liebiao.com/jiajiaolaoshi/">青岛家教招聘</a><a href="http://ningbo.zhaopin.liebiao.com/jiajiaolaoshi/">宁波家教招聘</a>
+            <a href="http://shenyang.zhaopin.liebiao.com/jiajiaolaoshi/">沈阳家教招聘</a>
+            <a href="http://wuhan.zhaopin.liebiao.com/jiajiaolaoshi/">武汉家教招聘</a><a href="http://nanjing.zhaopin.liebiao.com/jiajiaolaoshi/">南京家教招聘</a><a href="http://dalian.zhaopin.liebiao.com/jiajiaolaoshi/">大连家教招聘</a><a href="http://haerbin.zhaopin.liebiao.com/jiajiaolaoshi/">哈尔滨家教招聘</a>
+            <a href="http://foshan.zhaopin.liebiao.com/jiajiaolaoshi/">佛山家教招聘</a>
+            <a href="http://yantai.zhaopin.liebiao.com/jiajiaolaoshi/">烟台家教招聘</a>
+        </p>
+        <div class="bottom-bg">
+            <div class="footer">
+                <div class="bottom_nav">
+                    <a href="http://about.liebiao.com" target="_blank" rel="nofollow">关于列表网</a>
+                    <a href="http://tg.liebiao.com" target="_blank" rel="nofollow">我要推广</a>
+                    <a href="/cgi-bin/del_post_menu.php" target="_blank" rel="nofollow">我要删除信息</a>
+                    <a href="http://help.liebiao.com" target="_blank" rel="nofollow">帮助中心</a>
+                    <a href="http://about.liebiao.com/jobs.html" target="_blank" rel="nofollow">招贤纳士</a>
+                    <a href="http://about.liebiao.com/contact.html" target="_blank" rel="nofollow">联系我们</a>
+                </div>
+                <div>&copy;2017 列表网&nbsp;琼ICP备14000502号-12&nbsp;<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=46010602000129" rel="nofollow" style="color: #888888;" target="_blank">琼公网安备46010602000129</a></div>
+            </div>
+        </div>
+    </footer>
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="/public/js/company/comDetail.js"></script>
 </body>

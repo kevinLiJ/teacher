@@ -16,11 +16,7 @@
             <h2 class="form-signin-heading">Please sign in</h2>
             <input type="email" name="email" class="form-control" placeholder="邮箱" required autofocus>
             <input type="password" name="password" class="form-control" placeholder="密码" required>
-            <div class="checkbox">
-                <label>
-          <input type="checkbox" value="remember-me"> 记住我
-        </label>
-            </div>
+            <span class="error">账号或密码错误</span>
             <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
         </form>
     </div>
@@ -40,10 +36,19 @@
                         window.location.href = '/#' + data.id
                     } else if (data.type === '2') {
                         window.location.href = '/company/factoryMain#' + data.id
+                    } else if (data.type === '3') {
+                        window.location.href = '/userApplicant/admin'
                     }
+
+                } else if (!data.success) {
+                    console.log(1)
+                    $('.alert').css(
+                        'display', 'inline-block'
+                    )
 
                 }
             })
+
         })
     </script>
 </body>

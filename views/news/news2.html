@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/common/base.css">
+    <link rel="stylesheet" href="/public/css/company/comDetail.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">欢迎来到同城家教</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <% if (!isLogin) { %>
+                            <form class="navbar-form navbar-left">
+                                <a href="/common/login" class="btn btn-primary">登录</a>
+                                <a href="/common/register" class="btn btn-success">注册</a>
+                            </form>
+                            <% } %>
+                                <li><a href="/common/logout">退出</a></li>
+                                <li><a href="/company/require" id="require">招聘要求</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <div class="search container">
+        <div class="search-left">同城家教</div>
+    </div>
+    <div class="main-content container" style="width:998px; border-left:1px solid #ddd; border-right:1px solid #ddd;">
+        <div class="cont-qz" id="teacherInfo">
+            <div class="wa_title">
+                <h1 style="color:#00B2EE; font-size:30px;text-align:center;margin:10px auto;">
+                    请告诉你的孩子：读书和不读书，过的是不一样的人生！</h1>
+            </div>
+            <div id="txt" class="wa_des">
+                <p style="text-indent:30pt;">
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">锻炼与不锻炼的人，隔一天看，没有任何区别；隔一个月看，差异甚微；但是隔五年十年看，身体和精神状态上就有了巨大差别。读书也是一样的道理，读书与不读书的人，日积月累，终成天渊之别。</span><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30.1pt;">
+                    <b><span style="line-height:2;font-family:SimSun;font-size:16px;">今天多学一点知识，明天就少一句求人的话。</span></b><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30pt;">
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">问：“我读过很多书，但后来大部分都忘记了，你说这样的阅读究竟有什么意义？”</span><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30pt;">
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">答：“当我还是个孩子时，我吃过很多食物，现在已经记不起来吃过什么了。但可以肯定的是，它们中的一部分已经长成我的骨头和肉。”</span><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30.1pt;">
+                    <b><span style="line-height:2;font-family:SimSun;font-size:16px;">你读过的书其实早已融进你的骨血，只要一个触动点，就会喷薄而出。</span></b><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30pt;">
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">有人问，女孩子上那么久的学、读那么多的书，最终不还是要回到一座平凡的城市，打一份平常的工，嫁作人妇，洗衣煮饭，相夫教子，何苦折腾？</span><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30pt;">
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">我想，我们的坚持是为了，就算最终跌入繁琐，洗尽铅华，同样的工作，却有不一样的心境，同样的家庭，却有不一样的情调，同样的后代，却有不一样的素养。</span><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30pt;">
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">全世界每年阅读书籍数量排名第一的是犹太人，平均每人一年读书</span><span style="line-height:2;font-family:SimSun;font-size:16px;">64</span><span style="line-height:2;font-family:SimSun;font-size:16px;">本。而中国</span>
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">13</span><span style="line-height:2;font-family:SimSun;font-size:16px;">亿人口，除去教科书，平均每人一年读书</span><span style="line-height:2;font-family:SimSun;font-size:16px;">1</span>
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">本都不到。一个爱读书的民族，自然是优秀的。</span>
+                </p>
+                <p style="text-indent:30pt;" align="center">
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;"></span><img title="请告诉你的孩子：读书和不读书，过的是不一样的人生！" alt="请告诉你的孩子：读书和不读书，过的是不一样的人生！" src="/public/images/news4.jpg" width="345" height="268" /><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30pt;">
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">自诺贝尔奖设立以来，犹太人共拿走了</span><span style="line-height:2;font-family:SimSun;font-size:16px;">20%</span><span style="line-height:2;font-family:SimSun;font-size:16px;">的化学奖、</span>
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">25%</span><span style="line-height:2;font-family:SimSun;font-size:16px;">的物理奖、</span><span style="line-height:2;font-family:SimSun;font-size:16px;">27%</span><span style="line-height:2;font-family:SimSun;font-size:16px;">的生理与医学奖、</span>
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">41%</span><span style="line-height:2;font-family:SimSun;font-size:16px;">的经济学奖、</span><span style="line-height:2;font-family:SimSun;font-size:16px;">12%</span><span style="line-height:2;font-family:SimSun;font-size:16px;">的诺贝尔文学奖，同时还拿到了</span>
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">1/3</span><span style="line-height:2;font-family:SimSun;font-size:16px;">以上的普利策奖、</span><span style="line-height:2;font-family:SimSun;font-size:16px;">1/3</span><span style="line-height:2;font-family:SimSun;font-size:16px;">以上的奥斯卡奖。而犹太人在世界上的人口只占</span>
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">0.3</span><span style="line-height:2;font-family:SimSun;font-size:16px;">℅。</span><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30.1pt;">
+                    <b><span style="line-height:2;font-family:SimSun;font-size:16px;">“</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">你现在的气质里，藏着你走过的路，读过的书，爱过的人。</span></b><b><span style="line-height:2;font-family:SimSun;font-size:16px;">”</span></b>
+                    <span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30pt;">
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">“读书，让我即使没有富庶的生活，仍有富庶的生命，让我清贫至今也朴素至今，平凡至今也善良至今，渺小至今也强大至今。</span><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30pt;">
+                    <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">甚至日后嫁人，此生智慧和善念就是我的嫁妆。我未入过繁华之境，未听过喧嚣之声，未见过太多生灵，未有过滚烫心灵，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">但书本给了我所有智慧和情感。</span></b>
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">”</span>
+                    </span><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30pt;">
+                    <span style="font-family:宋体;font-size:15pt;"><span style="line-height:2;font-family:SimSun;font-size:16px;">“如果你半夜醒来发现自己已经好长时间没读书，而且没有任何负罪感的时候，</span><b><span style="line-height:2;font-family:SimSun;font-size:16px;">你就必须知道，你已经堕落了。</span></b></span>
+                </p>
+                <p style="text-indent:30pt;" align="center">
+                    <span style="font-family:宋体;font-size:15pt;"><b><span style="line-height:2;font-family:SimSun;font-size:16px;"></span></b>
+                    </span><img title="请告诉你的孩子：读书和不读书，过的是不一样的人生！" alt="请告诉你的孩子：读书和不读书，过的是不一样的人生！" src="/public/images/news3.jpg" width="319" height="263" /><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30pt;">
+                    <span style="line-height:2;font-family:SimSun;font-size:16px;">不是说书本本身有多么了不起，而是读书这个行为意味着你没有完全认同这个现世和现实，你还有追求，还在奋斗，你还有不满，你还在寻找另一种可能，另一种生活方式。”</span><span style="font-size:15pt;"></span>
+                </p>
+                <p style="text-indent:30.1pt;">
+                    <b><span style="line-height:2;font-family:SimSun;font-size:16px;">我读书为的就是为了不遇到我不想遇到的人。读书，是为了成为一个有温度懂情趣会思考的人。</span></b>
+                </p>
+                <button style="margin:10px auto;background:#00B2EE;width:50px;height:30px;float:left;border-radius:4px;"><a href="/news/news1" style="color:white;text-decoration:none;">上一篇</a></button>
+                <button style="margin:10px auto;background:#00B2EE;width:50px;height:30px;float:right;border-radius:4px;"><a href="/news/news3" style="color:white;text-decoration:none;">下一篇</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="right_noborder" class="foot_info container">
+            <p class="right_channel">中国家教人才招聘频道介绍：欢迎您访问中国人才网的 . 中国 . 家教 .招聘频道。中国招聘频道免费为中国家教的人才和招聘单位提供家教招聘信息查询和发布服务，是寻找和发布中国家教人才求职和招聘信息的最佳专业的人才网站。欢迎提出宝贵的意见。最新中国家教人才招聘信息：1.招聘有经验的语文老师2.6000急聘会英语住家家教和早教师3.招聘初高中各科兼职老师4.高新诚聘辅导教师5.招聘围棋象棋兼职老师 移动终端请访问<a href="http://m.liebiao.com/_zhaopin/jiajiaolaoshi/">家教招聘</a>移动版</p>
+        </div>
+        <div style="height:5px;"></div>
+        <div id="quick_area" class="zimuzuhe-bottom active container">
+            <ul class="zimuzuhe">
+            </ul>
+            <div class="zimuzuhe-con f12">
+            </div>
+        </div>
+        <p class="container">
+            <strong class="b-title">中国家教招聘相关分类：</strong>
+            <a href="http://zhaopin.liebiao.com/jiaoshi/">教师/助教招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiajiaolaoshi/">家教招聘</a>
+            <a href="http://zhaopin.liebiao.com/youerjiaoshi/">幼教招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiangshi/">培训师/讲师招聘</a>
+            <a href="http://zhaopin.liebiao.com/zhujiao/">培训策划招聘</a>
+            <a href="http://zhaopin.liebiao.com/peixunzhuli/">培训助理招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiaowurenyuan/">教学/教务管理招聘</a>
+            <a href="http://zhaopin.liebiao.com/jiaoyukaifa/">教育产品开发招聘</a>
+            <a href="http://zhaopin.liebiao.com/jykeyuanrenyuan/">学术研究/科研招聘</a>
+            <a href="http://zhaopin.liebiao.com/jyzhaosheng/">招生/课程顾问招聘</a>
+            <a href="http://zhaopin.liebiao.com/xiaozhang/">校长招聘</a>
+        </p>
+        <p class="container">
+            <strong class="b-title">热点城市家教招聘分类：</strong>
+            <a href="http://beijing.zhaopin.liebiao.com/jiajiaolaoshi/">北京家教招聘</a><a href="http://shanghai.zhaopin.liebiao.com/jiajiaolaoshi/">上海家教招聘</a><a href="http://guangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">广州家教招聘</a>
+            <a href="http://suzhou.zhaopin.liebiao.com/jiajiaolaoshi/">苏州家教招聘</a>
+            <a href="http://shenzhen.zhaopin.liebiao.com/jiajiaolaoshi/">深圳家教招聘</a><a href="http://tianjin.zhaopin.liebiao.com/jiajiaolaoshi/">天津家教招聘</a><a href="http://chongqing.zhaopin.liebiao.com/jiajiaolaoshi/">重庆家教招聘</a>
+            <a href="http://hangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">杭州家教招聘</a>
+            <a href="http://wuxi.zhaopin.liebiao.com/jiajiaolaoshi/">无锡家教招聘</a>
+            <a href="http://jinan.zhaopin.liebiao.com/jiajiaolaoshi/">济南家教招聘</a><a href="http://chengdu.zhaopin.liebiao.com/jiajiaolaoshi/">成都家教招聘</a><a href="http://qingdao.zhaopin.liebiao.com/jiajiaolaoshi/">青岛家教招聘</a>
+            <a href="http://ningbo.zhaopin.liebiao.com/jiajiaolaoshi/">宁波家教招聘</a>
+            <a href="http://shenyang.zhaopin.liebiao.com/jiajiaolaoshi/">沈阳家教招聘</a>
+            <a href="http://wuhan.zhaopin.liebiao.com/jiajiaolaoshi/">武汉家教招聘</a><a href="http://nanjing.zhaopin.liebiao.com/jiajiaolaoshi/">南京家教招聘</a><a href="http://dalian.zhaopin.liebiao.com/jiajiaolaoshi/">大连家教招聘</a>
+            <a href="http://haerbin.zhaopin.liebiao.com/jiajiaolaoshi/">哈尔滨家教招聘</a>
+            <a href="http://foshan.zhaopin.liebiao.com/jiajiaolaoshi/">佛山家教招聘</a>
+            <a href="http://yantai.zhaopin.liebiao.com/jiajiaolaoshi/">烟台家教招聘</a>
+        </p>
+        <div class="bottom-bg">
+            <div class="footer">
+                <div class="bottom_nav">
+                    <a href="http://about.liebiao.com" target="_blank" rel="nofollow">关于列表网</a>
+                    <a href="http://tg.liebiao.com" target="_blank" rel="nofollow">我要推广</a>
+                    <a href="/cgi-bin/del_post_menu.php" target="_blank" rel="nofollow">我要删除信息</a>
+                    <a href="http://help.liebiao.com" target="_blank" rel="nofollow">帮助中心</a>
+                    <a href="http://about.liebiao.com/jobs.html" target="_blank" rel="nofollow">招贤纳士</a>
+                    <a href="http://about.liebiao.com/contact.html" target="_blank" rel="nofollow">联系我们</a>
+                </div>
+                <div>&copy;2017 列表网&nbsp;琼ICP备14000502号-12&nbsp;<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=46010602000129" rel="nofollow" style="color: #888888;" target="_blank">琼公网安备46010602000129</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <!--<script src="/public/js/company/comDetail.js"></script>-->
+</body>
+
+</html>

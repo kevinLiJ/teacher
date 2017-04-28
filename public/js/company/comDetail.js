@@ -28,4 +28,6 @@ $(function() {
             $('#teacherInfo').html(html)
         }
     })
+
+
 })

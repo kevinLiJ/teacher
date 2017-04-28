@@ -221,7 +221,7 @@ header nav .container- .btn-lg,
 footer {
     margin-top: 10px;
     width: 100%;
-    height: 400px;
+    /*height: 400px;*/
     background: #F5F5F5;
 }
 
@@ -280,5 +280,115 @@ footer p {
     position: absolute;
 }
 
+footer a:hover {
+    text-decoration: none;
+}
+
 
 /*footer部分结束*/
+
+.btn-success {
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #f8f8f8;
+}
+
+.btn-success:hover {
+    background: #f8f8f8;
+    color: #00B2EE;
+    border: 1px solid #f8f8f8;
+}
+
+.btn-primary {
+    color: #333;
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+}
+
+.btn-primary:hover {
+    background: #f8f8f8;
+    color: #00B2EE;
+    border: 1px solid #f8f8f8;
+}
+
+
+/*新闻部分开始*/
+
+.community {
+    width: 1020px;
+    margin-top: 20px;
+}
+
+.community .c-content {
+    width: 1020px;
+    margin-left: -30px;
+}
+
+.community .c-content .father {
+    height: 170px;
+    /*width: 1050px;*/
+    width: 300px;
+    overflow: hidden;
+}
+
+.community .c-content .pack img {
+    transition: all 1s;
+}
+
+.community .c-content .pack img:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+}
+
+.c-content>div {
+    margin: 0;
+    width: 330px;
+    height: 230px;
+    /*padding: 0 10px 0 0;*/
+    float: left;
+    border: 0;
+}
+
+.c-content .pack {
+    width: 300px;
+    height: 230px;
+    border: 1px solid #c5d8db;
+    margin-bottom: 15px;
+}
+
+.c-content .pack img {
+    width: 300px;
+    height: 170px;
+}
+
+.c-content .pack p {
+    text-align: center;
+    line-height: 59px;
+    font-size: 14px;
+    color: #373d41;
+}
+
+.c-content>div>div:nth-child(2) p {
+    line-height: 28px;
+    font-size: 14px;
+    color: #373d41;
+}
+
+.c-content .two {
+    margin-left: 23px;
+}
+
+.c-content .three .pack {
+    margin-left: 20px;
+}
+
+.c-content .three {
+    margin-left: 6px;
+}
+
+.community .c-content a:hover {
+    text-decoration: none;
+}
+
+
+/*新闻部分结束*/

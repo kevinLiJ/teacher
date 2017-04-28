@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/public/assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/public/css/common/base.css">
     <link rel="stylesheet" href="/public/css/applicant/main.css">
+    <link rel="stylesheet" href="/public/css/lrtk.css">
     <link rel="stylesheet" href="/public/css/company/factoryMain.css">
 </head>
 
@@ -24,8 +25,14 @@
                         <li><a href="#">欢迎来到同城家教</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/common/logout">退出</a></li>
-                        <li><a href="/company/require" id="require">招聘要求</a></li>
+                        <% if (!isLogin) { %>
+                            <form class="navbar-form navbar-left">
+                                <a href="/common/login" class="btn btn-primary">登录</a>
+                                <a href="/common/register" class="btn btn-success">注册</a>
+                            </form>
+                            <% } %>
+                                <li><a href="/common/logout">退出</a></li>
+                                <li><a href="/company/require" id="require">招聘要求</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -89,21 +96,86 @@
         </div>
     </div>
     <!-- main部分结束 -->
+    <script src='/public/js/cs_q.js'>
+    </script>
+    <div id="qq_icon"></div>
+    <div id="cs_online">
+        <ul class='qq_context'>
+            <li>
+                <span class='span_t'>在线客服01：</span>
+                <span class='qq_num'></span>
+            </li>
+            <li>
+                <span class='span_t'>在线客服02：</span>
+                <span class='qq_num'></span>
+            </li>
+            <li>
+                <span class='span_t'>在线客服03：</span>
+                <span class='qq_num'></span>
+            </li>
+            <li>
+                <span class='span_t'>在线客服04：</span>
+                <span class='qq_num'></span>
+            </li>
+            <li>
+                <span class='span_t'>在线客服05：</span>
+                <span class='qq_num'></span>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        myEvent(window, 'load', function() {
+            dealy('qq_icon', 1); //1秒后显示QQ图标，默认为1秒，可自行设置
+            settop('qq_icon', 'cs_online', 150); //设置在线客服的高度，默认150，可自行设置
+            var span_q = getbyClass('cs_online', 'qq_num');
+            setqq(span_q, ['812118541', '787644040', '147430218', '147430218', '147430218']); //填写5个QQ号码
+            click_fn('qq_icon', 'cs_online');
+        });
+    </script>
+
     <div class="container">
         <div class="qz-lb" id="teacherList">
             <dl class="cl row">
                 <dt class='col-lg-2'>求职意向</dt>
-                <dd class='col-lg-1'>姓名</dd>
+                <dd class='col-lg-2'>姓名</dd>
                 <dd class='col-lg-1'>性别</dd>
-                <dd class='col-lg-2'>出生日期</dd>
+                <!--<dd class='col-lg-2'>出生日期</dd>-->
                 <dd class='col-lg-2'>工作经验</dd>
-                <dd class='col-lg-1'>学历</dd>
+                <dd class='col-lg-2'>学历</dd>
                 <dd class='col-lg-2'>期望薪资</dd>
                 <dd class='col-lg-1'></dd>
             </dl>
         </div>
     </div>
     <!-- footer部分开始 -->
+    <div class="community container">
+        <div class="c-content w clearfix">
+            <div class="one">
+                <div class="pack">
+                    <div class=father><img src="/public/images/72.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news1">【热点】“为了孩子好”背后是父母的贪婪或面子!</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="two">
+                <div class="pack">
+                    <div class=father><img src="/public/images/75.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news2">【热点】读书和不读书，过的是不一样的人生！</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="three">
+                <div class="pack">
+                    <div class=father><img src="/public/images/58.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news3">【热点】教育孩子给思维给理念才是上策！</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div id="right_noborder" class="foot_info container">
             <p class="right_channel">中国家教人才招聘频道介绍：欢迎您访问中国人才网的 . 中国 . 家教 .招聘频道。中国招聘频道免费为中国家教的人才和招聘单位提供家教招聘信息查询和发布服务，是寻找和发布中国家教人才求职和招聘信息的最佳专业的人才网站。欢迎提出宝贵的意见。最新中国家教人才招聘信息：1.招聘有经验的语文老师2.6000急聘会英语住家家教和早教师3.招聘初高中各科兼职老师4.高新诚聘辅导教师5.招聘围棋象棋兼职老师 移动终端请访问<a href="http://m.liebiao.com/_zhaopin/jiajiaolaoshi/">家教招聘</a>移动版</p>

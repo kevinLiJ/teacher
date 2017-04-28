@@ -3963,3 +3963,7 @@ span.p_rz {
 
 
 /*content部分结束*/
+
+.community .c-content {
+    margin-left: -9px;
+}
