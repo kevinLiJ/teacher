@@ -68,6 +68,22 @@ $(function() {
         }
     })
     $('body').on('click', '#apply', function() {
-
+        $.ajax({
+            url: '/teacher/teacherApply',
+            type: 'post',
+            data: {
+                teacherId: teacherId,
+                companyId: companyId
+            },
+            success: function(data) {
+                if (data.success) {
+                    alert('申请成功');
+                } else {
+                    if (data.errMsg) {
+                        alert(data.errMsg);
+                    }
+                }
+            }
+        })
     })
 })

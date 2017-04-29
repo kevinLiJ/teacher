@@ -49,8 +49,15 @@ router
     .get('/company/queryCompanyList', ajaxController.queryCompanyList)
     .post('/company/queryCompanyInfo1', ajaxController.queryCompanyInfo1)
     .post('/teacher/queryTeacherInfo', ajaxController.queryTeacherInfo)
-    // 用户管理-公司管理-首页列表渲染
-    .get('/administrator/queryCompanyInfo', ajaxController.queryCompanyInfo)
+    //老师提交申请
+    .post('/teacher/teacherApply', ajaxController.teacherApply)
+    //根据公司id查询申请过此公司的老师的详情列表
+    .post('/teacher/applicationTeacherList', ajaxController.applicationTeacherList)
+
+
+
+// 用户管理-公司管理-首页列表渲染
+.get('/administrator/queryCompanyInfo', ajaxController.queryCompanyInfo)
     // 用户管理-公司管理-添加功能实现
     .post('/administrator/queryCompanyAdd', ajaxController.queryCompanyAdd)
     // 用户管理-公司管理-查看功能实现
@@ -65,5 +72,7 @@ router
     .post('/administrator/queryApplicantModel', ajaxController.queryApplicantModel)
     // 用户管理-应聘者管理-删除功能实心
     .post('/administrator/queryApplicantDelete', ajaxController.queryApplicantDelete)
+
+
 
 module.exports = router;

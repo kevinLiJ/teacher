@@ -234,13 +234,57 @@ exports.queryApplicantDelete = function(req, res) {
 
 //老师提交申请
 exports.teacherApply = function(req, res) {
-    console.log(req.body.id)
-    query('SELECT * FROM teacher_info where id=?', req.body.id, function(error, result) {
+    var teacherId = parseInt(req.body.teacherId);
+    var companyId = parseInt(req.body.companyId);
+    // 判断这个老师是否申请过这个公司
+    query('SELECT * FROM companyTeacher where applicationTeacherId = ? AND companyId = ?', [teacherId, companyId], function(error, result) {
         if (error) {
-            console.log(error)
+            console.log(error);
             res.json({ success: false })
+            return;
         }
-        console.log(result)
-        res.json(result[0])
+        // 没有申请过则加入数据库
+        if (result.length === 0) {
+            query('INSERT INTO companyTeacher(applicationTeacherId,companyId,isResponse) VALUES(?,?,0)', [teacherId, companyId], function(error, result) {
+                if (error) {
+                    res.json({ success: false })
+                    return;
+                }
+                res.json({ success: true })
+            })
+        } else {
+            res.json({ success: false, errMsg: '已申请过' })
+        }
     })
+
+}
+
+// 查询申请过此公司的老师
+// 用于渲染公司首页
+exports.applicationTeacherList = function(req, res) {
+    var companyId = req.body.companyId;
+    var applicationTeacherList = []
+    query('SELECT * FROM companyTeacher where companyId = ?', companyId, function(error, result) {
+        if (error) {
+            console.log(error);
+            res.json({ success: false })
+            return;
+        }
+        for (var i = 0; i < result.length; i++) {
+            applicationTeacherList.push(result[i].applicationTeacherId);
+        }
+        // 拼接成  (2,4,7)  这种形式去查询
+        var queryIdListStr = '(' + applicationTeacherList.join(',') + ')';
+        // res.json({ success: true, teacherList: applicationTeacherList });
+        query('SELECT * FROM teacher_info where id in ' + queryIdListStr, function(error, result) {
+            if (error) {
+                console.log(error);
+                res.json({ success: false })
+                return;
+            }
+            console.log(result)
+            res.json({ success: true, data: result })
+        })
+    })
+
 }
