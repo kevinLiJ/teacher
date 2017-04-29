@@ -1,10 +1,14 @@
 $(function() {
-    var teacherId = location.hash.replace('#', '');
-    console.log(teacherId)
+    // 获取url参数的函数
+    var hashArr = window.location.hash.replace("#", '').split('|');
+    // 当前登录的老师的id
+    var teacherId = parseInt(hashArr[0]);
+    // 当前公司详细信息的id
+    var companyId = parseInt(hashArr[1]);
     $.ajax({
         url: '/company/queryCompanyInfo1',
         type: 'post',
-        data: { id: teacherId },
+        data: { id: companyId },
         success: function(data) {
             var html = `
             <div class="infoTitle-zp">
@@ -41,7 +45,7 @@ $(function() {
                 </dl>
             </div>
             <div class="applyJob">
-                <a class="sq-submiter" href="javascript:void(0);">立即申请</a>
+                <a class="sq-submiter" id="apply" href="javascript:void(0);">立即申请</a>
             </div>
             <div class="about-zp">
                 <ul class='about-dh'>
@@ -62,5 +66,8 @@ $(function() {
             `
             $('#companyDetail').html(html)
         }
+    })
+    $('body').on('click', '#apply', function() {
+
     })
 })

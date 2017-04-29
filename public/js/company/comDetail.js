@@ -1,5 +1,10 @@
 $(function() {
-    var teacherId = location.hash.replace('#', '');
+    // 获取url参数的函数
+    var hashArr = window.location.hash.replace("#", '').split('|');
+    // 当前登录的公司的id
+    var companyId = parseInt(hashArr[0]);
+    // 当前老师详细信息的id
+    var teacherId = parseInt(hashArr[1]);
     $.ajax({
         url: '/teacher/queryTeacherInfo',
         type: 'post',

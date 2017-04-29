@@ -1,5 +1,7 @@
 $(function() {
+    // 设置跳转招聘要求的地址
     $('#require').attr('href', '/company/require' + window.location.hash);
+    // 页面渲染的地址
     $.ajax({
         url: '/teacher/queryTeacherList',
         type: 'get',
@@ -15,7 +17,7 @@ $(function() {
                         <dd class='col-lg-2'>${element.workingLife}</dd>
                         <dd class='col-lg-2'>${element.education}</dd>
                         <dd class='col-lg-2'>${element.salaryExpectation}</dd>
-                        <dd class='col-lg-1'><a href="/company/comDetail?#${element.id}">详情</a></dd>
+                        <dd class='col-lg-1'><a href="/company/comDetail${window.location.hash}|${element.id}">详情</a></dd>
                     </dl> 
                     `
             }

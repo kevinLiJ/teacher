@@ -78,18 +78,6 @@ $("#submit").click(function() {
         url: '/teacher/submitTeacherInfo',
         type: 'post',
         data: $('#resumeId').serialize() + '&id=' + userId,
-        // data: {
-        //     name: 'lijianyang',
-        //     sex: 'male',
-        //     dateOfBirth: '2017-04-15',
-        //     workingLife: '无经验',
-        //     salaryExpecation: '面议',
-        //     education: '高中以下',
-        //     phone: 15832572358,
-        //     selfIntroduction: 'dddd',
-        //     workExperience: 'ddddd',
-        //     id: 14
-        // },
         success: function(data) {
             console.log(data.success)
         }

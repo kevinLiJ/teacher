@@ -4,14 +4,18 @@ $(function() {
         return false;
     })
     $('#submit').click(function() {
+        var userId = window.location.hash.replace('#', '');
         $.ajax({
             url: '/teacher/submitCompanyInfo',
-            data: $('#resumeId').serialize(),
             type: 'post',
+            data: $('#requireId').serialize() + '&id=' + userId,
             success: function(data) {
-                console.log(data)
+                if (data.success) {
+                    alert("上传成功")
+                }
             }
         })
-        return false
+        return false;
     })
+
 })

@@ -1,9 +1,10 @@
 // 封装处理函数
 // 登录页面
 exports.showLogin = function(req, res) {
-        res.render('common/login');
-    }
-    // 注册页面
+    res.render('common/login');
+}
+
+// 注册页面
 exports.showRegister = function(req, res) {
     res.render('common/register');
 }

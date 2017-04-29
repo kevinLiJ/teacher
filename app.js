@@ -13,11 +13,12 @@ app.engine('.html', ejs.__express);
 app.set('view engine', 'html');
 //配置session中间件
 app.use(session({
-        secret: 'Keyboard cat',
-        resave: false,
-        saveUninitialized: true
-    }))
-    // 配置解析表单Post请求体数据中间件
+    secret: 'Keyboard cat',
+    resave: false,
+    saveUninitialized: true
+}))
+
+// 配置解析表单Post请求体数据中间件
 app.use(bodyParser.urlencoded({ extended: false }));
 // express中间件
 app.use(userRouter);
