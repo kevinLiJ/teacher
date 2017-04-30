@@ -1,0 +1,9 @@
+.search .search-left {
+    position: absolute;
+}
+
+.search {
+    width: 204px;
+    height: 60px;
+    /*float: left;*/
+}

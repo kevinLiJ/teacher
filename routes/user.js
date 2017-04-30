@@ -17,6 +17,7 @@ router
     .get('/common/logout', userController.doLogin)
     // 应聘者-简历页
     .get('/applicant/resume', userController.showResume)
+    .get('/applicant/personal', userController.showPersonal)
     // 应聘者-详情页
     .get('/applicant/detail', userController.showDetail)
     //公司-详情页

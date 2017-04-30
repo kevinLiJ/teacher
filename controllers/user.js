@@ -69,3 +69,8 @@ exports.news3 = function(req, res) {
         isLogin: req.session.isLogin
     });
 }
+exports.showPersonal = function(req, res) {
+    res.render('applicant/personal', {
+        isLogin: req.session.isLogin
+    });
+}

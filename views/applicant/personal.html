@@ -8,7 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="/public/assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/public/css/common/base.css">
+    <link rel="stylesheet" href="/public/css/applicant/detail.css">
 </head>
+
 
 <body>
     <header>
@@ -28,16 +30,63 @@
                             </form>
                             <% } %>
                                 <li><a href="/common/logout">退出</a></li>
-                                <li><a href="/company/require" id="resume">简历</a></li>
+                                <li><a href="/company/require" id="require">招聘要求</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
         </nav>
-    </header>9-
+    </header>
+    <!--search部分开始-->
     <div class="search container">
         <div class="search-left">同城家教</div>
+    </div>
+    <!--search部分结束-->
+    <div class="content container">
+        <div class="main-content">
+            <div class="detail-main">
+                <div style="text-align:center;margin-bottom:10px;">
+                    <script type="text/javascript" src="/public/js/detail.js"></script>
+                </div>
+                <div class="main-l">
+                    <div class="detail-con" style="margin-top:0">
+                        <div style=" margin:0 auto; width:780px;" id="personal">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="community container">
+        <div class="c-content w clearfix">
+            <div class="one">
+                <div class="pack">
+                    <div class=father><img src="/public/images/72.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news1">【热点】“为了孩子好”背后是父母的贪婪或面子!</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="two">
+                <div class="pack">
+                    <div class=father><img src="/public/images/75.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news2">【热点】读书和不读书，过的是不一样的人生！</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="three">
+                <div class="pack">
+                    <div class=father><img src="/public/images/58.jpg" alt=""></div>
+                    <div>
+                        <p><a href="/news/news3">【热点】教育孩子给思维给理念才是上策！</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div id="right_noborder" class="foot_info container">
@@ -73,30 +122,17 @@
         </p>
         <p class="container">
             <strong class="b-title">热点城市家教招聘分类：</strong>
-            <a href="http://beijing.zhaopin.liebiao.com/jiajiaolaoshi/">北京家教招聘</a>
-            <a href="http://shanghai.zhaopin.liebiao.com/jiajiaolaoshi/">上海家教招聘</a>
-            <a href="http://guangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">广州家教招聘</a>
-            <a href="http://suzhou.zhaopin.liebiao.com/jiajiaolaoshi/">苏州家教招聘</a>
-            <a href="http://shenzhen.zhaopin.liebiao.com/jiajiaolaoshi/">深圳家教招聘</a>
-            <a href="http://tianjin.zhaopin.liebiao.com/jiajiaolaoshi/">天津家教招聘</a>
-            <a href="http://chongqing.zhaopin.liebiao.com/jiajiaolaoshi/">重庆家教招聘</a>
-            <a href="http://hangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">杭州家教招聘</a>
+            <a href="http://beijing.zhaopin.liebiao.com/jiajiaolaoshi/">北京家教招聘</a><a href="http://shanghai.zhaopin.liebiao.com/jiajiaolaoshi/">上海家教招聘</a><a href="http://guangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">广州家教招聘</a><a href="http://suzhou.zhaopin.liebiao.com/jiajiaolaoshi/">苏州家教招聘</a>
+            <a href="http://shenzhen.zhaopin.liebiao.com/jiajiaolaoshi/">深圳家教招聘</a><a href="http://tianjin.zhaopin.liebiao.com/jiajiaolaoshi/">天津家教招聘</a><a href="http://chongqing.zhaopin.liebiao.com/jiajiaolaoshi/">重庆家教招聘</a><a href="http://hangzhou.zhaopin.liebiao.com/jiajiaolaoshi/">杭州家教招聘</a>
             <a href="http://wuxi.zhaopin.liebiao.com/jiajiaolaoshi/">无锡家教招聘</a>
-            <a href="http://jinan.zhaopin.liebiao.com/jiajiaolaoshi/">济南家教招聘</a>
-            <a href="http://chengdu.zhaopin.liebiao.com/jiajiaolaoshi/">成都家教招聘</a>
-            <a href="http://qingdao.zhaopin.liebiao.com/jiajiaolaoshi/">青岛家教招聘</a>
-            <a href="http://ningbo.zhaopin.liebiao.com/jiajiaolaoshi/">宁波家教招聘</a>
+            <a href="http://jinan.zhaopin.liebiao.com/jiajiaolaoshi/">济南家教招聘</a><a href="http://chengdu.zhaopin.liebiao.com/jiajiaolaoshi/">成都家教招聘</a><a href="http://qingdao.zhaopin.liebiao.com/jiajiaolaoshi/">青岛家教招聘</a><a href="http://ningbo.zhaopin.liebiao.com/jiajiaolaoshi/">宁波家教招聘</a>
             <a href="http://shenyang.zhaopin.liebiao.com/jiajiaolaoshi/">沈阳家教招聘</a>
-            <a href="http://wuhan.zhaopin.liebiao.com/jiajiaolaoshi/">武汉家教招聘</a>
-            <a href="http://nanjing.zhaopin.liebiao.com/jiajiaolaoshi/">南京家教招聘</a>
-            <a href="http://dalian.zhaopin.liebiao.com/jiajiaolaoshi/">大连家教招聘</a>
-            <a href="http://haerbin.zhaopin.liebiao.com/jiajiaolaoshi/">哈尔滨家教招聘</a>
+            <a href="http://wuhan.zhaopin.liebiao.com/jiajiaolaoshi/">武汉家教招聘</a><a href="http://nanjing.zhaopin.liebiao.com/jiajiaolaoshi/">南京家教招聘</a><a href="http://dalian.zhaopin.liebiao.com/jiajiaolaoshi/">大连家教招聘</a><a href="http://haerbin.zhaopin.liebiao.com/jiajiaolaoshi/">哈尔滨家教招聘</a>
             <a href="http://foshan.zhaopin.liebiao.com/jiajiaolaoshi/">佛山家教招聘</a>
             <a href="http://yantai.zhaopin.liebiao.com/jiajiaolaoshi/">烟台家教招聘</a>
         </p>
 
-        </div>
-        </div>
+
         <div class="bottom-bg">
             <div class="footer">
                 <div class="bottom_nav">
@@ -111,7 +147,13 @@
             </div>
         </div>
 
+
+
+
     </footer>
+
 </body>
+<script src="/public/assets/jquery/jquery.js"></script>
+<script src="/public/js/applicant/personal.js"></script>
 
 </html>

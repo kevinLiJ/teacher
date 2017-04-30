@@ -47,11 +47,25 @@ $("#submit").click(function() {
     $("#woman").css("display", "none");
 })
 $("#resumeId").validate({
+
     sendForm: false,
     valid: function() {
-        $(this).ajaxSubmit({
-
-        })
+        $(this).ajaxSubmit(
+            function() {
+                var userId = window.location.hash.replace('#', '');
+                $.ajax({
+                    url: '/teacher/submitTeacherInfo',
+                    type: 'post',
+                    data: $('#resumeId').serialize() + '&id=' + userId,
+                    success: function(data) {
+                        if (data.success) {
+                            alert('保存成功')
+                        }
+                    }
+                })
+                return false;
+            }
+        )
     },
     eachInvalidField: function() {
         $(this).closest('.form-group').removeClass('has-success').addClass('has-error');
@@ -64,25 +78,11 @@ $("#resumeId").validate({
             required: '姓名不能为空'
         },
         dateBir: {
-            required: '出生年份不能为空'
+            required: '出生年份不能为空',
         },
         tel: {
             required: '手机号不能为空'
         }
     }
 });
-
-$("#submit").click(function() {
-    var userId = window.location.hash.replace('#', '');
-    $.ajax({
-        url: '/teacher/submitTeacherInfo',
-        type: 'post',
-        data: $('#resumeId').serialize() + '&id=' + userId,
-        success: function(data) {
-            if (data.success) {
-                alert('保存成功')
-            }
-        }
-    })
-    return false;
-})
+$("#resumeId").click()
