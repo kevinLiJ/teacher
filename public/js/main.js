@@ -5,7 +5,7 @@ $(function() {
         type: 'get',
         success: function(data) {
             var html = ``
-            for (var i = 0; i < data.length - 1; i++) {
+            for (var i = 0; i < data.length; i++) {
                 var element = data[i];
                 html += `
                         <dl class="box row" style="width:100%;">

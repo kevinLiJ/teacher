@@ -43,34 +43,34 @@ $("#woman").click(function() {
 })
 
 $("#submit").click(function() {
-        $("#man").css("display", "none");
-        $("#woman").css("display", "none");
-    })
-    // $("#resumeId").validate({
-    //     sendForm: false,
-    //     valid: function() {
-    //         $(this).ajaxSubmit({
+    $("#man").css("display", "none");
+    $("#woman").css("display", "none");
+})
+$("#resumeId").validate({
+    sendForm: false,
+    valid: function() {
+        $(this).ajaxSubmit({
 
-//         })
-//     },
-//     eachInvalidField: function() {
-//         $(this).closest('.form-group').removeClass('has-success').addClass('has-error');
-//     },
-//     eachValidField: function() {
-//         $(this).closest('.form-group').removeClass('has-error').addClass('has-success');
-//     },
-//     description: {
-//         tcName: {
-//             required: '姓名不能为空'
-//         },
-//         dateBir: {
-//             required: '出生年份不能为空'
-//         },
-//         tel: {
-//             required: '手机号不能为空'
-//         }
-//     }
-// });
+        })
+    },
+    eachInvalidField: function() {
+        $(this).closest('.form-group').removeClass('has-success').addClass('has-error');
+    },
+    eachValidField: function() {
+        $(this).closest('.form-group').removeClass('has-error').addClass('has-success');
+    },
+    description: {
+        tcName: {
+            required: '姓名不能为空'
+        },
+        dateBir: {
+            required: '出生年份不能为空'
+        },
+        tel: {
+            required: '手机号不能为空'
+        }
+    }
+});
 
 $("#submit").click(function() {
     var userId = window.location.hash.replace('#', '');
@@ -79,7 +79,9 @@ $("#submit").click(function() {
         type: 'post',
         data: $('#resumeId').serialize() + '&id=' + userId,
         success: function(data) {
-            console.log(data.success)
+            if (data.success) {
+                alert('保存成功')
+            }
         }
     })
     return false;
