@@ -293,7 +293,7 @@ exports.applicationTeacherList = function(req, res) {
 exports.companycheckPhone = function(req, res) {
     var teacherId = req.body.teacherId;
     var companyId = req.body.companyId;
-    query('UPDATE companyTeacher SET isResponse = 1 WHERE teacherId = ? and companyId = ?', [teacherId, companyId], function(error, result) {
+    query('UPDATE companyTeacher SET isResponse = 1 WHERE applicationTeacherId = ? and companyId = ?', [teacherId, companyId], function(error, result) {
         if (error) {
             console.log(error)
             res.json({ success: false })

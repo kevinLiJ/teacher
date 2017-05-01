@@ -34,8 +34,20 @@ $(function() {
             </div>
             `
             $('#teacherInfo').html(html)
-            $('#seePhone').click(function() {
-                console.log(111);
+            $('#seePhone li').click(function() {
+                $.ajax({
+                    url: '/company/companycheckPhone',
+                    type: 'post',
+                    data: {
+                        companyId: companyId,
+                        teacherId: teacherId
+                    },
+                    success: function(data) {
+                        if (data.success) {
+                            alert('已反馈给应聘者')
+                        }
+                    }
+                })
                 $(".tel").css('display', 'block');
             })
         }

@@ -54,6 +54,7 @@ router
     .post('/teacher/teacherApply', ajaxController.teacherApply)
     //根据公司id查询申请过此公司的老师的详情列表
     .post('/teacher/applicationTeacherList', ajaxController.applicationTeacherList)
+    .post('/company/companycheckPhone', ajaxController.companycheckPhone)
 
 
 
