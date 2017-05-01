@@ -302,14 +302,32 @@ exports.companycheckPhone = function(req, res) {
     })
 }
 
-// //根据老师的id，查询老师申请的公司中，做回复的公司列表
-// exports.applicationTeacherList = function(req, res) {
-//     var companyId = req.body.companyId;
-//     query('SELECT * FROM companyTeacher where companyId = ? and isResponse = 1', companyId, function(error, result) {
-//         if (error) {
-//             console.log(error);
-//             res.json({ success: false })
-//             return;
-//         }
-//     })
-// }
+//根据老师的id，查询老师申请的公司中，做回复的公司列表
+exports.responseCompanyList = function(req, res) {
+    var teacherId = req.body.teacherId;
+    var responseCompanyIdList = [];
+    query('SELECT * FROM companyTeacher where applicationTeacherId = ? and isResponse = 1', teacherId, function(error, result) {
+        if (error) {
+            console.log(error);
+            res.json({ success: false })
+            return;
+        }
+        if (result.length === 0) {
+            res.json({ success: true, errMsg: '暂时无公司回应' })
+            return
+        }
+        for (var i = 0; i < result.length; i++) {
+            responseCompanyIdList.push(result[i].companyId);
+        }
+        var responseCompanyIdStr = '(' + responseCompanyIdList.join(',') + ')';
+        console.log(responseCompanyIdStr)
+        query('SELECT * FROM company_info where id in' + responseCompanyIdStr, function(error, result) {
+            if (error) {
+                console.log(error)
+                res.json({ success: false })
+                return;
+            }
+            res.json({ success: true, data: result })
+        })
+    })
+}

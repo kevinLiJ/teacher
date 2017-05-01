@@ -3,7 +3,6 @@ $(function() {
         $(".other .com-content").toggle();
         return false;
     })
-    $('#submit').click()
     $("#requireId").validate({
         sendForm: false,
         valid: function() {

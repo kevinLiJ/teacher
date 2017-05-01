@@ -52,9 +52,13 @@ router
     .post('/teacher/queryTeacherInfo', ajaxController.queryTeacherInfo)
     //老师提交申请
     .post('/teacher/teacherApply', ajaxController.teacherApply)
-    //根据公司id查询申请过此公司的老师的详情列表
+    //根据公司id，查询申请过此公司的老师的详情列表
     .post('/teacher/applicationTeacherList', ajaxController.applicationTeacherList)
+    //给予老师反馈的公司的详情列表
+    .post('/teacher/responseCompanyList', ajaxController.responseCompanyList)
+    //公司查询联系方式。并反馈给该应聘者
     .post('/company/companycheckPhone', ajaxController.companycheckPhone)
+
 
 
 
