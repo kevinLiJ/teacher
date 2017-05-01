@@ -288,3 +288,28 @@ exports.applicationTeacherList = function(req, res) {
     })
 
 }
+
+//公司查看申请老师的联系方式
+exports.companycheckPhone = function(req, res) {
+    var teacherId = req.body.teacherId;
+    var companyId = req.body.companyId;
+    query('UPDATE companyTeacher SET isResponse = 1 WHERE teacherId = ? and companyId = ?', [teacherId, companyId], function(error, result) {
+        if (error) {
+            console.log(error)
+            res.json({ success: false })
+        }
+        res.json({ success: true })
+    })
+}
+
+// //根据老师的id，查询老师申请的公司中，做回复的公司列表
+// exports.applicationTeacherList = function(req, res) {
+//     var companyId = req.body.companyId;
+//     query('SELECT * FROM companyTeacher where companyId = ? and isResponse = 1', companyId, function(error, result) {
+//         if (error) {
+//             console.log(error);
+//             res.json({ success: false })
+//             return;
+//         }
+//     })
+// }
