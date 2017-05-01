@@ -23,14 +23,21 @@ $(function() {
                     ${data.selfIntroduction}
                 </div>
                 <ul class="hope">
-                    <li>期望薪资：${data.salaryExpectation}</li>
+                    <li>期望薪资：${data.salaryExpecation}</li>
                 </ul>
                 <ul class="s-phone" id="seePhone">
                     <li>查看联系方式</li>
                 </ul>
+                 <ul class='tel'>
+                    <li>${data.phone}</li>
+                </ul>
             </div>
             `
             $('#teacherInfo').html(html)
+            $('#seePhone').click(function() {
+                console.log(111);
+                $(".tel").css('display', 'block');
+            })
         }
     })
 

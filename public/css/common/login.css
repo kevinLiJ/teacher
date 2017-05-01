@@ -61,3 +61,7 @@ body {
     height: 30px;
     padding: 0;
 }
+
+a:hover {
+    text-decoration: none;
+}

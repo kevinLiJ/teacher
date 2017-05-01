@@ -13,7 +13,7 @@ $(function() {
             var html = `
             <div class="infoTitle-zp">
                 <div class="title-time">
-                    <h1 class="detail-title">招聘有经验的语文老师</h1>
+                    <h1 class="detail-title">${data.positionName}</h1>
                     <div class="title-bot">
                         <span class="tb-other">${data.releaseDate}</span>
                     </div>
@@ -86,4 +86,6 @@ $(function() {
             }
         })
     })
+
+
 })

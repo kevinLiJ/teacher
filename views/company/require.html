@@ -55,9 +55,9 @@
                             <b class="must-Symbol">*</b>
                             <span class="com-title">招聘职位</span>
                             <div class="com-select selects clear">
-                                <input type="text" class="dateBir" name="positionName">
+                                <input type="text" class="dateBir" name="positionName" data-required data-description='positionName' data-describedby='positionNameInfo'>
                             </div>
-                            <div id="dateBirInfo" class="ErrorInfo"></div>
+                            <div id="positionNameInfo" class="ErrorInfo"></div>
                         </li>
                         <li class="birthday cate-list">
                             <b class="must-Symbol">*</b>
@@ -70,21 +70,21 @@
                         <li class="name cate-list">
                             <b class="must-Symbol">*</b>
                             <span class="com-title">公司名称</span>
-                            <input type="text" data-required data-description='tcName' data-describedby='tcNameInfo' class="com-input" id="txtUserName" name="username" value="">
-                            <div id="tcNameInfo" class="ErrorInfo"></div>
+                            <input type="text" data-required data-description='username' data-describedby='usernameInfo' class="com-input" id="txtUserName" name="username" value="">
+                            <div id="usernameInfo" class="ErrorInfo"></div>
                         </li>
 
                         <li class="name cate-list">
                             <b class="must-Symbol">*</b>
                             <span class="com-title">公司性质</span>
-                            <input type="text" data-required data-description='tcName' data-describedby='tcNameInfo' class="com-input" id="txtUserName" name="CompanyNature" value="">
-                            <div id="tcNameInfo" class="ErrorInfo"></div>
+                            <input type="text" data-required data-description='CompanyNature' data-describedby='CompanyNatureInfo' class="com-input" id="txtUserName" name="CompanyNature" value="">
+                            <div id="CompanyNatureInfo" class="ErrorInfo"></div>
                         </li>
                         <li class="name cate-list">
                             <b class="must-Symbol">*</b>
                             <span class="com-title">公司规模</span>
-                            <input type="text" data-required data-description='tcName' data-describedby='tcNameInfo' class="com-input" id="txtUserName" name="companySize" value="">
-                            <div id="tcNameInfo" class="ErrorInfo"></div>
+                            <input type="text" data-required data-description='companySize' data-describedby='companySizeInfo' class="com-input" id="txtUserName" name="companySize" value="">
+                            <div id="companySizeInfo" class="ErrorInfo"></div>
                         </li>
                         <li class="workTime cate-list">
                             <b class="must-Symbol">*</b>
@@ -116,14 +116,14 @@
                         <li id="notAuthTel" class="tel cate-list">
                             <b class="must-Symbol">*</b>
                             <span class="com-title">联系方式</span>
-                            <input type="text" data-required data-description='tel' data-describedby='telInfo' class="com-input" maxlength="11" name="phone" id="txtMobile" value="">
-                            <div id="telInfo" class="ErrorInfo"></div>
+                            <input type="text" data-required data-description='phone' data-describedby='phoneInfo' class="com-input" maxlength="11" name="phone" id="txtMobile" value="">
+                            <div id="phoneInfo" class="ErrorInfo"></div>
                         </li>
                         <li id="notAuthTel" class="tel cate-list">
                             <b class="must-Symbol">*</b>
                             <span class="com-title">联系地址</span>
-                            <input type="text" data-required data-description='tel' data-describedby='telInfo' class="com-input" maxlength="11" name="contactAddress" id="txtMobile" value="">
-                            <div id="telInfo" class="ErrorInfo"></div>
+                            <input type="text" data-required data-description='contactAddress' data-describedby='contactAddressInfo' class="com-input" maxlength="11" name="contactAddress" id="txtMobile" value="">
+                            <div id="contactAddressInfo" class="ErrorInfo"></div>
                         </li>
                     </ul>
                 </div>

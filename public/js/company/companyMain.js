@@ -20,7 +20,7 @@ $(function() {
                         <dd class='col-lg-1'>${element.sex}</dd>
                         <dd class='col-lg-2'>${element.workingLife}</dd>
                         <dd class='col-lg-2'>${element.education}</dd>
-                        <dd class='col-lg-2'>${element.salaryExpectation}</dd>
+                        <dd class='col-lg-2'>${element.salaryExpecation}</dd>
                         <dd class='col-lg-1'><a href="/company/comDetail${window.location.hash}|${element.id}">详情</a></dd>
                     </dl> 
                     `

@@ -85,4 +85,3 @@ $("#resumeId").validate({
         }
     }
 });
-$("#resumeId").click()
